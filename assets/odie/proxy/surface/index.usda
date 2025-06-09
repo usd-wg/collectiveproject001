@@ -1,0 +1,18 @@
+#usda 1.0
+(
+    defaultPrim = "main"
+    endTimeCode = 1
+    metersPerUnit = 0.01
+    startTimeCode = 1
+    upAxis = "Y"
+)
+
+def Xform "main"
+{
+    def Scope "mtl" (
+        prepend payload = @payload.usda@
+    )
+    {
+    }
+}
+
