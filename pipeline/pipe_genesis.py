@@ -21,27 +21,6 @@ def main(args):
     shots_root = pipe_globals.get_subfolder(show_root, "shots")
 
     for asset in assets:
-        # Asset/index.usda in the asset main folder defines the purpose-prims
-        # and it references purpose/index.usda on each purpose prim.
-        #
-        # Purpose/index.usda defines "geo" and "mtl" and sublayers
-        # all fragment/index.usda based on a specific fragment-order.
-        #
-        # Fragment/index.usda uses its payload (for model and surface) and "data" files based
-        # on its internal requirements.
-        #
-        # "data" folder may contain extra bits like mtlx files or
-        # textures or VDBs, etc.
-        #
-        # asset [folder]
-        #  - index.usda
-        #  - purpose [folder]
-        #    - fragment [folder]
-        #      - index.usda
-        #      - payload.usda [only for model and surface]
-        #      - data [folder]
-        #        - extra files...
-        #    - index.usda
         asset_name = asset
         asset_folder = pipe_globals.get_subfolder(assets_root, asset_name)
         asset_filename = os.path.join(asset_folder, "index.usda")
