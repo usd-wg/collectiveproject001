@@ -22,6 +22,9 @@ TYPE = "type"
 ASSET = "asset"
 ARC = "arc"
 ELEMENTS = "elements"
+START_TIMECODE = "startTimeCode"
+END_TIMECODE = "endTimeCode"
+FRAMES_PER_SECOND = "framesPerSecond"
 
 ASSETS = [
     "odie",
@@ -31,6 +34,9 @@ ASSETS = [
 SHOTS = [
     {
         NAME:"s001_001",
+        START_TIMECODE:1000.0,
+        END_TIMECODE:1480.0,
+        FRAMES_PER_SECOND:24.0,
         ELEMENTS: [
             {
                 NAME:"odie01",
@@ -137,7 +143,7 @@ def main(args):
         shot_folder = pipe_globals.get_subfolder(shots_root, shot_name)
         elements = shot[ELEMENTS]
         shot_filename = os.path.join(shot_folder, "index.usda")
-        shot_stage = pipe_globals.stage_begin(shot_filename)
+        shot_stage = pipe_globals.stage_begin(shot_filename, start=shot[START_TIMECODE], end=shot[END_TIMECODE], fps=shot[FRAMES_PER_SECOND])
         shot_world_prim = pipe_globals.get_or_create_world_prim(shot_stage)
 
         for element in elements:

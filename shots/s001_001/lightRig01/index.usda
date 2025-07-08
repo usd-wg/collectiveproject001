@@ -1,6 +1,7 @@
 #usda 1.0
 (
     endTimeCode = 1
+    framesPerSecond = 24
     metersPerUnit = 0.01
     startTimeCode = 1
     subLayers = [
@@ -8,6 +9,7 @@
         @lighting\index.usda@,
         @animation\index.usda@
     ]
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 

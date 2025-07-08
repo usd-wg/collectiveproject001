@@ -4,11 +4,13 @@ import os
 import math
 
 
-def stage_begin(filename, start=1.0, end=1.0):
+def stage_begin(filename, start=1.0, end=1.0, fps=24.0):
     layer = Sdf.Layer.CreateNew( filename, args={'format':'usda'} )
     stage = Usd.Stage.Open( layer )
     stage.SetStartTimeCode(start)
     stage.SetEndTimeCode(end)
+    stage.SetTimeCodesPerSecond(fps)
+    stage.SetFramesPerSecond(fps)
     stage.SetMetadata("metersPerUnit", 0.01 )
     stage.SetMetadata("upAxis", "Y")
     return stage

@@ -2,6 +2,7 @@
 (
     defaultPrim = "main"
     endTimeCode = 1
+    framesPerSecond = 24
     metersPerUnit = 0.01
     startTimeCode = 1
     subLayers = [
@@ -9,6 +10,7 @@
         @surface\index.usda@,
         @model\index.usda@
     ]
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 

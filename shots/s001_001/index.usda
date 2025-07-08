@@ -1,8 +1,9 @@
 #usda 1.0
 (
-    endTimeCode = 1
+    endTimeCode = 1480
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1000
     subLayers = [
         @rendersettings\index.usda@,
         @fx\index.usda@,
@@ -11,6 +12,7 @@
         @renderPasses\index.usda@,
         @lightRig01\index.usda@
     ]
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 
