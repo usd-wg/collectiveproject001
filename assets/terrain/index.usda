@@ -8,8 +8,8 @@
 
 def Xform "main" (
     assetInfo = {
-        asset identifier = @C:\Users\paolo\Desktop\code\collectiveproject001\assets\odie\index.usda@
-        string name = "odie"
+        asset identifier = @C:\Users\paolo\Desktop\code\collectiveproject001\assets\terrain\index.usda@
+        string name = "terrain"
         string version = "latest"
     }
     kind = "component"

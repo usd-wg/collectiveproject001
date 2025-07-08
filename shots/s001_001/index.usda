@@ -1,0 +1,69 @@
+#usda 1.0
+(
+    endTimeCode = 1
+    metersPerUnit = 0.01
+    startTimeCode = 1
+    subLayers = [
+        @rendersettings\index.usda@,
+        @fx\index.usda@,
+        @lighting\index.usda@,
+        @animation\index.usda@,
+        @renderPasses\index.usda@,
+        @lightRig01\index.usda@
+    ]
+    upAxis = "Y"
+)
+
+def Xform "World" (
+    kind = "group"
+)
+{
+    def Xform "characters" (
+        kind = "group"
+    )
+    {
+        def Xform "odie01" (
+            kind = "component"
+            prepend references = @odie01\index.usda@
+        )
+        {
+        }
+    }
+
+    def Xform "environments" (
+        kind = "group"
+    )
+    {
+        def Xform "terrain01" (
+            kind = "component"
+            prepend references = @terrain01\index.usda@
+        )
+        {
+        }
+    }
+
+    def Xform "cameras" (
+        kind = "group"
+    )
+    {
+        def Xform "renderCam" (
+            kind = "component"
+            prepend references = @renderCam\index.usda@
+        )
+        {
+        }
+    }
+
+    def Xform "lights" (
+        kind = "group"
+    )
+    {
+        def Xform "envLights" (
+            kind = "component"
+            prepend references = @envLights\index.usda@
+        )
+        {
+        }
+    }
+}
+

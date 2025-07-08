@@ -214,6 +214,13 @@ def create_root_prim(stage, kind="", asset_name="", asset_identifier="", asset_v
     return asset_root_prim.GetPrim()
 
 
+def override_root_prim(stage):
+    root_path = Sdf.Path.absoluteRootPath
+    asset_root_path = root_path.AppendChild("main")
+    asset_root_prim = stage.OverridePrim(asset_root_path)
+    return asset_root_prim.GetPrim()
+
+
 def get_array_value_from_args(args, flag_short, flag_long):
     result = []
     i = 1
@@ -250,6 +257,11 @@ def get_subfolder(root_path, subfolder):
     folder = os.path.join( root_path, subfolder )
     mkdir_safe(folder)
     return folder
+
+
+def keep_folder(folder):
+    f = open("{}/.keep".format(folder), "w")
+    f.close()
 
 
 def get_show_folder():

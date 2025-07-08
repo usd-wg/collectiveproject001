@@ -59,7 +59,6 @@ textures or VDBs, etc.
                 - extra files...
         - index.usda
 
-
 # Exporting and Publishing
 
 To export and publish, the git-repo can be cloned, a new branch created and the necessary files updated.
