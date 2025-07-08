@@ -46,6 +46,16 @@ The `pipeline` is made of `python` scripts to be able to, for example, validate 
 
 We are hoping to connect with the `wg-ci` Working group on the Academy Software Foundation slack, and connect some scripts more automatically happening when updates are pushed to the repo (TBD).
 
+## Workflow
 
+The general idea is that the pipeline ensures that all the files needed for assets and shots are already in place.
+
+This makes an asset or a shot already "ready to be rendered".
+
+It might be meaningless initially (camera is empty, no animation, etc), but over time, all the initial empty placeholders for the various `fragments` will be populated by the artists.
+
+Artists update the fragments, as needed by their tasks, and then those will be merged in the main branch of the git repo, so that the assets and shots will always point to the latest fragments.
+
+More details in the assets and shots READMEs.
 
 

@@ -1,2 +1,3 @@
-# For artists
+# For the artists
 
+TBD
