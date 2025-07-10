@@ -6,10 +6,10 @@
     metersPerUnit = 0.01
     startTimeCode = 1
     subLayers = [
-        @fx\index.usda@,
-        @lighting\index.usda@,
-        @animation\index.usda@,
-        @..\..\..\assets\terrain\index.usda@
+        @fx/index.usda@,
+        @lighting/index.usda@,
+        @animation/index.usda@,
+        @../../../assets/terrain/index.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Y"

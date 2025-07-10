@@ -10,7 +10,7 @@
 
 def Xform "main" (
     assetInfo = {
-        asset identifier = @C:\Users\paolo\Desktop\code\collectiveproject001\assets\odie\index.usda@
+        asset identifier = @assets/odie/index.usda@
         string name = "odie"
         string version = "latest"
     }
@@ -18,14 +18,14 @@ def Xform "main" (
 )
 {
     def Scope "proxy" (
-        prepend references = @proxy\index.usda@
+        prepend references = @proxy/index.usda@
     )
     {
         uniform token purpose = "proxy"
     }
 
     def Scope "render" (
-        prepend references = @render\index.usda@
+        prepend references = @render/index.usda@
     )
     {
         uniform token purpose = "render"
