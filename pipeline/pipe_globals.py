@@ -2,6 +2,7 @@ from pxr import Usd, UsdGeom, Sdf, UsdRender, Gf, UsdShade
 
 import os
 import math
+import pathlib
 
 
 def stage_begin(filename, start=1.0, end=1.0, fps=24.0):
@@ -19,9 +20,14 @@ def stage_begin(filename, start=1.0, end=1.0, fps=24.0):
 def stage_end(stage):
     stage.GetRootLayer().Save()
 
-
+# For Asset Paths, use POSIX-style paths (/), which still work in USD on Windows (but not the reverse)
 def anchor_path(path, root_path):
-    return str(os.path.relpath(path, os.path.dirname(root_path)))
+    # NOTE: pathlib.Path.relpath() supports walk_up kwarg in 3.12+
+    return pathlib.Path(os.path.relpath(path, os.path.dirname(root_path))).as_posix()
+
+# For un-anchored Asset Path identifiers (e.g. assetInfo), assume relative to show root
+def get_identifier_from_filename(asset_filename):
+    return pathlib.Path(asset_filename).relative_to(pathlib.Path(get_show_folder())).as_posix()
 
 def get_or_create_world_prim(stage):
     root_path = Sdf.Path.absoluteRootPath
@@ -200,7 +206,7 @@ def create_rendersettings(
     return prim
 
 
-def create_root_prim(stage, kind="", asset_name="", asset_identifier="", asset_version=""):
+def create_root_prim(stage, kind="", asset_name="", asset_filename="", asset_version=""):
     root_path = Sdf.Path.absoluteRootPath
     asset_root_path = root_path.AppendChild("main")
     asset_root_prim = UsdGeom.Xform.Define(stage, asset_root_path)
@@ -209,7 +215,8 @@ def create_root_prim(stage, kind="", asset_name="", asset_identifier="", asset_v
         modelAPI.SetKind(kind)
     if asset_name != "":
         modelAPI.SetAssetName(asset_name)
-    if asset_identifier != "":
+    if asset_filename != "":
+        asset_identifier = get_identifier_from_filename(asset_filename)
         modelAPI.SetAssetIdentifier(asset_identifier)
     if asset_version != "":
         modelAPI.SetAssetVersion(asset_version)    

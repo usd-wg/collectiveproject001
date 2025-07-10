@@ -5,12 +5,12 @@
     metersPerUnit = 0.01
     startTimeCode = 1000
     subLayers = [
-        @rendersettings\index.usda@,
-        @fx\index.usda@,
-        @lighting\index.usda@,
-        @animation\index.usda@,
-        @renderPasses\index.usda@,
-        @lightRig01\index.usda@
+        @rendersettings/index.usda@,
+        @fx/index.usda@,
+        @lighting/index.usda@,
+        @animation/index.usda@,
+        @renderPasses/index.usda@,
+        @lightRig01/index.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Y"
@@ -26,7 +26,7 @@ def Xform "World" (
     {
         def Xform "odie01" (
             kind = "component"
-            prepend references = @odie01\index.usda@
+            prepend references = @odie01/index.usda@
         )
         {
         }
@@ -38,7 +38,7 @@ def Xform "World" (
     {
         def Xform "terrain01" (
             kind = "component"
-            prepend references = @terrain01\index.usda@
+            prepend references = @terrain01/index.usda@
         )
         {
         }
@@ -50,7 +50,7 @@ def Xform "World" (
     {
         def Xform "renderCam" (
             kind = "component"
-            prepend references = @renderCam\index.usda@
+            prepend references = @renderCam/index.usda@
         )
         {
         }
@@ -62,7 +62,7 @@ def Xform "World" (
     {
         def Xform "envLights" (
             kind = "component"
-            prepend references = @envLights\index.usda@
+            prepend references = @envLights/index.usda@
         )
         {
         }

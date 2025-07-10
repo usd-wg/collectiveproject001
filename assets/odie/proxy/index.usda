@@ -6,9 +6,9 @@
     metersPerUnit = 0.01
     startTimeCode = 1
     subLayers = [
-        @binding\index.usda@,
-        @surface\index.usda@,
-        @model\index.usda@
+        @binding/index.usda@,
+        @surface/index.usda@,
+        @model/index.usda@
     ]
     timeCodesPerSecond = 24
     upAxis = "Y"
