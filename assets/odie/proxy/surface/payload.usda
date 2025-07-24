@@ -9,5 +9,123 @@
 
 def Xform "main"
 {
+    def Material "Odie_rig_OdieSG"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG/Odie_rig_Body_Primary.outputs:surface>
+
+        def Shader "Odie_rig_Body_Primary"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.5584352, 0.029555483, 0.022172296)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0.1396088, 0.0073888707, 0.005543074)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG1"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG1/Odie_rig_Body_Secondary.outputs:surface>
+
+        def Shader "Odie_rig_Body_Secondary"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.6173109, 0.46205682, 0.09083525)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0.15432772, 0.1155142, 0.022708813)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG2"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG2/Odie_rig_Body_Tertiary.outputs:surface>
+
+        def Shader "Odie_rig_Body_Tertiary"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0, 0, 0)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0, 0, 0)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG3"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG3/Odie_rig_Eye_Sclera.outputs:surface>
+
+        def Shader "Odie_rig_Eye_Sclera"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.3564595, 0.53945583, 0.8962046)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0.089114875, 0.13486396, 0.22405115)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG4"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG4/Odie_rig_Eye_Iris.outputs:surface>
+
+        def Shader "Odie_rig_Eye_Iris"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0, 0, 0)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0, 0, 0)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG5"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG5/Odie_rig_Eye_Pupil_Center.outputs:surface>
+
+        def Shader "Odie_rig_Eye_Pupil_Center"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0, 0, 0)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0, 0, 0)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
+
+    def Material "Odie_rig_OdieSG6"
+    {
+        token outputs:surface.connect = </main/Odie_rig_OdieSG6/Odie_rig_Eye_Pupil_Border.outputs:surface>
+
+        def Shader "Odie_rig_Eye_Pupil_Border"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            color3f inputs:diffuseColor = (0.8, 0.8, 0.8)
+            normal3f inputs:normal = (1, 1, 1)
+            float inputs:roughness = 0.26075816
+            color3f inputs:specularColor = (0.2, 0.2, 0.2)
+            int inputs:useSpecularWorkflow = 1
+            token outputs:displacement
+            token outputs:surface
+        }
+    }
 }
 

@@ -5,9 +5,7 @@
     metersPerUnit = 0.01
     startTimeCode = 1
     upAxis = "Y"
+    subLayers = [
+        @mat_assignments.usda@
+    ]
 )
-
-def Xform "main"
-{
-}
-
