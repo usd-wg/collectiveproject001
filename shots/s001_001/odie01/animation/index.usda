@@ -1,8 +1,13 @@
 #usda 1.0
 (
-    endTimeCode = 1
+    endTimeCode = 1456
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1000
+    subLayers = [
+        @animated_proxy.usd@
+    ]
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 

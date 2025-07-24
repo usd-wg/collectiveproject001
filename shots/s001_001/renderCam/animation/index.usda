@@ -1,8 +1,25 @@
 #usda 1.0
 (
-    endTimeCode = 1
+    endTimeCode = 1456
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1000
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
+
+def Xform "main"
+{
+    matrix4d xformOp:transform = ( (0.979889736529664, 2.8361860574797366e-14, 0.19953973099066155, 0), (-0.007872620843578175, 0.9992213917223376, 0.03866047290874843, 0), (-0.1993843677043886, -0.03945390125798478, 0.9791267862696058, 0), (-180.30009542626092, 66.30614099628846, 765.1592500253221, 1) )
+    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+    def Camera "mono"
+    {
+        float2 clippingRange = (0.1, 10000)
+        float focalLength = 65
+        float focusDistance = 5
+        float horizontalAperture = 35.999928
+        float verticalAperture = 23.999952
+    }
+}
 
