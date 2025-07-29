@@ -1,0 +1,59 @@
+#usda 1.0
+(
+    endTimeCode = 1480
+    framesPerSecond = 24
+    metersPerUnit = 0.01
+    renderSettingsPrimPath = "/Render/rendersettings"
+    startTimeCode = 1000
+    subLayers = [
+        @C:\Users\paolo\Desktop\code\collectiveproject001\shots\s001_001\index.usda@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+def Scope "Render"
+{
+    def "Products"
+    {
+        def "Vars"
+        {
+            def RenderVar "rgba"
+            {
+                custom string driver:parameters:aov:name = "rgba"
+                custom string driver:parameters:aov:source = "rgba"
+                uniform string sourceName = "rgba"
+            }
+        }
+
+        def RenderProduct "rgba"
+        {
+            uniform token aspectRatioConformPolicy = "expandAperture"
+            rel camera = </World/cameras/renderCam/mono>
+            uniform float4 dataWindowNDC = (0, 0, 1, 1)
+            custom string driver:aovNames = "rgba"
+            custom string driver:imagePath = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_GL_rgba.####.jpg"
+            custom string driver:parameters:subimage = "rgba"
+            custom string imageName = "beauty"
+            uniform bool instantaneousShutter = 0
+            prepend rel orderedVars = </Render/Products/Vars/rgba>
+            custom string partName = "rgba"
+            uniform float pixelAspectRatio = 1
+            token productName = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_GL_rgba.####.jpg"
+            uniform int2 resolution = (1024, 768)
+        }
+    }
+
+    def RenderSettings "rendersettings"
+    {
+        uniform token aspectRatioConformPolicy = "expandAperture"
+        rel camera = </World/cameras/renderCam/mono>
+        uniform float4 dataWindowNDC = (0, 0, 1, 1)
+        uniform token[] includedPurposes = ["default"]
+        uniform bool instantaneousShutter = 0
+        uniform float pixelAspectRatio = 1
+        prepend rel products = </Render/Products/rgba>
+        uniform int2 resolution = (1024, 768)
+    }
+}
+
