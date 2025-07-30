@@ -1,0 +1,67 @@
+#usda 1.0
+(
+    defaultPrim = "main"
+    endTimeCode = 1
+    metersPerUnit = 0.01
+    startTimeCode = 1
+    upAxis = "Y"
+)
+
+over "main"
+{
+    over "geo"
+    {
+        over "body"
+        {
+            over "Body_Primary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG>
+            }
+
+            over "Body_Secondary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG1>
+            }
+
+            over "Body_Tertiary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG2>
+            }
+
+            over "Eye_Sclera" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG3>
+            }
+
+            over "Eye_Iris" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG4>
+            }
+
+            over "Eye_Pupil_Center" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG5>
+            }
+
+            over "Eye_Pupil_Border" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/mtl/Odie_rig_OdieSG6>
+            }
+        }
+    }
+}
+
