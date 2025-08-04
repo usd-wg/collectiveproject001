@@ -1,0 +1,2 @@
+This is a derivative work.
+Original license is at https://github.com/o3de/odie-3d-assets

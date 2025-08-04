@@ -1,0 +1,9 @@
+# black
+.black
+
+# pre-commit
+.pre-commit-config.yaml
+
+# backup files
+pipeline/dcc_files/backup
+pipeline/dcc_files/*.nk~

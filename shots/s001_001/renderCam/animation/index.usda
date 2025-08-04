@@ -22,4 +22,3 @@ def Xform "main"
         float verticalAperture = 23.999952
     }
 }
-

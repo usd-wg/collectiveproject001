@@ -10,9 +10,11 @@
 def Xform "main"
 {
     def Scope "geo" (
-        prepend payload = @payload.usda@
+        prepend payload = [
+            @facesets.usda@,
+            @payload.usda@
+        ]
     )
     {
     }
 }
-

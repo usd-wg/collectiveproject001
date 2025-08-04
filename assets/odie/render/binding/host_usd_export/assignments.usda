@@ -1,0 +1,35 @@
+#usda 1.0
+(
+    defaultPrim = "main"
+    endTimeCode = 196
+    framesPerSecond = 24
+    metersPerUnit = 0.01
+    startTimeCode = 196
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+over "main"
+{
+    over "render"
+    {
+        over "geo"
+        {
+            over "body" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                rel material:binding = </main/render/mtl/odie_mtl>
+                uniform token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+                over "odie_glass_face" (
+                    prepend apiSchemas = ["MaterialBindingAPI"]
+                )
+                {
+                    uniform token familyName = "materialBind"
+                    rel material:binding = </main/render/mtl/odie_glass_face_mtl>
+                }
+            }
+        }
+    }
+}
