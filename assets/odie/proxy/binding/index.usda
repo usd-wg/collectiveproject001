@@ -9,5 +9,62 @@
 
 def Xform "main"
 {
+    over "geo"
+    {
+        over "body"
+        {
+            uniform token subsetFamily:materialBind:familyType = "nonOverlapping"
+
+            over "Body_Primary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Body_Primary>
+            }
+            over "Body_Secondary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Body_Secondary>
+            }
+            over "Body_Tertiary" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Body_Tertiary>
+            }
+            over "Eye_Iris" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Eye_Iris>
+            }
+            over "Eye_Pupil_Border" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Eye_Pupil_Border>
+            }
+            over "Eye_Pupil_Center" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Eye_Pupil_Center>
+            }
+            over "Eye_Sclera" (
+                prepend apiSchemas = ["MaterialBindingAPI"]
+            )
+            {
+                uniform token familyName = "materialBind"
+                rel material:binding = </main/mtl/Eye_Sclera>
+            }
+        }
+    }
 }
 

@@ -9,5 +9,239 @@
 
 def Xform "main"
 {
+    def Material "Body_Primary"
+    {
+        token outputs:surface.connect = </main/Body_Primary/Body_Primary_preview.outputs:surface>
+
+        def Shader "Body_Primary_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0.5584352, 0.029555483, 0.022172296)
+            color3f inputs:diffuseColor.connect = </main/Body_Primary/Body_Primary_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Body_Primary/Body_Primary_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            color3f inputs:specularColor = (0.5584352, 0.029555483, 0.022172296)
+            token outputs:surface
+        }
+
+        def Shader "Body_Primary_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0.5584352, 0.029555483, 0.022172296)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Body_Primary_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Body_Secondary"
+    {
+        token outputs:surface.connect = </main/Body_Secondary/Body_Secondary_preview.outputs:surface>
+
+        def Shader "Body_Secondary_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0.6173109, 0.46205682, 0.09083525)
+            color3f inputs:diffuseColor.connect = </main/Body_Secondary/Body_Secondary_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Body_Secondary/Body_Secondary_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            color3f inputs:specularColor = (0.6173109, 0.46205682, 0.09083525)
+            token outputs:surface
+        }
+
+        def Shader "Body_Secondary_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0.6173109, 0.46205682, 0.09083525)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Body_Secondary_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Body_Tertiary"
+    {
+        token outputs:surface.connect = </main/Body_Tertiary/Body_Tertiary_preview.outputs:surface>
+
+        def Shader "Body_Tertiary_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0, 0, 0)
+            color3f inputs:diffuseColor.connect = </main/Body_Tertiary/Body_Tertiary_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Body_Tertiary/Body_Tertiary_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            token outputs:surface
+        }
+
+        def Shader "Body_Tertiary_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0, 0, 0)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Body_Tertiary_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Eye_Iris"
+    {
+        token outputs:surface.connect = </main/Eye_Iris/Eye_Iris_preview.outputs:surface>
+
+        def Shader "Eye_Iris_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0, 0, 0)
+            color3f inputs:diffuseColor.connect = </main/Eye_Iris/Eye_Iris_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Eye_Iris/Eye_Iris_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            token outputs:surface
+        }
+
+        def Shader "Eye_Iris_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0, 0, 0)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Eye_Iris_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Eye_Pupil_Border"
+    {
+        token outputs:surface.connect = </main/Eye_Pupil_Border/Eye_Pupil_Border_preview.outputs:surface>
+
+        def Shader "Eye_Pupil_Border_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0.8, 0.8, 0.8)
+            color3f inputs:diffuseColor.connect = </main/Eye_Pupil_Border/Eye_Pupil_Border_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Eye_Pupil_Border/Eye_Pupil_Border_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            color3f inputs:specularColor = (0.8, 0.8, 0.8)
+            token outputs:surface
+        }
+
+        def Shader "Eye_Pupil_Border_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0.8, 0.8, 0.8)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Eye_Pupil_Border_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Eye_Pupil_Center"
+    {
+        token outputs:surface.connect = </main/Eye_Pupil_Center/Eye_Pupil_Center_preview.outputs:surface>
+
+        def Shader "Eye_Pupil_Center_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0, 0, 0)
+            color3f inputs:diffuseColor.connect = </main/Eye_Pupil_Center/Eye_Pupil_Center_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Eye_Pupil_Center/Eye_Pupil_Center_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            token outputs:surface
+        }
+
+        def Shader "Eye_Pupil_Center_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0, 0, 0)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Eye_Pupil_Center_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
+
+    def Material "Eye_Sclera"
+    {
+        token outputs:surface.connect = </main/Eye_Sclera/Eye_Sclera_preview.outputs:surface>
+
+        def Shader "Eye_Sclera_preview"
+        {
+            uniform token info:id = "UsdPreviewSurface"
+            float inputs:clearcoatRoughness = 0
+            color3f inputs:diffuseColor = (0.3564595, 0.53945583, 0.8962046)
+            color3f inputs:diffuseColor.connect = </main/Eye_Sclera/Eye_Sclera_preview_primvar_displayColor.outputs:result>
+            float inputs:opacity = 1
+            float inputs:opacity.connect = </main/Eye_Sclera/Eye_Sclera_preview_primvar_displayOpacity.outputs:result>
+            float inputs:roughness = 0.75
+            color3f inputs:specularColor = (0.3564595, 0.53945583, 0.8962046)
+            token outputs:surface
+        }
+
+        def Shader "Eye_Sclera_preview_primvar_displayColor"
+        {
+            uniform token info:id = "UsdPrimvarReader_float3"
+            float3 inputs:fallback = (0.3564595, 0.53945583, 0.8962046)
+            token inputs:varname = "displayColor"
+            float3 outputs:result
+        }
+
+        def Shader "Eye_Sclera_preview_primvar_displayOpacity"
+        {
+            uniform token info:id = "UsdPrimvarReader_float"
+            float inputs:fallback = 1
+            token inputs:varname = "displayOpacity"
+            float outputs:result
+        }
+    }
 }
 
