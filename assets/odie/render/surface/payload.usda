@@ -1,13 +1,174 @@
 #usda 1.0
 (
     defaultPrim = "main"
-    endTimeCode = 1
+    endTimeCode = 196
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 196
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 
-def Xform "main"
+over "main"
 {
-}
+    def Material "odie_mtl" (
+        prepend inherits = </__class_mtl__/odie_mtl>
+    )
+    {
+        int inputs:inputnum = 1
+        token outputs:mtlx:surface.connect = </main/odie_mtl/mtlxmaterial.outputs:surface>
 
+        def NodeGraph "mtlxmaterial"
+        {
+            token outputs:surface.connect = </main/odie_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+
+            def Shader "mtlxsurface1"
+            {
+                uniform token info:id = "ND_surface"
+                string inputs:bsdf.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer3.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxlayer3"
+            {
+                uniform token info:id = "ND_layer_bsdf"
+                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
+                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer2.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxlayer2"
+            {
+                uniform token info:id = "ND_layer_bsdf"
+                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
+                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxdielectric_bsdf1"
+            {
+                uniform token info:id = "ND_dielectric_bsdf"
+                float2 inputs:roughness = (0.1, 0.1)
+                token outputs:out
+            }
+
+            def Shader "mtlxdielectric_bsdf2"
+            {
+                uniform token info:id = "ND_dielectric_bsdf"
+                float inputs:ior = 2
+                float2 inputs:roughness = (0.6, 0.6)
+                color3f inputs:tint = (0.171, 0.171, 0.261)
+                token outputs:out
+            }
+
+            def Shader "mtlxlayer1"
+            {
+                uniform token info:id = "ND_layer_bsdf"
+                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxconductor_bsdf1.outputs:out>
+                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxburley_diffuse_bsdf1.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxburley_diffuse_bsdf1"
+            {
+                uniform token info:id = "ND_burley_diffuse_bsdf"
+                color3f inputs:color.connect = </main/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:rgb>
+                vector3f inputs:normal.connect = </main/odie_mtl/mtlxmaterial/cartoon_normal_map.outputs:rgb>
+                float inputs:roughness.connect = </main/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:r>
+                token outputs:out
+            }
+
+            def Shader "cartoon_base_color_texture"
+            {
+                uniform token info:id = "ND_UsdUVTexture"
+                asset inputs:file = @textures/odie_cartoon_color_01.exr@
+                color3f outputs:rgb
+            }
+
+            def Shader "cartoon_roughness_texture"
+            {
+                uniform token info:id = "ND_UsdUVTexture"
+                asset inputs:file = @textures/odie_cartoon_rough_01.exr@
+                float outputs:r
+            }
+
+            def Shader "cartoon_normal_map"
+            {
+                uniform token info:id = "ND_UsdUVTexture"
+                asset inputs:file = @textures/odie_cartoon_norm_01.exr@
+                color3f outputs:rgb
+            }
+
+            def Shader "mtlxconductor_bsdf1"
+            {
+                uniform token info:id = "ND_conductor_bsdf"
+                color3f inputs:extinction.connect = </main/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:extinction>
+                color3f inputs:ior.connect = </main/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:ior>
+                float2 inputs:roughness = (0.1, 0.1)
+                token outputs:out
+            }
+
+            def Shader "mtlxartistic_ior1"
+            {
+                uniform token info:id = "ND_artistic_ior"
+                color3f inputs:edge_color = (0.1709999, 0.1709999, 0.261)
+                color3f inputs:reflectivity.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:rgb>
+                color3f outputs:extinction
+                color3f outputs:ior
+            }
+
+            def Shader "cartoon_metallic_texture"
+            {
+                uniform token info:id = "ND_UsdUVTexture"
+                asset inputs:file = @textures/odie_cartoon_metal_01.exr@
+                color3f outputs:rgb
+            }
+        }
+    }
+
+    def Material "odie_glass_face_mtl" (
+        prepend inherits = </__class_mtl__/odie_glass_face_mtl>
+    )
+    {
+        int inputs:inputnum = 1
+        token outputs:mtlx:surface.connect = </main/odie_glass_face_mtl/mtlxmaterial.outputs:surface>
+
+        def NodeGraph "mtlxmaterial"
+        {
+            token outputs:surface.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+
+            def Shader "mtlxsurface1"
+            {
+                uniform token info:id = "ND_surface"
+                string inputs:bsdf.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxlayer1"
+            {
+                uniform token info:id = "ND_layer_bsdf"
+                string inputs:base.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
+                string inputs:top.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
+                token outputs:out
+            }
+
+            def Shader "mtlxdielectric_bsdf2"
+            {
+                uniform token info:id = "ND_dielectric_bsdf"
+                float inputs:ior = 1.8
+                float2 inputs:roughness = (0.001, 0.001)
+                color3f inputs:tint = (-0.027333332, 0.111999996, 0.17933333)
+                float inputs:weight = 0.821
+                token outputs:out
+            }
+
+            def Shader "mtlxdielectric_bsdf1"
+            {
+                uniform token info:id = "ND_dielectric_bsdf"
+                float2 inputs:roughness = (0.001, 0.001)
+                string inputs:scatter_mode = "T"
+                token outputs:out
+            }
+        }
+    }
+}

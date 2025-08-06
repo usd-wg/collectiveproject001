@@ -1,0 +1,329 @@
+#! /laika/dist/local_sync/ent/linux_platform/net_linked/local/prod/foundry/Nuke/14.1v4-64/libnuke-14.1.4.so -nx
+version 14.1 v4
+define_window_layout_xml {<?xml version="1.0" encoding="UTF-8"?>
+<layout version="1.0">
+    <window x="2560" y="0" w="2559" h="1412" screen="0">
+        <splitter orientation="1">
+            <split size="40"/>
+            <dock id="" hideTitles="1" activePageId="Toolbar.1">
+                <page id="Toolbar.1"/>
+            </dock>
+            <split size="1896" stretch="1"/>
+            <splitter orientation="2">
+                <split size="817"/>
+                <dock id="" activePageId="Viewer.1">
+                    <page id="Viewer.1"/>
+                </dock>
+                <split size="575"/>
+                <dock id="" activePageId="DAG.1" focus="true">
+                    <page id="DAG.1"/>
+                    <page id="Curve Editor.1"/>
+                    <page id="DopeSheet.1"/>
+                </dock>
+            </splitter>
+            <split size="615"/>
+            <dock id="" activePageId="Properties.1">
+                <page id="Properties.1"/>
+                <page id="uk.co.thefoundry.backgroundrenderview.1"/>
+                <page id="Scenegraph.1"/>
+            </dock>
+        </splitter>
+    </window>
+</layout>
+}
+Root {
+ inputs 0
+ name /home/m/mdavies/git/aswf/collectiveproject001/pipeline/dcc_files/texture_convert.nk
+ last_frame 10
+ format "2348 1566 0 0 2348 1566 1 wide_2k"
+ proxy_type scale
+ proxy_format "1024 778 0 0 1024 778 1 1K_Super_35(full-ap)"
+ colorManagement OCIO
+ defaultViewerLUT "OCIO LUTs"
+ workingSpaceLUT scene_linear
+ monitorLut "sRGB (Display)"
+ monitorOutLUT "Laika Tonemap (Display)"
+ int8Lut matte_paint
+ int16Lut texture_paint
+ logLut compositing_log
+ floatLut scene_linear
+ views "L #ff0000
+R #00ff00"
+ views_colours true
+ set_by_user_template true
+}
+BackdropNode {
+ inputs 0
+ name " CG _backdrop1"
+ tile_color 0x3e4f5aff
+ label Cartoon
+ note_font_size 48
+ xpos -1272
+ ypos -497
+ icon Shaders.png
+ bdwidth 945
+ bdheight 329
+ addUserKnob {20 mainTabTK l backdropTK}
+ addUserKnob {41 label_1 l label T " CG _backdrop1.label"}
+ addUserKnob {22 rndClrs0 l "<font style=\"background-color:#3e4f5a\"> <img size=\"8\" src=\"Shaders.png\"> CG </font>" T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Shaders.png')\nR,G,B= \[0.567, 0.301, 0.353]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' CG ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' CG '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))" +STARTLINE}
+ addUserKnob {22 rndClrs1 l "<font style=\"background-color:#3d3228\"> <img size=\"8\" src=\"Light.png\"> FX </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Light.png')\nR,G,B= \[0.079, 0.34, 0.242]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' FX ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' FX '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs2 l "<font style=\"background-color:#2e202f\"> <img size=\"8\" src=\"Geometry.png\"> 3D </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Geometry.png')\nR,G,B= \[0.822, 0.312, 0.188]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' 3D ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' 3D '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs3 l "<font style=\"background-color:#384937\"> <img size=\"8\" src=\"Keyer.png\"> Key </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Keyer.png')\nR,G,B= \[0.333, 0.243, 0.29]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Key ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Key '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs4 l "<font style=\"background-color:#403b52\"> <img size=\"8\" src=\"FloodFill.png\">Cleanup</font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('FloodFill.png')\nR,G,B= \[0.703, 0.28, 0.322]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue('Cleanup')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % 'Cleanup'\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs5 l "<font style=\"background-color:#787048\"> <img size=\"8\" src=\"Read.png\"> Ref </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Read.png')\nR,G,B= \[0.138, 0.404, 0.474]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Ref ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Ref '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs6 l "<font style=\"background-color:#67754a\"> <img size=\"8\" src=\"Vectorfield.png\"> Pub </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Vectorfield.png')\nR,G,B= \[0.221, 0.368, 0.46]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Pub ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Pub '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs7 l "<font style=\"background-color:#a65fcc\"> <img size=\"8\" src=\"Glow.png\">Important</font>" T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Glow.png')\nR,G,B= \[0.776, 0.533, 0.8]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue('Important')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % 'Important'\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))" +STARTLINE}
+ addUserKnob {22 rndColors l " <img src=\"ColorBars.png\">Randomize color " -STARTLINE T "import colorsys, random\nn=nuke.thisNode()\nR,G,B= colorsys.hsv_to_rgb(random.random(),.1+random.random()*.15,.15+random.random()*.15)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ) )"}
+ addUserKnob {22 rndTint l " <img src=\"HueShift.png\">Randomize tint " -STARTLINE T "import colorsys, random\nn=nuke.thisNode()\nV=int(n\['tile_color'].getValue())\nR = (0xFF & V >> 24) / 255.0\nG = (0xFF & V >> 16) / 255.0\nB = (0xFF & V >> 8) / 255.0\n\nR,G,B= colorsys.rgb_to_hsv(R,G,B)\n\nR,G,B= colorsys.hsv_to_rgb(R,.1+random.random()*.15,.15+random.random()*.15)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ) )"}
+ addUserKnob {22 grow l " <img src=\"MergeMin.png\">" -STARTLINE T "n=nuke.thisNode()\nautoBackdrop.Grow(n)"}
+ addUserKnob {22 shrink l " <img src=\"MergeMax.png\">" -STARTLINE T "n=nuke.thisNode()\nautoBackdrop.Shrink(n)"}
+ addUserKnob {20 version}
+ addUserKnob {26 nodeClass l Class: T backdropTK}
+ addUserKnob {26 nodeVersion l Version: T "v 3.0"}
+}
+BackdropNode {
+ inputs 0
+ name " Pub _backdrop1"
+ tile_color 0x67754aff
+ label "Grunge\n"
+ note_font_size 48
+ xpos -248
+ ypos -491
+ icon Vectorfield.png
+ bdwidth 944
+ bdheight 336
+ z_order 1
+ addUserKnob {20 mainTabTK l backdropTK}
+ addUserKnob {41 label_1 l label T " Pub _backdrop1.label"}
+ addUserKnob {22 rndClrs0 l "<font style=\"background-color:#3e4f5a\"> <img size=\"8\" src=\"Shaders.png\"> CG </font>" T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Shaders.png')\nR,G,B= \[0.567, 0.301, 0.353]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' CG ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' CG '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))" +STARTLINE}
+ addUserKnob {22 rndClrs1 l "<font style=\"background-color:#3d3228\"> <img size=\"8\" src=\"Light.png\"> FX </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Light.png')\nR,G,B= \[0.079, 0.34, 0.242]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' FX ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' FX '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs2 l "<font style=\"background-color:#2e202f\"> <img size=\"8\" src=\"Geometry.png\"> 3D </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Geometry.png')\nR,G,B= \[0.822, 0.312, 0.188]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' 3D ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' 3D '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs3 l "<font style=\"background-color:#384937\"> <img size=\"8\" src=\"Keyer.png\"> Key </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Keyer.png')\nR,G,B= \[0.333, 0.243, 0.29]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Key ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Key '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs4 l "<font style=\"background-color:#403b52\"> <img size=\"8\" src=\"FloodFill.png\">Cleanup</font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('FloodFill.png')\nR,G,B= \[0.703, 0.28, 0.322]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue('Cleanup')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % 'Cleanup'\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs5 l "<font style=\"background-color:#787048\"> <img size=\"8\" src=\"Read.png\"> Ref </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Read.png')\nR,G,B= \[0.138, 0.404, 0.474]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Ref ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Ref '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs6 l "<font style=\"background-color:#67754a\"> <img size=\"8\" src=\"Vectorfield.png\"> Pub </font>" -STARTLINE T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Vectorfield.png')\nR,G,B= \[0.221, 0.368, 0.46]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue(' Pub ')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % ' Pub '\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))"}
+ addUserKnob {22 rndClrs7 l "<font style=\"background-color:#a65fcc\"> <img size=\"8\" src=\"Glow.png\">Important</font>" T "import colorsys\nn=nuke.thisNode()\nlist=\[' CG ', ' FX ', ' 3D ', ' Key ', 'Cleanup', ' Ref ', ' Pub ', 'Important']\nn\['icon'].setValue('Glow.png')\nR,G,B= \[0.776, 0.533, 0.8]\nR,G,B=colorsys.hsv_to_rgb(R,G,B)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ))\nif ((n\['label'].getValue()=='') or (n\['label'].getValue() in list)):\n   n\['label'].setValue('Important')\n\nallnodes=nuke.allNodes()\nlist=\[]\nnd_name='%s_backdrop' % 'Important'\ncurName=n\['name'].getValue().split(nd_name)\n\nif ((len(curName)>0) and (not curName\[0]=='')):\n    for nd in allnodes:\n        splt=nd.name().split(nd_name)\n        if (len(splt)>1):\n            num=splt\[1]\n            if num.isdigit():\n                list.append(int(num))\n    if len(list)>0:\n        next=int(sorted(list)\[-1])+1 \n    else: next=1\n    n\['name'].setValue('%s%s' % (nd_name,next))" +STARTLINE}
+ addUserKnob {22 rndColors l " <img src=\"ColorBars.png\">Randomize color " -STARTLINE T "import colorsys, random\nn=nuke.thisNode()\nR,G,B= colorsys.hsv_to_rgb(random.random(),.1+random.random()*.15,.15+random.random()*.15)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ) )"}
+ addUserKnob {22 rndTint l " <img src=\"HueShift.png\">Randomize tint " -STARTLINE T "import colorsys, random\nn=nuke.thisNode()\nV=int(n\['tile_color'].getValue())\nR = (0xFF & V >> 24) / 255.0\nG = (0xFF & V >> 16) / 255.0\nB = (0xFF & V >> 8) / 255.0\n\nR,G,B= colorsys.rgb_to_hsv(R,G,B)\n\nR,G,B= colorsys.hsv_to_rgb(R,.1+random.random()*.15,.15+random.random()*.15)\nn\['tile_color'].setValue( int('%02x%02x%02x%02x' % (int(R*255),int(G*255),int(B*255),int(255)), 16 ) )"}
+ addUserKnob {22 grow l " <img src=\"MergeMin.png\">" -STARTLINE T "n=nuke.thisNode()\nautoBackdrop.Grow(n)"}
+ addUserKnob {22 shrink l " <img src=\"MergeMax.png\">" -STARTLINE T "n=nuke.thisNode()\nautoBackdrop.Shrink(n)"}
+ addUserKnob {20 version}
+ addUserKnob {26 nodeClass l Class: T backdropTK}
+ addUserKnob {26 nodeVersion l Version: T "v 3.0"}
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_rough_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read10
+ xpos -757
+ ypos -423
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_metal_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read2
+ xpos -904
+ ypos -422
+}
+Read {
+ inputs 0
+ file_type targa
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_color_01.tga
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read1
+ xpos -1058
+ ypos -422
+}
+Write {
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_color_01.exr
+ views {L}
+ file_type exr
+ write_ACES_compliant_EXR true
+ compression "PIZ Wavelet (32 scanlines)"
+ metadata "all metadata"
+ first_part rgba
+ version 3
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display Display
+ view "Laika Tonemap"
+ name Write1
+ xpos -1058
+ ypos -278
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_norm_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read9
+ xpos -454
+ ypos -307
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_color_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read4
+ xpos -1208
+ ypos -319
+}
+Read {
+ inputs 0
+ file_type targa
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_norm_01.tga
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read3
+ xpos -617
+ ypos -424
+}
+Write {
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_cartoon_norm_01.exr
+ views {L}
+ file_type exr
+ write_ACES_compliant_EXR true
+ compression "PIZ Wavelet (32 scanlines)"
+ metadata "all metadata"
+ first_part rgba
+ version 3
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display Display
+ view "Laika Tonemap"
+ name Write2
+ xpos -617
+ ypos -274
+}
+Read {
+ inputs 0
+ file_type targa
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_norm_01.tga
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read7
+ xpos 420
+ ypos -377
+}
+set N109daec0 [stack 0]
+Write {
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_norm_01.exr
+ views {L}
+ file_type exr
+ write_ACES_compliant_EXR true
+ compression "PIZ Wavelet (32 scanlines)"
+ metadata "all metadata"
+ first_part rgba
+ version 4
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display Display
+ view "Laika Tonemap"
+ name Write4
+ xpos 420
+ ypos -250
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_norm_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read12
+ xpos 584
+ ypos -281
+}
+push $N109daec0
+Viewer {
+ inputs 2
+ frame 1
+ frame_range 1-10
+ input_process_node LaikaViewer
+ monitorOutNDISenderName "Nuke - texture_convert - Viewer1"
+ name Viewer1
+ xpos 123
+ ypos -22
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_rough_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read6
+ xpos 277
+ ypos -377
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_metal_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read8
+ xpos 126
+ ypos -377
+}
+Read {
+ inputs 0
+ file_type targa
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_color_01.tga
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read5
+ xpos -35
+ ypos -372
+}
+Write {
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_color_01.exr
+ views {L}
+ file_type exr
+ write_ACES_compliant_EXR true
+ compression "PIZ Wavelet (32 scanlines)"
+ metadata "all metadata"
+ first_part rgba
+ version 4
+ in_colorspace scene_linear
+ out_colorspace scene_linear
+ ocioColorspace scene_linear
+ display Display
+ view "Laika Tonemap"
+ name Write3
+ xpos -35
+ ypos -243
+}
+Read {
+ inputs 0
+ file_type exr
+ file /home/m/mdavies/git/aswf/collectiveproject001/assets/odie/render/surface/textures/odie_grunge_color_01.exr
+ format "4096 4096 0 0 4096 4096 1 square_4k"
+ origset true
+ name Read11
+ xpos -193
+ ypos -318
+}
+LaikaViewer {
+ inputs 0
+ name LaikaViewer
+ selected false
+ xpos -40
+ ypos -10
+ format 0
+ cut_in {{"\[exists root.cut_in]?root.cut_in:root.first_frame()"}}
+ cut_out {{"\[exists root.cut_out]?root.cut_out:root.last_frame()"}}
+ first_frame {{root.first_frame()}}
+ last_frame {{root.last_frame()}}
+}

@@ -28,4 +28,3 @@ def Xform "main"
         uniform token subdivisionScheme = "catmullClark"
     }
 }
-

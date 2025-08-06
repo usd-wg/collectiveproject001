@@ -440,4 +440,3 @@ def Scope "Render"
         uniform int2 resolution = (1024, 768)
     }
 }
-

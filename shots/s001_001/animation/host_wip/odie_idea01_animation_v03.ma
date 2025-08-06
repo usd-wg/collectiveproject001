@@ -3898,7 +3898,7 @@ createNode mesh -n "Odie_rig:OdieShapeOrig" -p "Odie_rig:Odie";
 		 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20
 		 1e+20 1e+20 1e+20;
 	setAttr -s 3182 -ch 12258 ".fc";
-	setAttr ".fc[0:499]" -type "polyFaces" 
+	setAttr ".fc[0:499]" -type "polyFaces"
 		f 4 0 1 2 3
 		mu 0 4 1947 2051 2049 1945
 		f 4 4 5 -1 6
@@ -14559,7 +14559,7 @@ createNode mesh -n "Odie_rig:Odie1ShapeOrig" -p "Odie_rig:Odie1";
 		 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20
 		 1e+20 1e+20 1e+20;
 	setAttr -s 3182 -ch 12258 ".fc";
-	setAttr ".fc[0:499]" -type "polyFaces" 
+	setAttr ".fc[0:499]" -type "polyFaces"
 		f 4 0 1 2 3
 		mu 0 4 1947 2051 2049 1945
 		f 4 4 5 -1 6
@@ -24711,7 +24711,7 @@ createNode mesh -n "Odie_rig:Odie1ShapeOrig1" -p "Odie_rig:Odie1";
 		 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20 1e+20
 		 1e+20 1e+20 1e+20;
 	setAttr -s 3182 -ch 12258 ".fc";
-	setAttr ".fc[0:499]" -type "polyFaces" 
+	setAttr ".fc[0:499]" -type "polyFaces"
 		f 4 0 1 2 3
 		mu 0 4 1947 2051 2049 1945
 		f 4 4 5 -1 6
@@ -31089,7 +31089,7 @@ createNode mesh -n "Odie_rig:Odie1ShapeOrig1" -p "Odie_rig:Odie1";
 	setAttr ".vcs" 2;
 createNode joint -n "Odie_rig:root" -p "odieRig";
 	rename -uid "8FC6FB69-42F7-BAA0-EF1E-9698F2D60260";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
 	setAttr ".mxrl" -type "double3" 360 360 360 ;
@@ -31101,7 +31101,7 @@ createNode joint -n "Odie_rig:Root_M" -p "Odie_rig:root";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31118,7 +31118,7 @@ createNode joint -n "Odie_rig:RootEnd_M" -p "Odie_rig:Root_M";
 	addAttr -ci true -sn "fat" -ln "fat" -dv 38.7 -at "double";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	setAttr ".t" -type "double3" 78.857281497662115 3.4638958368304884e-14 -1.4503976138817405e-14 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -31130,7 +31130,7 @@ createNode joint -n "Odie_rig:Antenna1_R" -p "Odie_rig:Root_M";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31147,7 +31147,7 @@ createNode joint -n "Odie_rig:Antenna1End_R" -p "Odie_rig:Antenna1_R";
 	addAttr -ci true -sn "fat" -ln "fat" -dv 7.0010315259912659 -at "double";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	setAttr ".t" -type "double3" 28.004126103965234 -4.2632564145606011e-14 -2.8421709430404007e-14 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -31159,7 +31159,7 @@ createNode joint -n "Odie_rig:Shoulder_R" -p "Odie_rig:Root_M";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31180,7 +31180,7 @@ createNode joint -n "Odie_rig:Elbow_R" -p "Odie_rig:Shoulder_R";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31200,11 +31200,11 @@ createNode joint -n "Odie_rig:ElbowPart1_R" -p "Odie_rig:Elbow_R";
 	addAttr -ci true -sn "fat" -ln "fat" -dv 5.0499999999999989 -at "double";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1.6550000000000002 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
-	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -dv 0.5 -min 0 -max 
+	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -dv 0.5 -min 0 -max
 		1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31224,7 +31224,7 @@ createNode joint -n "Odie_rig:Wrist_R" -p "Odie_rig:ElbowPart1_R";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 2.3100000000000005 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31437,7 +31437,7 @@ createNode joint -n "Odie_rig:Hip_R" -p "Odie_rig:Root_M";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31458,7 +31458,7 @@ createNode joint -n "Odie_rig:Knee_R" -p "Odie_rig:Hip_R";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31477,7 +31477,7 @@ createNode joint -n "Odie_rig:Ankle_R" -p "Odie_rig:Knee_R";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31506,7 +31506,7 @@ createNode joint -n "Odie_rig:Antenna1_L" -p "Odie_rig:Root_M";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31523,7 +31523,7 @@ createNode joint -n "Odie_rig:Antenna1End_L" -p "Odie_rig:Antenna1_L";
 	addAttr -ci true -sn "fat" -ln "fat" -dv 7.0010315259912659 -at "double";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	setAttr ".t" -type "double3" -28.004126103965291 5.6843418860808015e-14 4.2632564145606011e-14 ;
 	setAttr ".mnrl" -type "double3" -360 -360 -360 ;
@@ -31536,7 +31536,7 @@ createNode joint -n "Odie_rig:Shoulder_L" -p "Odie_rig:Root_M";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31557,7 +31557,7 @@ createNode joint -n "Odie_rig:Elbow_L" -p "Odie_rig:Shoulder_L";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31577,11 +31577,11 @@ createNode joint -n "Odie_rig:ElbowPart1_L" -p "Odie_rig:Elbow_L";
 	addAttr -ci true -sn "fat" -ln "fat" -dv 5.0499999999999989 -at "double";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1.6550000000000002 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
-	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -dv 0.5 -min 0 -max 
+	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -dv 0.5 -min 0 -max
 		1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31601,7 +31601,7 @@ createNode joint -n "Odie_rig:Wrist_L" -p "Odie_rig:ElbowPart1_L";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 2.3100000000000005 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31814,7 +31814,7 @@ createNode joint -n "Odie_rig:Hip_L" -p "Odie_rig:Root_M";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31835,7 +31835,7 @@ createNode joint -n "Odie_rig:Knee_L" -p "Odie_rig:Hip_L";
 	addAttr -ci true -k true -sn "twistAmount" -ln "twistAmount" -min 0 -max 1 -at "double";
 	addAttr -ci true -k true -sn "twistAddition" -ln "twistAddition" -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31854,7 +31854,7 @@ createNode joint -n "Odie_rig:Ankle_L" -p "Odie_rig:Knee_L";
 	addAttr -ci true -sn "fatFront" -ln "fatFront" -dv 1 -at "double";
 	addAttr -ci true -sn "fatWidth" -ln "fatWidth" -dv 1 -at "double";
 	addAttr -ci true -sn "liw" -ln "lockInfluenceWeights" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min 
+	addAttr -ci true -sn "GameEngineScalingSSC" -ln "GameEngineScalingSSC" -dv 1 -min
 		0 -max 1 -at "bool";
 	addAttr -ci true -sn "GameEngineScalingSX" -ln "GameEngineScalingSX" -at "double";
 	addAttr -ci true -sn "GameEngineScalingSY" -ln "GameEngineScalingSY" -at "double";
@@ -31893,16 +31893,16 @@ createNode transform -n "Odie_rig:FitSkeleton" -p "Odie_rig:Group";
 	addAttr -ci true -sn "visCylinders" -ln "visCylinders" -min 0 -max 1 -at "bool";
 	addAttr -ci true -sn "visBoxes" -ln "visBoxes" -min 0 -max 1 -at "bool";
 	addAttr -ci true -sn "visBones" -ln "visBones" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "lockCenterJoints" -ln "lockCenterJoints" -dv 1 -min 0 -max 
+	addAttr -ci true -sn "lockCenterJoints" -ln "lockCenterJoints" -dv 1 -min 0 -max
 		1 -at "bool";
 	addAttr -ci true -sn "visGap" -ln "visGap" -dv 0.75 -min 0 -max 1 -at "double";
 	addAttr -ci true -sn "fitSkeletonTemplate" -ln "fitSkeletonTemplate" -dt "string";
 	addAttr -ci true -k true -sn "visGeo" -ln "visGeo" -min 0 -max 1 -at "bool";
-	addAttr -ci true -k true -sn "visGeoType" -ln "visGeoType" -min 0 -max 3 -en "cylinders:boxes:spheres:bones" 
+	addAttr -ci true -k true -sn "visGeoType" -ln "visGeoType" -min 0 -max 3 -en "cylinders:boxes:spheres:bones"
 		-at "enum";
 	addAttr -ci true -sn "visSpheres" -ln "visSpheres" -min 0 -max 1 -at "bool";
 	addAttr -ci true -k true -sn "visPoleVector" -ln "visPoleVector" -min 0 -max 1 -at "bool";
-	addAttr -ci true -k true -sn "visJointOrient" -ln "visJointOrient" -min 0 -max 1 
+	addAttr -ci true -k true -sn "visJointOrient" -ln "visJointOrient" -min 0 -max 1
 		-at "bool";
 	addAttr -ci true -k true -sn "visJointAxis" -ln "visJointAxis" -min 0 -max 1 -at "bool";
 	addAttr -ci true -sn "objectsSkin" -ln "objectsSkin" -dt "string";
@@ -31910,17 +31910,17 @@ createNode transform -n "Odie_rig:FitSkeleton" -p "Odie_rig:Group";
 	addAttr -ci true -sn "objectsRightEye" -ln "objectsRightEye" -dt "string";
 	addAttr -ci true -sn "objectsLeftEye" -ln "objectsLeftEye" -dt "string";
 	addAttr -ci true -sn "gameEngine" -ln "gameEngine" -min 0 -max 1 -at "bool";
-	addAttr -ci true -sn "useOffsetParentMatrix" -ln "useOffsetParentMatrix" -min 0 
+	addAttr -ci true -sn "useOffsetParentMatrix" -ln "useOffsetParentMatrix" -min 0
 		-max 1 -at "bool";
 	addAttr -ci true -sn "subControllers" -ln "subControllers" -min 0 -max 1 -at "bool";
 	addAttr -ci true -sn "extraControllers" -ln "extraControllers" -min 0 -max 1 -at "bool";
 	addAttr -ci true -sn "preRebuildScript" -ln "preRebuildScript" -dt "string";
 	addAttr -ci true -sn "postRebuildScript" -ln "postRebuildScript" -dt "string";
-	addAttr -r false -s false -ci true -m -im false -sn "drivingSystem" -ln "drivingSystem" 
+	addAttr -r false -s false -ci true -m -im false -sn "drivingSystem" -ln "drivingSystem"
 		-at "message";
-	addAttr -ci true -m -sn "drivingSystem_Fingers_R" -ln "drivingSystem_Fingers_R" 
+	addAttr -ci true -m -sn "drivingSystem_Fingers_R" -ln "drivingSystem_Fingers_R"
 		-dv 1 -min 0 -max 1 -at "bool";
-	addAttr -ci true -m -sn "drivingSystem_Fingers_L" -ln "drivingSystem_Fingers_L" 
+	addAttr -ci true -m -sn "drivingSystem_Fingers_L" -ln "drivingSystem_Fingers_L"
 		-dv 1 -min 0 -max 1 -at "bool";
 	setAttr -l on ".v" no;
 	setAttr ".ove" yes;
@@ -31949,7 +31949,7 @@ createNode nurbsCurve -n "Odie_rig:FitSkeletonShape" -p "Odie_rig:FitSkeleton";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 29;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32041,7 +32041,7 @@ createNode joint -n "Odie_rig:Antenna1End" -p "Odie_rig:Antenna1";
 createNode joint -n "Odie_rig:Shoulder" -p "Odie_rig:Root";
 	rename -uid "992CF6AD-48CB-2EB6-C9FC-7E9790796105";
 	addAttr -ci true -sn "fatYabs" -ln "fatYabs" -at "double";
-	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 10 
+	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 10
 		-at "long";
 	addAttr -ci true -k true -sn "bendyCtrls" -ln "bendyCtrls" -min 0 -at "long";
 	addAttr -ci true -k true -sn "fat" -ln "fat" -dv 6.5 -min 0 -at "double";
@@ -32065,7 +32065,7 @@ createNode joint -n "Odie_rig:Shoulder" -p "Odie_rig:Root";
 createNode joint -n "Odie_rig:Elbow" -p "Odie_rig:Shoulder";
 	rename -uid "4C27E0EC-487D-CCF0-D1C9-388B89028B96";
 	addAttr -ci true -sn "fatYabs" -ln "fatYabs" -at "double";
-	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 10 
+	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 10
 		-at "long";
 	addAttr -ci true -k true -sn "bendyCtrls" -ln "bendyCtrls" -min 0 -at "long";
 	addAttr -ci true -k true -sn "fat" -ln "fat" -dv 4.4999999999999982 -min 0 -at "double";
@@ -32407,7 +32407,7 @@ createNode joint -n "Odie_rig:RingFinger4" -p "Odie_rig:RingFinger3";
 	setAttr -k on ".fatWidth";
 createNode joint -n "Odie_rig:Hip" -p "Odie_rig:Root";
 	rename -uid "5993B718-4514-3009-3DF6-1182DAD2AB05";
-	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 
+	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max
 		10 -at "long";
 	addAttr -ci true -k true -sn "bendyCtrls" -ln "bendyCtrls" -min 0 -at "long";
 	addAttr -ci true -sn "fatYabs" -ln "fatYabs" -at "double";
@@ -32430,7 +32430,7 @@ createNode joint -n "Odie_rig:Hip" -p "Odie_rig:Root";
 	setAttr -k on ".fatWidth";
 createNode joint -n "Odie_rig:Knee" -p "Odie_rig:Hip";
 	rename -uid "DDB7929B-45F3-6ECD-719D-60843506535A";
-	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max 
+	addAttr -ci true -k true -sn "twistJoints" -ln "twistJoints" -dv 1 -min 0 -max
 		10 -at "long";
 	addAttr -ci true -k true -sn "bendyCtrls" -ln "bendyCtrls" -min 0 -at "long";
 	addAttr -ci true -sn "fatYabs" -ln "fatYabs" -at "double";
@@ -32452,7 +32452,7 @@ createNode joint -n "Odie_rig:Knee" -p "Odie_rig:Hip";
 createNode joint -n "Odie_rig:Ankle" -p "Odie_rig:Knee";
 	rename -uid "DEAE31BC-4739-BD52-D5E8-90AB4DFA32DF";
 	addAttr -ci true -sn "fatYabs" -ln "fatYabs" -at "double";
-	addAttr -ci true -k true -sn "worldOrient" -ln "worldOrient" -min 0 -max 5 -en "xUp:yUp:zUp:xDown:yDown:zDown" 
+	addAttr -ci true -k true -sn "worldOrient" -ln "worldOrient" -min 0 -max 5 -en "xUp:yUp:zUp:xDown:yDown:zDown"
 		-at "enum";
 	addAttr -ci true -k true -sn "fat" -ln "fat" -dv 3.6999999999999988 -min 0 -at "double";
 	addAttr -ci true -k true -sn "fatFront" -ln "fatFront" -dv 1 -min 0 -at "double";
@@ -32585,7 +32585,7 @@ createNode nurbsCurve -n "Odie_rig:MainShape" -p "Odie_rig:Main";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 15;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32605,10 +32605,10 @@ createNode transform -n "Odie_rig:FKSystem" -p "Odie_rig:MotionSystem";
 	rename -uid "661AE5A2-4491-486F-9B30-64970EC1E513";
 createNode transform -n "Odie_rig:FKParentConstraintToRoot_M" -p "Odie_rig:FKSystem";
 	rename -uid "194997A1-48C5-420A-4B63-3F96F8C826AC";
-createNode parentConstraint -n "Odie_rig:FKParentConstraintToRoot_M_parentConstraint1" 
+createNode parentConstraint -n "Odie_rig:FKParentConstraintToRoot_M_parentConstraint1"
 		-p "Odie_rig:FKParentConstraintToRoot_M";
 	rename -uid "34CE1C1E-48AE-7F7F-BBAC-69A1A3863610";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -32651,7 +32651,7 @@ createNode nurbsCurve -n "Odie_rig:FKAntenna1_RShape" -p "Odie_rig:FKAntenna1_R"
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32666,7 +32666,7 @@ createNode nurbsCurve -n "Odie_rig:FKAntenna1_RShape" -p "Odie_rig:FKAntenna1_R"
 		0 -8.2291345600000003 -8.2291345600000003
 		0 1.327752097e-15 -11.63775349
 		0 8.2291345600000003 -8.2291345600000003
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -32703,7 +32703,7 @@ createNode nurbsCurve -n "Odie_rig:FKShoulder_RShape" -p "Odie_rig:FKShoulder_R"
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32718,7 +32718,7 @@ createNode nurbsCurve -n "Odie_rig:FKShoulder_RShape" -p "Odie_rig:FKShoulder_R"
 		0 -8.9331722259999999 -8.9331722259999999
 		0 1.44134705e-15 -12.63341331
 		0 8.9331722259999999 -8.9331722259999999
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -32761,7 +32761,7 @@ createNode nurbsCurve -n "Odie_rig:FKElbow_RShape" -p "Odie_rig:FKElbow_R";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32776,7 +32776,7 @@ createNode nurbsCurve -n "Odie_rig:FKElbow_RShape" -p "Odie_rig:FKElbow_R";
 		0 -7.5226717000000001 -7.5226717000000001
 		0 1.2137659199999999e-15 -10.63866425
 		0 7.5226717000000001 -7.5226717000000001
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -32813,7 +32813,7 @@ createNode nurbsCurve -n "Odie_rig:FKWrist_RShape" -p "Odie_rig:FKWrist_R";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32828,7 +32828,7 @@ createNode nurbsCurve -n "Odie_rig:FKWrist_RShape" -p "Odie_rig:FKWrist_R";
 		0 -10.046293260000001 -10.046293260000001
 		0 -2.680076281e-14 -14.207603450000001
 		0 10.046293260000001 -10.046293260000001
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -32962,7 +32962,7 @@ createNode nurbsCurve -n "Odie_rig:FKHip_RShape" -p "Odie_rig:FKHip_R";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -32977,7 +32977,7 @@ createNode nurbsCurve -n "Odie_rig:FKHip_RShape" -p "Odie_rig:FKHip_R";
 		0 -10.22613144 -10.22613144
 		0 1.649963007e-15 -14.46193409
 		0 10.22613144 -10.22613144
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33020,7 +33020,7 @@ createNode nurbsCurve -n "Odie_rig:FKKnee_RShape" -p "Odie_rig:FKKnee_R";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33035,7 +33035,7 @@ createNode nurbsCurve -n "Odie_rig:FKKnee_RShape" -p "Odie_rig:FKKnee_R";
 		-3.5527136789999999e-15 -9.991047859 -9.991047859
 		-3.5527136789999999e-15 1.6120328710000001e-15 -14.12947559
 		-3.5527136789999999e-15 9.991047859 -9.991047859
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33072,7 +33072,7 @@ createNode nurbsCurve -n "Odie_rig:FKAnkle_RShape" -p "Odie_rig:FKAnkle_R";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33087,7 +33087,7 @@ createNode nurbsCurve -n "Odie_rig:FKAnkle_RShape" -p "Odie_rig:FKAnkle_R";
 		0 -7.2875881199999997 -7.2875881199999997
 		0 1.1758356790000001e-15 -10.30620575
 		0 7.2875881199999997 -7.2875881199999997
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33219,7 +33219,7 @@ createNode nurbsCurve -n "Odie_rig:FKAntenna1_LShape" -p "Odie_rig:FKAntenna1_L"
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33234,7 +33234,7 @@ createNode nurbsCurve -n "Odie_rig:FKAntenna1_LShape" -p "Odie_rig:FKAntenna1_L"
 		-4.0554141378379427e-08 8.2291344548694028 8.2291346651306014
 		6.2129203115546261e-08 -1.4867711684019014e-07 11.637753490000016
 		1.2841809393648873e-07 -8.2291346651306085 8.2291344548694525
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33271,7 +33271,7 @@ createNode nurbsCurve -n "Odie_rig:FKShoulder_LShape" -p "Odie_rig:FKShoulder_L"
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33286,7 +33286,7 @@ createNode nurbsCurve -n "Odie_rig:FKShoulder_LShape" -p "Odie_rig:FKShoulder_L"
 		8.8138989440267324e-09 8.9331722242709581 8.9331722277290879
 		1.24646888366442e-08 -2.4452406766073409e-09 12.633413310000051
 		8.8138136788984411e-09 -8.9331722277290471 8.9331722242709901
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33329,7 +33329,7 @@ createNode nurbsCurve -n "Odie_rig:FKElbow_LShape" -p "Odie_rig:FKElbow_L";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33344,7 +33344,7 @@ createNode nurbsCurve -n "Odie_rig:FKElbow_LShape" -p "Odie_rig:FKElbow_L";
 		7.370054788680136e-09 7.5226716982996829 7.5226717180733544
 		1.0422844809454546e-08 -2.4046191704485409e-09 10.638664266373027
 		7.3700476832527784e-09 -7.5226717017003191 7.5226717146726969
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33381,7 +33381,7 @@ createNode nurbsCurve -n "Odie_rig:FKWrist_LShape" -p "Odie_rig:FKWrist_L";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33396,7 +33396,7 @@ createNode nurbsCurve -n "Odie_rig:FKWrist_LShape" -p "Odie_rig:FKWrist_L";
 		6.1703104847765644e-09 10.046293256020705 10.046293296537755
 		1.0968037145175913e-08 -4.8530459650919511e-09 14.207603484428247
 		7.6038446650272817e-09 -10.04629326397929 10.046293292318751
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33531,7 +33531,7 @@ createNode nurbsCurve -n "Odie_rig:FKHip_LShape" -p "Odie_rig:FKHip_L";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33546,7 +33546,7 @@ createNode nurbsCurve -n "Odie_rig:FKHip_LShape" -p "Odie_rig:FKHip_L";
 		-1.0731469046731945e-09 10.226131439746585 10.226131440253404
 		6.9064753915881738e-12 -3.5838376710728426e-10 14.461934089999989
 		1.0828529184436775e-09 -10.226131440253411 10.226131439746581
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33589,7 +33589,7 @@ createNode nurbsCurve -n "Odie_rig:FKKnee_LShape" -p "Odie_rig:FKKnee_L";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33604,7 +33604,7 @@ createNode nurbsCurve -n "Odie_rig:FKKnee_LShape" -p "Odie_rig:FKKnee_L";
 		-8.3701223729804042e-10 9.9910478543992554 9.9910478592669811
 		2.2289015078058583e-10 -4.7031036842781759e-09 14.129475590019876
 		1.2694059137174918e-09 -9.99104786360075 9.9910478587727667
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33641,7 +33641,7 @@ createNode nurbsCurve -n "Odie_rig:FKAnkle_LShape" -p "Odie_rig:FKAnkle_L";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33656,7 +33656,7 @@ createNode nurbsCurve -n "Odie_rig:FKAnkle_LShape" -p "Odie_rig:FKAnkle_L";
 		-4.3498005197761813e-10 7.2875881112508365 7.2875881201883086
 		-4.3641534830385353e-10 -8.8239261453182394e-09 10.30620575000782
 		-4.3502090818492434e-10 -7.2875881287491646 7.2875881198273298
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33764,7 +33764,7 @@ createNode scaleConstraint -n "Odie_rig:FKPS1Knee_L_scaleConstraint1" -p "Odie_r
 	setAttr -k on ".w0";
 createNode transform -n "Odie_rig:FKParentConstraintToWrist_R" -p "Odie_rig:FKSystem";
 	rename -uid "FD38CE2A-4C93-B087-45B8-2D87CE6B83B1";
-createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_R_pointConstraint1" 
+createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_R_pointConstraint1"
 		-p "Odie_rig:FKParentConstraintToWrist_R";
 	rename -uid "6DAC88A1-4794-877B-E9A5-5FB3FE9AD74C";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_RW0" -dv 1 -min 0 -at "double";
@@ -33782,7 +33782,7 @@ createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_R_pointConstra
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" -80.00035289571754 135.99996746314403 -5.7162993472581469e-06 ;
 	setAttr -k on ".w0";
-createNode orientConstraint -n "Odie_rig:FKParentConstraintToWrist_R_orientConstraint1" 
+createNode orientConstraint -n "Odie_rig:FKParentConstraintToWrist_R_orientConstraint1"
 		-p "Odie_rig:FKParentConstraintToWrist_R";
 	rename -uid "7996C212-4DC7-8A8B-EBEC-53931E934D9A";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_RW0" -dv 1 -min 0 -at "double";
@@ -33828,7 +33828,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger1_RShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33843,7 +33843,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger1_RShape" -p "Odie_rig:FKMiddle
 		2.9130767486734643e-15 -3.7613358499999938 -3.1620378739026425
 		3.3306690786734605e-15 -2.1819622927024157e-14 -6.5261336059728166
 		3.7482613986734646e-15 3.7613358500000063 -3.1620378739026425
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33880,7 +33880,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger2_RShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33895,7 +33895,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger2_RShape" -p "Odie_rig:FKMiddle
 		2.8839300059999997e-14 -3.76133585 -3.76133585
 		2.842170943e-14 -2.7814827260000002e-14 -5.3193321229999997
 		2.8004117110000002e-14 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33932,7 +33932,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger3_RShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33947,7 +33947,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger3_RShape" -p "Odie_rig:FKMiddle
 		0 -3.76133585 -3.76133585
 		0 6.0688296010000002e-16 -5.3193321229999997
 		0 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -33982,7 +33982,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger1_RShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -33997,7 +33997,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger1_RShape" -p "Odie_rig:FKThumbFi
 		2.7821420570000003e-14 -5.4069204329999998 -5.4069204329999998
 		2.842170943e-14 -2.754931462e-14 -7.6465396879999998
 		2.9021998290000004e-14 5.4069204329999998 -5.4069204329999998
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34033,7 +34033,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger2_RShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34048,7 +34048,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger2_RShape" -p "Odie_rig:FKThumbFi
 		1.4210854719999998e-14 -5.4069204329999998 -5.4069204329999998
 		1.4210854719999998e-14 8.723942254000001e-16 -7.6465396879999998
 		1.4210854719999998e-14 5.4069204329999998 -5.4069204329999998
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34085,7 +34085,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger3_RShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34100,7 +34100,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger3_RShape" -p "Odie_rig:FKThumbFi
 		1.3610565850000001e-14 -5.4069204329999998 -5.4069204329999998
 		1.4210854719999998e-14 -2.754931462e-14 -7.6465396879999998
 		1.4811143579999998e-14 5.4069204329999998 -5.4069204329999998
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34137,7 +34137,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger1_RShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34152,7 +34152,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger1_RShape" -p "Odie_rig:FKIndexFi
 		3.7470027081099033e-15 -3.7613358499999787 -6.9311230078546302
 		3.7470027081099033e-15 2.125703121812791e-14 -10.697473935720984
 		3.7470027081099033e-15 3.7613358500000214 -6.9311230078546302
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34188,7 +34188,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger2_RShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34203,7 +34203,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger2_RShape" -p "Odie_rig:FKIndexFi
 		-1.4210854719999998e-14 -3.76133585 -3.76133585
 		-1.4210854719999998e-14 6.0688296010000002e-16 -5.3193321229999997
 		-1.4210854719999998e-14 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34240,7 +34240,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger3_RShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34255,7 +34255,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger3_RShape" -p "Odie_rig:FKIndexFi
 		2.842170943e-14 -3.76133585 -3.76133585
 		2.842170943e-14 -2.7814827260000002e-14 -5.3193321229999997
 		2.842170943e-14 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34292,7 +34292,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger1_RShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34307,7 +34307,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger1_RShape" -p "Odie_rig:FKRingFing
 		1.8207657608650558e-14 -3.7613358499999996 -2.8698302870239272
 		1.8207657608650558e-14 1.0509721699500629e-15 -6.1060836140983508
 		1.8207657608650558e-14 3.7613358500000005 -2.8698302870239272
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34344,7 +34344,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger2_RShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34359,7 +34359,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger2_RShape" -p "Odie_rig:FKRingFing
 		1.379326239e-14 -3.76133585 -3.76133585
 		1.4210854719999998e-14 6.0688296010000002e-16 -5.3193321229999997
 		1.4628447040000002e-14 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34396,7 +34396,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger3_RShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34411,7 +34411,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger3_RShape" -p "Odie_rig:FKRingFing
 		0 -3.76133585 -3.76133585
 		0 -2.7814827260000002e-14 -5.3193321229999997
 		0 3.76133585 -3.76133585
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34445,7 +34445,7 @@ createNode nurbsCurve -n "Odie_rig:FKRoot_MShape" -p "Odie_rig:FKRoot_M";
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34460,7 +34460,7 @@ createNode nurbsCurve -n "Odie_rig:FKRoot_MShape" -p "Odie_rig:FKRoot_M";
 		0 -41.374694820000002 -41.374694820000002
 		0 6.6757122969999992e-15 -58.512653350000001
 		0 41.374694820000002 -41.374694820000002
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34473,7 +34473,7 @@ createNode transform -n "Odie_rig:FKHSRoot_M" -p "Odie_rig:FKRoot_M";
 	rename -uid "0835EF7C-43D7-A51C-7540-2ABCB2F95529";
 createNode transform -n "Odie_rig:FKParentConstraintToWrist_L" -p "Odie_rig:FKSystem";
 	rename -uid "D185C4AF-466A-D971-5A45-7FB52582922D";
-createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_L_pointConstraint1" 
+createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_L_pointConstraint1"
 		-p "Odie_rig:FKParentConstraintToWrist_L";
 	rename -uid "EE2E81D2-4349-D6B9-A3EB-EBB67813A7B8";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_LW0" -dv 1 -min 0 -at "double";
@@ -34491,7 +34491,7 @@ createNode pointConstraint -n "Odie_rig:FKParentConstraintToWrist_L_pointConstra
 	setAttr ".erp" yes;
 	setAttr ".rst" -type "double3" 80.00035289571754 135.99996749775019 -5.7163002034621435e-06 ;
 	setAttr -k on ".w0";
-createNode orientConstraint -n "Odie_rig:FKParentConstraintToWrist_L_orientConstraint1" 
+createNode orientConstraint -n "Odie_rig:FKParentConstraintToWrist_L_orientConstraint1"
 		-p "Odie_rig:FKParentConstraintToWrist_L";
 	rename -uid "E7BA8141-42CA-0B9A-9F73-6A803DA7D909";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "Wrist_LW0" -dv 1 -min 0 -at "double";
@@ -34537,7 +34537,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger1_LShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34552,7 +34552,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger1_LShape" -p "Odie_rig:FKMiddle
 		5.8722946505440632e-09 3.7613358436628372 3.162037944537559
 		9.3669143552688183e-09 -7.696842274640403e-09 6.526133675087479
 		6.2797340660836198e-09 -3.7613358563371633 3.1620379414970614
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34589,7 +34589,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger2_LShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34604,7 +34604,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger2_LShape" -p "Odie_rig:FKMiddle
 		6.461036150540167e-09 3.7613358430891255 3.7613359274981519
 		8.1865607626241399e-09 -7.5405637289804872e-09 5.3193321989778894
 		6.8638001948784222e-09 -3.761335856910879 3.7613359244576259
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34641,7 +34641,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger3_LShape" -p "Odie_rig:FKMiddle
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34656,7 +34656,7 @@ createNode nurbsCurve -n "Odie_rig:FKMiddleFinger3_LShape" -p "Odie_rig:FKMiddle
 		8.6469071902683936e-09 3.7613358428952246 3.7613359340055723
 		1.0341778988731676e-08 -7.714104022227275e-09 5.3193322055344936
 		8.9702041350392392e-09 -3.7613358571047719 3.761335931063428
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34691,7 +34691,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger1_LShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34706,7 +34706,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger1_LShape" -p "Odie_rig:FKThumbFi
 		1.0119549642695347e-09 5.4069203836458541 5.4069204693124426
 		3.3001157362377853e-09 -5.154578275323729e-08 7.6465397190213338
 		4.4504702145786723e-09 -5.4069204823541668 5.4069204587302231
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34742,7 +34742,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger2_LShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34757,7 +34757,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger2_LShape" -p "Odie_rig:FKThumbFi
 		1.0119833859789651e-09 5.4069203814160289 5.4069204710936773
 		3.3001441579472157e-09 -5.3775607966599637e-08 7.6465397208025756
 		4.4504986362881027e-09 -5.4069204845839636 5.406920460511472
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34794,7 +34794,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger3_LShape" -p "Odie_rig:FKThumbFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34809,7 +34809,7 @@ createNode nurbsCurve -n "Odie_rig:FKThumbFinger3_LShape" -p "Odie_rig:FKThumbFi
 		-2.306108370930815e-08 5.4069203807991073 5.4069204673547446
 		-1.9605529644195485e-08 -5.4116100045575877e-08 7.646539717730974
 		-1.6300681693337538e-08 -5.4069204852008852 5.4069204581072086
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34846,7 +34846,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger1_LShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34861,7 +34861,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger1_LShape" -p "Odie_rig:FKIndexFi
 		9.6297583240811946e-09 3.7613358434491051 6.9311230760686584
 		1.3456201486405917e-08 -8.0731883400630977e-09 10.697474002414751
 		9.9078221182935522e-09 -3.7613358565508968 6.9311230730281466
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34897,7 +34897,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger2_LShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34912,7 +34912,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger2_LShape" -p "Odie_rig:FKIndexFi
 		6.5264202930848114e-09 3.7613358444711009 3.7613359250795213
 		8.1907955973292701e-09 -6.1586160615689778e-09 5.319332196559273
 		6.804484087297169e-09 -3.7613358555289009 3.7613359220389952
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -34949,7 +34949,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger3_LShape" -p "Odie_rig:FKIndexFi
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -34964,7 +34964,7 @@ createNode nurbsCurve -n "Odie_rig:FKIndexFinger3_LShape" -p "Odie_rig:FKIndexFi
 		1.031460783451621e-08 3.7613358429351518 3.7613359314235879
 		1.1968694479946862e-08 -7.6925495973156899e-09 5.3193322029081287
 		1.0570090580586111e-08 -3.7613358570648474 3.7613359283926542
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -35001,7 +35001,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger1_LShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -35016,7 +35016,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger1_LShape" -p "Odie_rig:FKRingFing
 		5.5722324532325729e-09 3.7613358433799871 2.8698303601364046
 		8.954643249126093e-09 -7.9280528808567396e-09 6.1060836856905354
 		6.0066867035857285e-09 -3.7613358566200148 2.8698303570958501
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -35052,7 +35052,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger2_LShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -35067,7 +35067,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger2_LShape" -p "Odie_rig:FKRingFing
 		6.4247700493069715e-09 3.7613358422250531 3.7613359299407136
 		8.1835764831339475e-09 -8.404663631722542e-09 5.3193322014204654
 		6.8957604071329115e-09 -3.7613358577749505 3.7613359269001876
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -35104,7 +35104,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger3_LShape" -p "Odie_rig:FKRingFing
 	setAttr ".ovc" 18;
 	setAttr ".gtag[0].gtagnm" -type "string" "tempCluster";
 	setAttr ".gtag[0].gtagcmp" -type "componentList" 1 "cv[0:7]";
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -35119,7 +35119,7 @@ createNode nurbsCurve -n "Odie_rig:FKRingFinger3_LShape" -p "Odie_rig:FKRingFing
 		6.4674736677261535e-09 3.7613358425753471 3.7613359366823715
 		8.1838322785188211e-09 -8.068409940165111e-09 5.3193322081281167
 		6.8635017669294029e-09 -3.7613358574246529 3.7613359335738892
-		
+
 
 		"gtag" 1
 		"tempCluster" 1 "cv[0:7]";
@@ -35454,7 +35454,7 @@ createNode transform -n "Odie_rig:IKExtraArm_R" -p "Odie_rig:IKOffsetArm_R";
 	setAttr -l on -k off ".sz";
 createNode transform -n "Odie_rig:IKArm_R" -p "Odie_rig:IKExtraArm_R";
 	rename -uid "5DAAFA26-4039-F09C-DE18-62AE582E19D8";
-	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10 
+	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10
 		-at "double";
 	addAttr -ci true -k true -sn "followRoot" -ln "followRoot" -min 0 -max 10 -at "double";
 	addAttr -ci true -k true -sn "stretchy" -ln "stretchy" -min 0 -max 10 -at "double";
@@ -35481,7 +35481,7 @@ createNode nurbsCurve -n "Odie_rig:IKArm_RShape" -p "Odie_rig:IKArm_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 15 0 no 3
 		16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 		16
@@ -35507,7 +35507,7 @@ createNode ikHandle -n "Odie_rig:IKArmHandle_R" -p "Odie_rig:IKArm_R";
 	setAttr -l on ".v" no;
 	setAttr ".t" -type "double3" 2.8421709430404007e-14 -8.5265128291212022e-14 -4.0800696154974503e-15 ;
 	setAttr ".roc" yes;
-createNode poleVectorConstraint -n "Odie_rig:IKArmHandle_R_poleVectorConstraint1" 
+createNode poleVectorConstraint -n "Odie_rig:IKArmHandle_R_poleVectorConstraint1"
 		-p "Odie_rig:IKArmHandle_R";
 	rename -uid "731BC13B-46FB-8890-CD1A-319D2A9DDE1B";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "PoleArm_RW0" -dv 1 -min 0 -at "double";
@@ -35547,7 +35547,7 @@ createNode transform -n "Odie_rig:IKExtraLeg_R" -p "Odie_rig:IKOffsetLeg_R";
 	setAttr -l on -k off ".sz";
 createNode transform -n "Odie_rig:IKLeg_R" -p "Odie_rig:IKExtraLeg_R";
 	rename -uid "B32ABEEF-43CD-FA92-7E43-5C9A5F638E73";
-	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10 
+	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10
 		-at "double";
 	addAttr -ci true -k true -sn "followRoot" -ln "followRoot" -min 0 -max 10 -at "double";
 	addAttr -ci true -k true -sn "stretchy" -ln "stretchy" -min 0 -max 10 -at "double";
@@ -35574,7 +35574,7 @@ createNode nurbsCurve -n "Odie_rig:IKLeg_RShape" -p "Odie_rig:IKLeg_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 15 0 no 3
 		16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 		16
@@ -35600,7 +35600,7 @@ createNode ikHandle -n "Odie_rig:IKLegHandle_R" -p "Odie_rig:IKLeg_R";
 	setAttr -l on ".v" no;
 	setAttr ".t" -type "double3" 7.1054273576010019e-15 2.8421709430404007e-14 -4.8849813083506888e-15 ;
 	setAttr ".roc" yes;
-createNode poleVectorConstraint -n "Odie_rig:IKLegHandle_R_poleVectorConstraint1" 
+createNode poleVectorConstraint -n "Odie_rig:IKLegHandle_R_poleVectorConstraint1"
 		-p "Odie_rig:IKLegHandle_R";
 	rename -uid "A7E61EE4-4CE6-C9EA-2C08-249EB90C3CC8";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "PoleLeg_RW0" -dv 1 -min 0 -at "double";
@@ -35642,7 +35642,7 @@ createNode transform -n "Odie_rig:IKExtraArm_L" -p "Odie_rig:IKOffsetArm_L";
 	setAttr -l on -k off ".sz";
 createNode transform -n "Odie_rig:IKArm_L" -p "Odie_rig:IKExtraArm_L";
 	rename -uid "6F10A7F1-4F37-3ECC-C0FA-778093A6CC33";
-	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10 
+	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10
 		-at "double";
 	addAttr -ci true -k true -sn "followRoot" -ln "followRoot" -min 0 -max 10 -at "double";
 	addAttr -ci true -k true -sn "stretchy" -ln "stretchy" -min 0 -max 10 -at "double";
@@ -35669,7 +35669,7 @@ createNode nurbsCurve -n "Odie_rig:IKArm_LShape" -p "Odie_rig:IKArm_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 15 0 no 3
 		16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 		16
@@ -35695,7 +35695,7 @@ createNode ikHandle -n "Odie_rig:IKArmHandle_L" -p "Odie_rig:IKArm_L";
 	setAttr -l on ".v" no;
 	setAttr ".t" -type "double3" 2.8421709430404007e-14 2.8421709430404007e-14 5.1625370645069779e-15 ;
 	setAttr ".roc" yes;
-createNode poleVectorConstraint -n "Odie_rig:IKArmHandle_L_poleVectorConstraint1" 
+createNode poleVectorConstraint -n "Odie_rig:IKArmHandle_L_poleVectorConstraint1"
 		-p "Odie_rig:IKArmHandle_L";
 	rename -uid "A7D51EEF-4A04-1C33-C0A4-AE8178291607";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "PoleArm_LW0" -dv 1 -min 0 -at "double";
@@ -35734,7 +35734,7 @@ createNode transform -n "Odie_rig:IKExtraLeg_L" -p "Odie_rig:IKOffsetLeg_L";
 	setAttr -l on -k off ".sz";
 createNode transform -n "Odie_rig:IKLeg_L" -p "Odie_rig:IKExtraLeg_L";
 	rename -uid "E3EA751B-48DB-032A-2ECF-319ECEC896EC";
-	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10 
+	addAttr -ci true -k true -sn "followMain" -ln "followMain" -dv 10 -min 0 -max 10
 		-at "double";
 	addAttr -ci true -k true -sn "followRoot" -ln "followRoot" -min 0 -max 10 -at "double";
 	addAttr -ci true -k true -sn "stretchy" -ln "stretchy" -min 0 -max 10 -at "double";
@@ -35763,7 +35763,7 @@ createNode nurbsCurve -n "Odie_rig:IKLeg_LShape" -p "Odie_rig:IKLeg_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 15 0 no 3
 		16 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15
 		16
@@ -35789,7 +35789,7 @@ createNode ikHandle -n "Odie_rig:IKLegHandle_L" -p "Odie_rig:IKLeg_L";
 	setAttr -l on ".v" no;
 	setAttr ".t" -type "double3" 1.4210854715202004e-14 -3.5527136788005009e-14 -3.8635761256955448e-14 ;
 	setAttr ".roc" yes;
-createNode poleVectorConstraint -n "Odie_rig:IKLegHandle_L_poleVectorConstraint1" 
+createNode poleVectorConstraint -n "Odie_rig:IKLegHandle_L_poleVectorConstraint1"
 		-p "Odie_rig:IKLegHandle_L";
 	rename -uid "4EBB72DA-46D1-628D-6684-BA9621A8082E";
 	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "PoleLeg_LW0" -dv 1 -min 0 -at "double";
@@ -35852,7 +35852,7 @@ createNode nurbsCurve -n "Odie_rig:PoleArm_RShape" -p "Odie_rig:PoleArm_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 7 0 no 3
 		8 0 1 2 3 4 5 6 7
 		8
@@ -35910,7 +35910,7 @@ createNode nurbsCurve -n "Odie_rig:PoleLeg_RShape" -p "Odie_rig:PoleLeg_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 7 0 no 3
 		8 0 1 2 3 4 5 6 7
 		8
@@ -35968,7 +35968,7 @@ createNode nurbsCurve -n "Odie_rig:PoleArm_LShape" -p "Odie_rig:PoleArm_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 7 0 no 3
 		8 0 1 2 3 4 5 6 7
 		8
@@ -36026,7 +36026,7 @@ createNode nurbsCurve -n "Odie_rig:PoleLeg_LShape" -p "Odie_rig:PoleLeg_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 13;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 7 0 no 3
 		8 0 1 2 3 4 5 6 7
 		8
@@ -36103,10 +36103,10 @@ createNode transform -n "Odie_rig:FKIKSystem" -p "Odie_rig:MotionSystem";
 createNode transform -n "Odie_rig:FKIKParentConstraintArm_R" -p "Odie_rig:FKIKSystem";
 	rename -uid "C1D7BAB8-4B7C-6710-2412-FAB29603022C";
 	setAttr ".s" -type "double3" 0.99999999999999989 0.99999999999999989 1 ;
-createNode parentConstraint -n "Odie_rig:FKIKParentConstraintArm_R_parentConstraint1" 
+createNode parentConstraint -n "Odie_rig:FKIKParentConstraintArm_R_parentConstraint1"
 		-p "Odie_rig:FKIKParentConstraintArm_R";
 	rename -uid "51E438D5-4709-3D63-BD9B-68AFA71BB4D6";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36160,7 +36160,7 @@ createNode nurbsCurve -n "Odie_rig:FKIKArm_RShape" -p "Odie_rig:FKIKArm_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 12 2 no 3
 		13 0 1 2 3 4 5 6 7 8 9 10 11 12
 		13
@@ -36181,10 +36181,10 @@ createNode nurbsCurve -n "Odie_rig:FKIKArm_RShape" -p "Odie_rig:FKIKArm_R";
 createNode transform -n "Odie_rig:FKIKParentConstraintLeg_R" -p "Odie_rig:FKIKSystem";
 	rename -uid "EC42ABBE-4F8A-75C1-A8DA-D0A994C1A017";
 	setAttr ".s" -type "double3" 0.99999999999999989 0.99999999999999989 1 ;
-createNode parentConstraint -n "Odie_rig:FKIKParentConstraintLeg_R_parentConstraint1" 
+createNode parentConstraint -n "Odie_rig:FKIKParentConstraintLeg_R_parentConstraint1"
 		-p "Odie_rig:FKIKParentConstraintLeg_R";
 	rename -uid "998AE57D-469D-0DC1-FBEF-D490994D4AC7";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36237,7 +36237,7 @@ createNode nurbsCurve -n "Odie_rig:FKIKLeg_RShape" -p "Odie_rig:FKIKLeg_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 12 2 no 3
 		13 0 1 2 3 4 5 6 7 8 9 10 11 12
 		13
@@ -36258,10 +36258,10 @@ createNode nurbsCurve -n "Odie_rig:FKIKLeg_RShape" -p "Odie_rig:FKIKLeg_R";
 createNode transform -n "Odie_rig:FKIKParentConstraintArm_L" -p "Odie_rig:FKIKSystem";
 	rename -uid "219643E9-4063-A221-9B7F-EB9F7B7DDA55";
 	setAttr ".s" -type "double3" 0.99999999999999989 0.99999999999999989 1 ;
-createNode parentConstraint -n "Odie_rig:FKIKParentConstraintArm_L_parentConstraint1" 
+createNode parentConstraint -n "Odie_rig:FKIKParentConstraintArm_L_parentConstraint1"
 		-p "Odie_rig:FKIKParentConstraintArm_L";
 	rename -uid "D27FEAE4-40CA-84BE-2FEA-0285A25F46E1";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36315,7 +36315,7 @@ createNode nurbsCurve -n "Odie_rig:FKIKArm_LShape" -p "Odie_rig:FKIKArm_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 12 2 no 3
 		13 0 1 2 3 4 5 6 7 8 9 10 11 12
 		13
@@ -36336,10 +36336,10 @@ createNode nurbsCurve -n "Odie_rig:FKIKArm_LShape" -p "Odie_rig:FKIKArm_L";
 createNode transform -n "Odie_rig:FKIKParentConstraintLeg_L" -p "Odie_rig:FKIKSystem";
 	rename -uid "2A587B8E-45AE-837F-93F0-0F838A671843";
 	setAttr ".s" -type "double3" 0.99999999999999989 0.99999999999999989 1 ;
-createNode parentConstraint -n "Odie_rig:FKIKParentConstraintLeg_L_parentConstraint1" 
+createNode parentConstraint -n "Odie_rig:FKIKParentConstraintLeg_L_parentConstraint1"
 		-p "Odie_rig:FKIKParentConstraintLeg_L";
 	rename -uid "D663DCBF-4860-7EF6-2A94-5BA0513C758E";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "LegLockConstrainedW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36393,7 +36393,7 @@ createNode nurbsCurve -n "Odie_rig:FKIKLeg_LShape" -p "Odie_rig:FKIKLeg_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 6;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 12 2 no 3
 		13 0 1 2 3 4 5 6 7 8 9 10 11 12
 		13
@@ -36484,7 +36484,7 @@ createNode nurbsCurve -n "Odie_rig:RootX_MShape" -p "Odie_rig:RootX_M";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 14;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		1 39 0 no 3
 		40 0 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27
 		 28 29 30 31 32 33 34 35 36 37 38 39
@@ -36555,7 +36555,7 @@ createNode nurbsCurve -n "Odie_rig:FKroot_MShape" -p "Odie_rig:FKroot_M";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 2 no 3
 		13 -2 -1 0 1 2 3 4 5 6 7 8 9 10
 		11
@@ -36705,7 +36705,7 @@ createNode orientConstraint -n "Odie_rig:Antenna1_R_orientConstraint1" -p "Odie_
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger3_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "FB3AD6B1-44D2-046C-015C-77BA43A27648";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36726,7 +36726,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger3_R_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger3_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "A44935BA-4DD8-DFD4-717F-FE876D3A2B80";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36748,7 +36748,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger3_R_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger2_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "AF8DD27B-4426-C27F-D3C7-07945873D112";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36769,7 +36769,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger2_R_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger2_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "E604FA1A-48A1-6588-C41F-489EFED80481";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36791,7 +36791,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger2_R_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger1_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "78083AE0-454B-59AA-E30D-91BA4F182F34";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36812,7 +36812,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger1_R_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger1_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "F6BC217C-4C9E-1694-1661-F08DB1933AE3";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_RW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_RW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36834,7 +36834,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger1_R_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger3_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "96DD866F-4362-0CDE-6F2B-AE8E04F84EB9";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36855,7 +36855,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger3_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger3_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "CC77E50E-4183-B9DB-E4DD-B5BE5734E8DD";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36877,7 +36877,7 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger3_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger2_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "5AC1AED4-42AA-EAF1-285A-8093C2DBD003";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36898,7 +36898,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger2_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger2_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "520DC065-43E4-5B62-6A85-A1B3080510ED";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36919,7 +36919,7 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger2_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger1_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "9BA8CE49-45B0-E8DA-B8B9-1EB77197FCCF";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36940,7 +36940,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger1_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger1_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "46DA8F1F-47F5-9611-D1F6-38923DBC9EDF";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36962,7 +36962,7 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger1_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger3_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "30DE18FA-451E-D137-C126-F49A1551DC07";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -36983,7 +36983,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger3_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger3_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "2F1B6D8B-481E-80B2-4CBE-FE8805D62B2B";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37005,7 +37005,7 @@ createNode orientConstraint -n "Odie_rig:IndexFinger3_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger2_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "1E0A4C53-482F-EAF5-A05D-46B605B01CCE";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37026,7 +37026,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger2_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger2_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "B361726D-4184-C6F5-B74E-C7B6FB86DF2C";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37047,7 +37047,7 @@ createNode orientConstraint -n "Odie_rig:IndexFinger2_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger1_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "63CA5B85-4006-F072-0E7A-808708CBABF0";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37068,7 +37068,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger1_R_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger1_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "5CFEF921-46DE-9520-9E4F-679EFDFFFD3C";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37090,7 +37090,7 @@ createNode orientConstraint -n "Odie_rig:IndexFinger1_R_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger3_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "2FE02C9A-45E9-AA1C-6708-798D42AEE6E9";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37111,7 +37111,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger3_R_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger3_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "C3C8AB19-4712-EC87-9CB0-98BEC42BEE20";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37133,7 +37133,7 @@ createNode orientConstraint -n "Odie_rig:RingFinger3_R_orientConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger2_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "07CE5FDB-4FC5-01BD-3898-688498EC6D4A";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37154,7 +37154,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger2_R_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger2_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "FA9205E7-4FA2-AF12-547C-1BBC4275B54F";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37176,7 +37176,7 @@ createNode orientConstraint -n "Odie_rig:RingFinger2_R_orientConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger1_R_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "0358FFDD-4FE6-1395-4E45-3B93D587993B";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37197,7 +37197,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger1_R_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger1_R_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "A633F2CF-4EC4-3959-1E12-09AE72649A09";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_RW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_RW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37359,7 +37359,7 @@ createNode orientConstraint -n "Odie_rig:Shoulder_R_orientConstraint1" -p "Odie_
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
 	setAttr ".lr" -type "double3" 58.162212521395482 86.260359815740685 -40.32340472147213 ;
-	setAttr ".rsrr" -type "double3" -2.0906139392204227e-06 -4.2196897720766182e-14 
+	setAttr ".rsrr" -type "double3" -2.0906139392204227e-06 -4.2196897720766182e-14
 		-1.4265921179763327e-06 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
@@ -37409,7 +37409,7 @@ createNode orientConstraint -n "Odie_rig:Ankle_R_orientConstraint1" -p "Odie_rig
 	setAttr ".erp" yes;
 	setAttr -s 2 ".tg";
 	setAttr ".lr" -type "double3" 1.4678329053157986 -2.6444581768768787 -45.768562301702488 ;
-	setAttr ".rsrr" -type "double3" -5.3114416943320704e-14 -9.2350806257708685e-11 
+	setAttr ".rsrr" -type "double3" -5.3114416943320704e-14 -9.2350806257708685e-11
 		1.4265583575611979e-08 ;
 	setAttr -k on ".w0";
 	setAttr -k on ".w1";
@@ -37548,7 +37548,7 @@ createNode orientConstraint -n "Odie_rig:Root_M_orientConstraint1" -p "Odie_rig:
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".lr" -type "double3" -38.408315749148485 14.685628315143632 16.843385525952097 ;
-	setAttr ".rsrr" -type "double3" -2.5433310662821603e-06 -2.5041768097093475e-06 
+	setAttr ".rsrr" -type "double3" -2.5433310662821603e-06 -2.5041768097093475e-06
 		4.690704689727351e-15 ;
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:Antenna1_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
@@ -37594,7 +37594,7 @@ createNode orientConstraint -n "Odie_rig:Antenna1_L_orientConstraint1" -p "Odie_
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger3_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "F0DBA40C-4B57-24CA-980E-09B82F894BC2";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37615,7 +37615,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger3_L_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger3_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "AB73CBE5-423D-538F-AA7B-28888A7159E9";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger3_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37637,7 +37637,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger3_L_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger2_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "0FB091FB-48CA-38AA-DDC2-03BB49A3A54A";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37658,7 +37658,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger2_L_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger2_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "D39F9E27-413F-7253-DDC6-1DB1334E08C5";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger2_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37680,7 +37680,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger2_L_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:MiddleFinger1_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "3295C60E-467F-0564-A744-AC9343DF1A3C";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37701,7 +37701,7 @@ createNode pointConstraint -n "Odie_rig:MiddleFinger1_L_pointConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:MiddleFinger1_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "8A943DDF-4CF4-B8D3-7D86-B2A84868C524";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_LW0" -dv 1 -min 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXMiddleFinger1_LW0" -dv 1 -min
 		0 -at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37723,7 +37723,7 @@ createNode orientConstraint -n "Odie_rig:MiddleFinger1_L_orientConstraint1" -p "
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger3_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "6BBE7EB3-4F56-AF4A-BFAE-DE8F5100615E";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37743,7 +37743,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger3_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger3_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "82CD76EE-40B8-043E-C5C0-86BD818B9D96";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37764,7 +37764,7 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger3_L_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger2_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "FFE9513F-4E80-9C89-4BBE-7CB8D1435A40";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37784,7 +37784,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger2_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger2_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "76D3953D-4A5C-7D30-420B-8888D5E2D5EC";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37804,7 +37804,7 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger2_L_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:ThumbFinger1_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "139AA20D-4CD3-8B39-E94A-6B9C8DF48919";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37824,7 +37824,7 @@ createNode pointConstraint -n "Odie_rig:ThumbFinger1_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:ThumbFinger1_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "0B2FB53F-44A1-2D11-E0A3-999E99083E5F";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXThumbFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37841,12 +37841,12 @@ createNode orientConstraint -n "Odie_rig:ThumbFinger1_L_orientConstraint1" -p "O
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".lr" -type "double3" -1.5902773407317587e-14 -1.2722218725854062e-14 3.1805546814635168e-14 ;
-	setAttr ".rsrr" -type "double3" -2.2263882770244624e-14 -6.3611093629270288e-15 
+	setAttr ".rsrr" -type "double3" -2.2263882770244624e-14 -6.3611093629270288e-15
 		2.8624992133171654e-14 ;
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger3_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "D1B8E6D5-4697-B856-DC1F-CD894EE9016E";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37867,7 +37867,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger3_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger3_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "D5926E3F-4686-468B-3426-1983976BC9A7";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37889,7 +37889,7 @@ createNode orientConstraint -n "Odie_rig:IndexFinger3_L_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger2_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "2A09CA55-4E79-24DB-CA52-3DB0443B30A3";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37910,7 +37910,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger2_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger2_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "EF79EA14-440A-8FA8-FD40-4D8EEB344A93";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37931,7 +37931,7 @@ createNode orientConstraint -n "Odie_rig:IndexFinger2_L_orientConstraint1" -p "O
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:IndexFinger1_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "421A9D00-4BC4-098C-8BFC-F4A9A528A458";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37952,7 +37952,7 @@ createNode pointConstraint -n "Odie_rig:IndexFinger1_L_pointConstraint1" -p "Odi
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:IndexFinger1_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "39E45B53-44AE-B3DA-7A03-97AFC142DDC0";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXIndexFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37970,12 +37970,12 @@ createNode orientConstraint -n "Odie_rig:IndexFinger1_L_orientConstraint1" -p "O
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
 	setAttr ".lr" -type "double3" -6.2393634694344256e-16 17.099999785423275 11.199999809265156 ;
-	setAttr ".rsrr" -type "double3" -9.6612454459885474e-15 -7.9203265993476251e-15 
+	setAttr ".rsrr" -type "double3" -9.6612454459885474e-15 -7.9203265993476251e-15
 		6.6033781765541372e-15 ;
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger3_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "1AC9A6C6-417B-78F5-0391-91B8280AC6B6";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -37995,7 +37995,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger3_L_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger3_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "6DD2B39D-44FC-D248-3E58-7EAF4C54AAC9";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger3_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -38016,7 +38016,7 @@ createNode orientConstraint -n "Odie_rig:RingFinger3_L_orientConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger2_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "994D7BA7-48F4-061E-7D74-6CB6C022B9CD";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -38036,7 +38036,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger2_L_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger2_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "69C003F7-45C6-5065-02B8-97BDA030D8C8";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger2_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -38057,7 +38057,7 @@ createNode orientConstraint -n "Odie_rig:RingFinger2_L_orientConstraint1" -p "Od
 	setAttr -k on ".w0";
 createNode pointConstraint -n "Odie_rig:RingFinger1_L_pointConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "E9C0ABA5-4BD9-0C84-8788-B69E8154086F";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -38077,7 +38077,7 @@ createNode pointConstraint -n "Odie_rig:RingFinger1_L_pointConstraint1" -p "Odie
 	setAttr -k on ".w0";
 createNode orientConstraint -n "Odie_rig:RingFinger1_L_orientConstraint1" -p "Odie_rig:ConstraintSystem";
 	rename -uid "F156137D-4983-C782-8616-49985F420774";
-	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_LW0" -dv 1 -min 0 
+	addAttr -dcb 0 -ci true -k true -sn "w0" -ln "FKXRingFinger1_LW0" -dv 1 -min 0
 		-at "double";
 	setAttr -k on ".nds";
 	setAttr -k off ".v";
@@ -38440,7 +38440,7 @@ createNode nurbsCurve -n "Odie_rig:Fingers_RShape" -p "Odie_rig:Fingers_R";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 0 no 3
 		13 0 0 0 1 2 3 4 5 6 7 8 8 8
 		11
@@ -38472,7 +38472,7 @@ createNode parentConstraint -n "Odie_rig:Fingers_R_parentConstraint1" -p "Odie_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" -1.4014738872579945e-14 3.1766031580719646e-15 
+	setAttr ".tg[0].tot" -type "double3" -1.4014738872579945e-14 3.1766031580719646e-15
 		-5.6764381828126453e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 2.7925088347385509 -0.68325408807644306 3.5642638064368888 ;
 	setAttr ".lr" -type "double3" 128.9444646020138 1.3888242329493459 -98.133982952699142 ;
@@ -38529,7 +38529,7 @@ createNode nurbsCurve -n "Odie_rig:Fingers_LShape" -p "Odie_rig:Fingers_L";
 	setAttr -k off ".v";
 	setAttr ".ove" yes;
 	setAttr ".ovc" 17;
-	setAttr ".cc" -type "nurbsCurve" 
+	setAttr ".cc" -type "nurbsCurve"
 		3 8 0 no 3
 		13 0 0 0 1 2 3 4 5 6 7 8 8 8
 		11
@@ -38561,7 +38561,7 @@ createNode parentConstraint -n "Odie_rig:Fingers_L_parentConstraint1" -p "Odie_r
 	setAttr -k off ".sy";
 	setAttr -k off ".sz";
 	setAttr ".erp" yes;
-	setAttr ".tg[0].tot" -type "double3" 4.2827352596239502e-14 2.2816665324211937e-15 
+	setAttr ".tg[0].tot" -type "double3" 4.2827352596239502e-14 2.2816665324211937e-15
 		-5.6468728271926526e-14 ;
 	setAttr ".tg[0].tor" -type "double3" 177.20749113853887 0.68325408807633381 -176.43573619356312 ;
 	setAttr ".lr" -type "double3" -45.352352911116128 -1.1216613529627273 -89.028931227461584 ;
@@ -38723,7 +38723,7 @@ createNode mesh -n "groundPlaneShape" -p "|environment|groundPlane";
 		 101 102 1 101 112 1 102 103 1 102 113 1 103 104 1 103 114 1 104 105 1 104 115 1 105 106 1
 		 105 116 1 106 107 1 106 117 1 107 108 1 107 118 1 108 109 1 108 119 1 109 120 0 110 111 0
 		 111 112 0 112 113 0 113 114 0 114 115 0 115 116 0 116 117 0 117 118 0 118 119 0 119 120 0;
-	setAttr -s 100 -ch 400 ".fc[0:99]" -type "polyFaces" 
+	setAttr -s 100 -ch 400 ".fc[0:99]" -type "polyFaces"
 		f 4 0 3 -22 -2
 		mu 0 4 0 1 12 11
 		f 4 2 5 -24 -4
@@ -38963,7 +38963,7 @@ createNode mesh -n "pCubeShape1" -p "pCube1";
 		 -0.5 0.5 -0.5 0.5 0.5 -0.5 -0.5 -0.5 -0.5 0.5 -0.5 -0.5;
 	setAttr -s 12 ".ed[0:11]"  0 1 0 2 3 0 4 5 0 6 7 0 0 2 0 1 3 0 2 4 0
 		 3 5 0 4 6 0 5 7 0 6 0 0 7 1 0;
-	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces" 
+	setAttr -s 6 -ch 24 ".fc[0:5]" -type "polyFaces"
 		f 4 0 5 -2 -5
 		mu 0 4 0 1 3 2
 		f 4 1 7 -3 -7
@@ -39084,9 +39084,9 @@ createNode animCurveTL -n "FKRoot_M_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39097,9 +39097,9 @@ createNode animCurveTL -n "FKRoot_M_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39110,9 +39110,9 @@ createNode animCurveTL -n "FKRoot_M_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39123,9 +39123,9 @@ createNode animCurveTL -n "FKAntenna1_L_translateX";
 	setAttr -s 12 ".ktv[0:11]"  1 24.776812112222249 9 24.776812112222249
 		 14 0 84 0 97 0 105 0 122 0 126 0 202 0 298 0 345 0 351 24.776812112222249;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39136,9 +39136,9 @@ createNode animCurveTL -n "FKAntenna1_L_translateY";
 	setAttr -s 12 ".ktv[0:11]"  1 4.4408920985006262e-15 9 0 14 0 84 0 97 0
 		 105 0 122 0 126 0 202 0 298 0 345 0 351 4.4408920985006262e-15;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39149,9 +39149,9 @@ createNode animCurveTL -n "FKAntenna1_L_translateZ";
 	setAttr -s 12 ".ktv[0:11]"  1 8.8817841970012523e-16 9 0 14 0 84 0 97 0
 		 105 0 122 0 126 0 202 0 298 0 345 0 351 8.8817841970012523e-16;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39162,9 +39162,9 @@ createNode animCurveTL -n "FKAntenna1_R_translateX";
 	setAttr -s 12 ".ktv[0:11]"  1 -26.00967166548438 9 -26.00967166548438
 		 14 0 42 0 72 0 84 0 122 0 126 0 202 0 298 0 345 0 351 -26.00967166548438;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39175,9 +39175,9 @@ createNode animCurveTL -n "FKAntenna1_R_translateY";
 	setAttr -s 12 ".ktv[0:11]"  1 -3.5527136788005009e-15 9 0 14 0 42 0
 		 72 0 84 0 122 0 126 0 202 0 298 0 345 0 351 -3.5527136788005009e-15;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39188,9 +39188,9 @@ createNode animCurveTL -n "FKAntenna1_R_translateZ";
 	setAttr -s 12 ".ktv[0:11]"  1 4.4408920985006262e-15 9 0 14 0 42 0 72 0
 		 84 0 122 0 126 0 202 0 298 0 345 0 351 4.4408920985006262e-15;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -39201,9 +39201,9 @@ createNode animCurveTL -n "FKShoulder_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39214,9 +39214,9 @@ createNode animCurveTL -n "FKShoulder_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39227,9 +39227,9 @@ createNode animCurveTL -n "FKShoulder_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39240,9 +39240,9 @@ createNode animCurveTL -n "FKElbow_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39253,9 +39253,9 @@ createNode animCurveTL -n "FKElbow_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39266,9 +39266,9 @@ createNode animCurveTL -n "FKElbow_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39279,9 +39279,9 @@ createNode animCurveTL -n "FKWrist_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39292,9 +39292,9 @@ createNode animCurveTL -n "FKWrist_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39305,9 +39305,9 @@ createNode animCurveTL -n "FKWrist_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39318,9 +39318,9 @@ createNode animCurveTL -n "FKShoulder_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39331,9 +39331,9 @@ createNode animCurveTL -n "FKShoulder_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39344,9 +39344,9 @@ createNode animCurveTL -n "FKShoulder_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39357,9 +39357,9 @@ createNode animCurveTL -n "FKElbow_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39370,9 +39370,9 @@ createNode animCurveTL -n "FKElbow_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39383,9 +39383,9 @@ createNode animCurveTL -n "FKElbow_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39396,9 +39396,9 @@ createNode animCurveTL -n "FKWrist_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39409,9 +39409,9 @@ createNode animCurveTL -n "FKWrist_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39422,9 +39422,9 @@ createNode animCurveTL -n "FKWrist_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39435,9 +39435,9 @@ createNode animCurveTL -n "FKIndexFinger1_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39448,9 +39448,9 @@ createNode animCurveTL -n "FKIndexFinger1_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39461,9 +39461,9 @@ createNode animCurveTL -n "FKIndexFinger1_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39474,9 +39474,9 @@ createNode animCurveTL -n "FKIndexFinger2_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39487,9 +39487,9 @@ createNode animCurveTL -n "FKIndexFinger2_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39500,9 +39500,9 @@ createNode animCurveTL -n "FKIndexFinger2_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39513,9 +39513,9 @@ createNode animCurveTL -n "FKIndexFinger3_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39526,9 +39526,9 @@ createNode animCurveTL -n "FKIndexFinger3_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39539,9 +39539,9 @@ createNode animCurveTL -n "FKIndexFinger3_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39552,9 +39552,9 @@ createNode animCurveTL -n "FKMiddleFinger1_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39565,9 +39565,9 @@ createNode animCurveTL -n "FKMiddleFinger1_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39578,9 +39578,9 @@ createNode animCurveTL -n "FKMiddleFinger1_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39591,9 +39591,9 @@ createNode animCurveTL -n "FKMiddleFinger2_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39604,9 +39604,9 @@ createNode animCurveTL -n "FKMiddleFinger2_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39617,9 +39617,9 @@ createNode animCurveTL -n "FKMiddleFinger2_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39630,9 +39630,9 @@ createNode animCurveTL -n "FKMiddleFinger3_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39643,9 +39643,9 @@ createNode animCurveTL -n "FKMiddleFinger3_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39656,9 +39656,9 @@ createNode animCurveTL -n "FKMiddleFinger3_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39669,9 +39669,9 @@ createNode animCurveTL -n "FKRingFinger1_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39682,9 +39682,9 @@ createNode animCurveTL -n "FKRingFinger1_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39695,9 +39695,9 @@ createNode animCurveTL -n "FKRingFinger1_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39708,9 +39708,9 @@ createNode animCurveTL -n "FKRingFinger2_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39721,9 +39721,9 @@ createNode animCurveTL -n "FKRingFinger2_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39734,9 +39734,9 @@ createNode animCurveTL -n "FKRingFinger2_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39747,9 +39747,9 @@ createNode animCurveTL -n "FKRingFinger3_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39760,9 +39760,9 @@ createNode animCurveTL -n "FKRingFinger3_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39773,9 +39773,9 @@ createNode animCurveTL -n "FKRingFinger3_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39786,9 +39786,9 @@ createNode animCurveTL -n "FKThumbFinger1_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39799,9 +39799,9 @@ createNode animCurveTL -n "FKThumbFinger1_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39812,9 +39812,9 @@ createNode animCurveTL -n "FKThumbFinger1_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39825,9 +39825,9 @@ createNode animCurveTL -n "FKThumbFinger2_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39838,9 +39838,9 @@ createNode animCurveTL -n "FKThumbFinger2_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39851,9 +39851,9 @@ createNode animCurveTL -n "FKThumbFinger2_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39864,9 +39864,9 @@ createNode animCurveTL -n "FKThumbFinger3_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39877,9 +39877,9 @@ createNode animCurveTL -n "FKThumbFinger3_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39890,9 +39890,9 @@ createNode animCurveTL -n "FKThumbFinger3_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39903,9 +39903,9 @@ createNode animCurveTL -n "FKIndexFinger1_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39916,9 +39916,9 @@ createNode animCurveTL -n "FKIndexFinger1_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39929,9 +39929,9 @@ createNode animCurveTL -n "FKIndexFinger1_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39942,9 +39942,9 @@ createNode animCurveTL -n "FKIndexFinger2_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39955,9 +39955,9 @@ createNode animCurveTL -n "FKIndexFinger2_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39968,9 +39968,9 @@ createNode animCurveTL -n "FKIndexFinger2_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39981,9 +39981,9 @@ createNode animCurveTL -n "FKIndexFinger3_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -39994,9 +39994,9 @@ createNode animCurveTL -n "FKIndexFinger3_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40007,9 +40007,9 @@ createNode animCurveTL -n "FKIndexFinger3_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40020,9 +40020,9 @@ createNode animCurveTL -n "FKMiddleFinger1_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40033,9 +40033,9 @@ createNode animCurveTL -n "FKMiddleFinger1_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40046,9 +40046,9 @@ createNode animCurveTL -n "FKMiddleFinger1_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40059,9 +40059,9 @@ createNode animCurveTL -n "FKMiddleFinger2_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40072,9 +40072,9 @@ createNode animCurveTL -n "FKMiddleFinger2_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40085,9 +40085,9 @@ createNode animCurveTL -n "FKMiddleFinger2_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40098,9 +40098,9 @@ createNode animCurveTL -n "FKMiddleFinger3_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40111,9 +40111,9 @@ createNode animCurveTL -n "FKMiddleFinger3_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40124,9 +40124,9 @@ createNode animCurveTL -n "FKMiddleFinger3_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40137,9 +40137,9 @@ createNode animCurveTL -n "FKRingFinger1_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40150,9 +40150,9 @@ createNode animCurveTL -n "FKRingFinger1_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40163,9 +40163,9 @@ createNode animCurveTL -n "FKRingFinger1_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40176,9 +40176,9 @@ createNode animCurveTL -n "FKRingFinger2_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40189,9 +40189,9 @@ createNode animCurveTL -n "FKRingFinger2_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40202,9 +40202,9 @@ createNode animCurveTL -n "FKRingFinger2_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40215,9 +40215,9 @@ createNode animCurveTL -n "FKRingFinger3_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40228,9 +40228,9 @@ createNode animCurveTL -n "FKRingFinger3_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40241,9 +40241,9 @@ createNode animCurveTL -n "FKRingFinger3_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40254,9 +40254,9 @@ createNode animCurveTL -n "FKThumbFinger1_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40267,9 +40267,9 @@ createNode animCurveTL -n "FKThumbFinger1_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40280,9 +40280,9 @@ createNode animCurveTL -n "FKThumbFinger1_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40293,9 +40293,9 @@ createNode animCurveTL -n "FKThumbFinger2_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40306,9 +40306,9 @@ createNode animCurveTL -n "FKThumbFinger2_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40319,9 +40319,9 @@ createNode animCurveTL -n "FKThumbFinger2_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40332,9 +40332,9 @@ createNode animCurveTL -n "FKThumbFinger3_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40345,9 +40345,9 @@ createNode animCurveTL -n "FKThumbFinger3_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40358,9 +40358,9 @@ createNode animCurveTL -n "FKThumbFinger3_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40401,9 +40401,9 @@ createNode animCurveTL -n "PoleLeg_L_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40414,9 +40414,9 @@ createNode animCurveTL -n "PoleLeg_L_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40427,9 +40427,9 @@ createNode animCurveTL -n "PoleLeg_L_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40440,9 +40440,9 @@ createNode animCurveTL -n "PoleLeg_R_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40453,9 +40453,9 @@ createNode animCurveTL -n "PoleLeg_R_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40466,9 +40466,9 @@ createNode animCurveTL -n "PoleLeg_R_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40479,9 +40479,9 @@ createNode animCurveTL -n "FKroot_M_translateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40492,9 +40492,9 @@ createNode animCurveTL -n "FKroot_M_translateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40505,9 +40505,9 @@ createNode animCurveTL -n "FKroot_M_translateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40521,15 +40521,15 @@ createNode animCurveTL -n "RootX_M_translateX";
 		 181 -4.4482702325402892 189 -4.4482702325402892 200 -4.4482702325402892 202 -4.4482702325402892
 		 246 -4.4482702325402892 253 -4.4482702325402892 265 -4.4482702325402892 276 -4.4482702325402892
 		 298 -4.4482702325402892 313 -4.4482702325402892 344 -4.4482702325402892 351 -4.4482702325402892;
-	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes 
+	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes
 		no no no no no;
-	setAttr -s 22 ".kit[0:21]"  1 27 18 16 18 16 18 18 
+	setAttr -s 22 ".kit[0:21]"  1 27 18 16 18 16 18 18
 		18 18 1 1 18 1 1 1 18 1 1 18 1 1;
-	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18 
+	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18
 		18 5 1 1 18 5 1 1 18 1 5 18 5 5;
-	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 		0 0;
-	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 		0 0;
 	setAttr -s 22 ".kox[10:21]"  1 1 1 0 1 1 1 1 0 1 0 0;
 	setAttr -s 22 ".koy[10:21]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -40543,15 +40543,15 @@ createNode animCurveTL -n "RootX_M_translateY";
 		 181 -107.56246292000654 189 -107.56246292000654 200 -107.56246292000654 202 -107.56246292000654
 		 246 -107.56246292000654 253 -107.56246292000654 265 -107.56246292000654 276 -107.56246292000654
 		 298 -107.56246292000654 313 -107.56246292000654 344 -107.56246292000654 351 -107.56246292000654;
-	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes 
+	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes
 		no no no no no;
-	setAttr -s 22 ".kit[0:21]"  1 27 18 18 18 18 18 18 
+	setAttr -s 22 ".kit[0:21]"  1 27 18 18 18 18 18 18
 		18 18 1 1 18 1 1 1 18 1 1 18 18 1;
-	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18 
+	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18
 		18 5 1 1 18 5 1 1 18 1 5 18 5 5;
-	setAttr -s 22 ".kix[0:21]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+	setAttr -s 22 ".kix[0:21]"  1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 		1 1;
-	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 		0 0;
 	setAttr -s 22 ".kox[10:21]"  1 1 1 0 1 1 1 1 0 1 0 0;
 	setAttr -s 22 ".koy[10:21]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -40565,15 +40565,15 @@ createNode animCurveTL -n "RootX_M_translateZ";
 		 181 -77.85049635927426 189 -77.85049635927426 200 -77.85049635927426 202 -77.85049635927426
 		 246 -77.85049635927426 253 -77.85049635927426 265 -77.85049635927426 276 -77.85049635927426
 		 298 -77.85049635927426 313 -77.85049635927426 344 -77.85049635927426 351 -77.85049635927426;
-	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes 
+	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes
 		no no no no no;
-	setAttr -s 22 ".kit[0:21]"  1 27 18 16 18 16 18 18 
+	setAttr -s 22 ".kit[0:21]"  1 27 18 16 18 16 18 18
 		18 18 1 1 18 1 1 1 18 1 1 18 1 1;
-	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18 
+	setAttr -s 22 ".kot[0:21]"  5 27 18 5 18 5 5 18
 		18 5 1 1 18 5 1 1 18 1 5 18 5 5;
-	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 		0 0;
-	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 		0 0;
 	setAttr -s 22 ".kox[10:21]"  1 1 1 0 1 1 1 1 0 1 0 0;
 	setAttr -s 22 ".koy[10:21]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -40584,9 +40584,9 @@ createNode animCurveTA -n "FKShoulder_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40597,9 +40597,9 @@ createNode animCurveTA -n "FKShoulder_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40610,9 +40610,9 @@ createNode animCurveTA -n "FKShoulder_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40623,9 +40623,9 @@ createNode animCurveTU -n "FKShoulder_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40636,9 +40636,9 @@ createNode animCurveTU -n "FKShoulder_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40649,9 +40649,9 @@ createNode animCurveTU -n "FKShoulder_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40662,9 +40662,9 @@ createNode animCurveTA -n "FKRoot_M_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40675,9 +40675,9 @@ createNode animCurveTA -n "FKRoot_M_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40688,9 +40688,9 @@ createNode animCurveTA -n "FKRoot_M_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40701,9 +40701,9 @@ createNode animCurveTU -n "FKRoot_M_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40714,9 +40714,9 @@ createNode animCurveTU -n "FKRoot_M_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40727,9 +40727,9 @@ createNode animCurveTU -n "FKRoot_M_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40740,9 +40740,9 @@ createNode animCurveTU -n "FKIKLeg_L_FKIKBlend";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40753,7 +40753,7 @@ createNode animCurveTU -n "FKIKLeg_L_FKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -40765,7 +40765,7 @@ createNode animCurveTU -n "FKIKLeg_L_IKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -40777,9 +40777,9 @@ createNode animCurveTA -n "FKMiddleFinger3_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40790,9 +40790,9 @@ createNode animCurveTA -n "FKMiddleFinger3_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40803,9 +40803,9 @@ createNode animCurveTA -n "FKMiddleFinger3_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40816,9 +40816,9 @@ createNode animCurveTU -n "FKMiddleFinger3_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40829,9 +40829,9 @@ createNode animCurveTU -n "FKMiddleFinger3_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40842,9 +40842,9 @@ createNode animCurveTU -n "FKMiddleFinger3_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40855,9 +40855,9 @@ createNode animCurveTA -n "FKThumbFinger1_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40868,9 +40868,9 @@ createNode animCurveTA -n "FKThumbFinger1_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40881,9 +40881,9 @@ createNode animCurveTA -n "FKThumbFinger1_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40894,9 +40894,9 @@ createNode animCurveTU -n "FKThumbFinger1_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40907,9 +40907,9 @@ createNode animCurveTU -n "FKThumbFinger1_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40920,9 +40920,9 @@ createNode animCurveTU -n "FKThumbFinger1_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40933,9 +40933,9 @@ createNode animCurveTA -n "FKThumbFinger2_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40946,9 +40946,9 @@ createNode animCurveTA -n "FKThumbFinger2_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40959,9 +40959,9 @@ createNode animCurveTA -n "FKThumbFinger2_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40972,9 +40972,9 @@ createNode animCurveTU -n "FKThumbFinger2_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40985,9 +40985,9 @@ createNode animCurveTU -n "FKThumbFinger2_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -40998,9 +40998,9 @@ createNode animCurveTU -n "FKThumbFinger2_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41011,9 +41011,9 @@ createNode animCurveTA -n "FKAntenna1_R_rotateX";
 	setAttr -s 12 ".ktv[0:11]"  1 0 9 0 14 0 42 0 72 0 84 0 122 0 126 0
 		 202 0 298 0 345 0 351 0;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41024,9 +41024,9 @@ createNode animCurveTA -n "FKAntenna1_R_rotateY";
 	setAttr -s 12 ".ktv[0:11]"  1 0 9 0 14 0 42 0 72 0 84 0 122 0 126 0
 		 202 0 298 0 345 0 351 0;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41037,9 +41037,9 @@ createNode animCurveTA -n "FKAntenna1_R_rotateZ";
 	setAttr -s 13 ".ktv[0:12]"  1 0 9 0 14 0 42 0 61 -19.85818841968689
 		 72 0 84 0 122 0 126 0 202 0 298 0 345 0 351 0;
 	setAttr -s 13 ".kyts[6:12]" yes no no no no no no;
-	setAttr -s 13 ".kit[0:12]"  1 18 16 16 16 16 18 18 
+	setAttr -s 13 ".kit[0:12]"  1 18 16 16 16 16 18 18
 		18 18 18 18 1;
-	setAttr -s 13 ".kot[0:12]"  5 18 5 5 5 5 5 5 
+	setAttr -s 13 ".kot[0:12]"  5 18 5 5 5 5 5 5
 		18 18 5 18 5;
 	setAttr -s 13 ".kix[0:12]"  0 1 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 13 ".kiy[0:12]"  0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41050,9 +41050,9 @@ createNode animCurveTU -n "FKAntenna1_R_scaleX";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 42 1 72 1 84 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41063,9 +41063,9 @@ createNode animCurveTU -n "FKAntenna1_R_scaleY";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 42 1 72 1 84 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41076,9 +41076,9 @@ createNode animCurveTU -n "FKAntenna1_R_scaleZ";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 42 1 72 1 84 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[5:11]" yes no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 16 16 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -41089,9 +41089,9 @@ createNode animCurveTA -n "FKWrist_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41102,9 +41102,9 @@ createNode animCurveTA -n "FKWrist_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41115,9 +41115,9 @@ createNode animCurveTA -n "FKWrist_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41128,9 +41128,9 @@ createNode animCurveTU -n "FKWrist_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41141,9 +41141,9 @@ createNode animCurveTU -n "FKWrist_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41154,9 +41154,9 @@ createNode animCurveTU -n "FKWrist_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41167,9 +41167,9 @@ createNode animCurveTA -n "FKIndexFinger3_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41180,9 +41180,9 @@ createNode animCurveTA -n "FKIndexFinger3_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41193,9 +41193,9 @@ createNode animCurveTA -n "FKIndexFinger3_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41206,9 +41206,9 @@ createNode animCurveTU -n "FKIndexFinger3_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41219,9 +41219,9 @@ createNode animCurveTU -n "FKIndexFinger3_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41232,9 +41232,9 @@ createNode animCurveTU -n "FKIndexFinger3_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41245,9 +41245,9 @@ createNode animCurveTA -n "FKMiddleFinger3_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41258,9 +41258,9 @@ createNode animCurveTA -n "FKMiddleFinger3_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41271,9 +41271,9 @@ createNode animCurveTA -n "FKMiddleFinger3_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41284,9 +41284,9 @@ createNode animCurveTU -n "FKMiddleFinger3_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41297,9 +41297,9 @@ createNode animCurveTU -n "FKMiddleFinger3_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41310,9 +41310,9 @@ createNode animCurveTU -n "FKMiddleFinger3_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41323,9 +41323,9 @@ createNode animCurveTA -n "FKElbow_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41336,9 +41336,9 @@ createNode animCurveTA -n "FKElbow_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41349,9 +41349,9 @@ createNode animCurveTA -n "FKElbow_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41362,9 +41362,9 @@ createNode animCurveTU -n "FKElbow_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41375,9 +41375,9 @@ createNode animCurveTU -n "FKElbow_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41388,9 +41388,9 @@ createNode animCurveTU -n "FKElbow_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41401,9 +41401,9 @@ createNode animCurveTU -n "FKIKArm_R_FKIKBlend";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41414,7 +41414,7 @@ createNode animCurveTU -n "FKIKArm_R_FKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -41426,7 +41426,7 @@ createNode animCurveTU -n "FKIKArm_R_IKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -41438,9 +41438,9 @@ createNode animCurveTA -n "FKIndexFinger2_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41451,9 +41451,9 @@ createNode animCurveTA -n "FKIndexFinger2_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41464,9 +41464,9 @@ createNode animCurveTA -n "FKIndexFinger2_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41477,9 +41477,9 @@ createNode animCurveTU -n "FKIndexFinger2_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41490,9 +41490,9 @@ createNode animCurveTU -n "FKIndexFinger2_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41503,9 +41503,9 @@ createNode animCurveTU -n "FKIndexFinger2_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41516,9 +41516,9 @@ createNode animCurveTA -n "FKThumbFinger2_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41529,9 +41529,9 @@ createNode animCurveTA -n "FKThumbFinger2_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41542,9 +41542,9 @@ createNode animCurveTA -n "FKThumbFinger2_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41555,9 +41555,9 @@ createNode animCurveTU -n "FKThumbFinger2_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41568,9 +41568,9 @@ createNode animCurveTU -n "FKThumbFinger2_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41581,9 +41581,9 @@ createNode animCurveTU -n "FKThumbFinger2_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41594,9 +41594,9 @@ createNode animCurveTU -n "PoleLeg_L_follow";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41607,9 +41607,9 @@ createNode animCurveTU -n "PoleLeg_L_lock";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41620,9 +41620,9 @@ createNode animCurveTA -n "FKThumbFinger3_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41633,9 +41633,9 @@ createNode animCurveTA -n "FKThumbFinger3_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41646,9 +41646,9 @@ createNode animCurveTA -n "FKThumbFinger3_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41659,9 +41659,9 @@ createNode animCurveTU -n "FKThumbFinger3_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41672,9 +41672,9 @@ createNode animCurveTU -n "FKThumbFinger3_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41685,9 +41685,9 @@ createNode animCurveTU -n "FKThumbFinger3_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41698,9 +41698,9 @@ createNode animCurveTA -n "FKRingFinger1_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41711,9 +41711,9 @@ createNode animCurveTA -n "FKRingFinger1_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41724,9 +41724,9 @@ createNode animCurveTA -n "FKRingFinger1_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41737,9 +41737,9 @@ createNode animCurveTU -n "FKRingFinger1_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41750,9 +41750,9 @@ createNode animCurveTU -n "FKRingFinger1_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41763,9 +41763,9 @@ createNode animCurveTU -n "FKRingFinger1_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41775,15 +41775,15 @@ createNode animCurveTU -n "RootX_M_visibility";
 	setAttr ".wgt" no;
 	setAttr -s 22 ".ktv[0:21]"  1 1 21 1 27 1 31 1 68 1 78 1 84 1 107 1
 		 117 1 120 1 181 1 189 1 200 1 202 1 246 1 253 1 265 1 276 1 298 1 313 1 344 1 351 1;
-	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes 
+	setAttr -s 22 ".kyts[6:21]" yes no yes no no yes yes no no yes yes
 		no no no no no;
-	setAttr -s 22 ".kit[0:21]"  1 27 9 16 9 16 18 9 
+	setAttr -s 22 ".kit[0:21]"  1 27 9 16 9 16 18 9
 		18 9 1 1 18 9 1 1 18 18 9 9 1 1;
-	setAttr -s 22 ".kot[1:21]"  27 5 5 5 5 5 5 5 
+	setAttr -s 22 ".kot[1:21]"  27 5 5 5 5 5 5 5
 		5 5 5 5 5 5 5 5 5 5 5 5 5;
-	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+	setAttr -s 22 ".kix[0:21]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1
 		0 0;
-	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 
+	setAttr -s 22 ".kiy[0:21]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
 		0 0;
 createNode animCurveTA -n "RootX_M_rotateX";
 	rename -uid "0BEF8D5D-4CB6-557A-E3C3-7BA7C0ABB9A8";
@@ -41796,23 +41796,23 @@ createNode animCurveTA -n "RootX_M_rotateX";
 		 200 -2.8488736468283489 202 -3.4356975875895679 246 -3.435697587589567 253 -3.3324203797458951
 		 265 11.323647527679725 267 11.187649208328077 276 11.187649208328077 298 4.4407386218730487
 		 313 4.4407386218730487 344 14.482000546161908 351 21.983398013653293;
-	setAttr -s 25 ".kyts[2:24]" yes no no no yes no yes yes no no no yes 
+	setAttr -s 25 ".kyts[2:24]" yes no no no yes no yes yes no no no yes
 		yes no no yes yes no no no no no no;
-	setAttr -s 25 ".kit[2:24]"  27 16 18 16 18 1 18 1 
+	setAttr -s 25 ".kit[2:24]"  27 16 18 16 18 1 18 1
 		18 18 1 1 18 1 1 1 27 27 27 1 18 1 1;
-	setAttr -s 25 ".kot[0:24]"  5 1 27 5 18 5 5 1 
+	setAttr -s 25 ".kot[0:24]"  5 1 27 5 18 5 5 1
 		18 1 5 5 1 1 18 5 1 1 27 27 27 5 18 5 5;
-	setAttr -s 25 ".kix[0:24]"  0 0.99570286864692448 0.91506408690301999 
-		1 1 1 1 1 0.99999907568559043 0.99999914541928048 1 1 1 0.99479596829932759 0.982589251900295 
+	setAttr -s 25 ".kix[0:24]"  0 0.99570286864692448 0.91506408690301999
+		1 1 1 1 1 0.99999907568559043 0.99999914541928048 1 1 1 0.99479596829932759 0.982589251900295
 		1 1 0.99983758434002823 1 1 1 0.99996430396731206 1 0 0;
-	setAttr -s 25 ".kiy[0:24]"  0 -0.092605601171232288 -0.40330846366068485 
-		0 0 0 0 0 -0.0013596425871280505 -0.0013073487326356224 0 0 0 -0.10188710151635035 
+	setAttr -s 25 ".kiy[0:24]"  0 -0.092605601171232288 -0.40330846366068485
+		0 0 0 0 0 -0.0013596425871280505 -0.0013073487326356224 0 0 0 -0.10188710151635035
 		-0.18579117861195293 0 0 0.01802234560474433 0 0 0 -0.0084493071413658371 0 0 0;
-	setAttr -s 25 ".kox[1:24]"  0.99570287023647908 0.91506408690302021 
-		0 1 0 0 1 0.99999907568559043 0.99999914541928048 0 0 1 0.9947959682993277 0.982589251900295 
+	setAttr -s 25 ".kox[1:24]"  0.99570287023647908 0.91506408690302021
+		0 1 0 0 1 0.99999907568559043 0.99999914541928048 0 0 1 0.9947959682993277 0.982589251900295
 		0 1 0.99983758434002845 1 1 1 0 1 0 0;
-	setAttr -s 25 ".koy[1:24]"  -0.092605584080212439 -0.40330846366068485 
-		0 0 0 0 0 -0.0013596425871280503 -0.001307348732635612 0 0 0 -0.10188710151635021 
+	setAttr -s 25 ".koy[1:24]"  -0.092605584080212439 -0.40330846366068485
+		0 0 0 0 0 -0.0013596425871280503 -0.001307348732635612 0 0 0 -0.10188710151635021
 		-0.18579117861195293 0 0 0.018022345604744378 0 0 0 0 0 0 0;
 createNode animCurveTA -n "RootX_M_rotateY";
 	rename -uid "816D0621-4849-65FA-374F-4BA0B422F661";
@@ -41824,23 +41824,23 @@ createNode animCurveTA -n "RootX_M_rotateY";
 		 202 -19.297872830718681 246 -19.297872830718674 253 -13.472363966878747 265 33.714257830224668
 		 267 38.957215807680591 276 38.957215807680591 298 24.283129279275155 313 24.283129279275155
 		 344 0 351 0;
-	setAttr -s 24 ".kyts[6:23]" yes no yes yes no no yes yes no no yes 
+	setAttr -s 24 ".kyts[6:23]" yes no yes yes no no yes yes no no yes
 		yes no no no no no no;
-	setAttr -s 24 ".kit[0:23]"  1 27 18 16 18 16 18 1 
+	setAttr -s 24 ".kit[0:23]"  1 27 18 16 18 16 18 1
 		18 1 18 1 1 18 1 1 1 18 18 18 1 18 1 1;
-	setAttr -s 24 ".kot[0:23]"  5 27 18 5 18 5 5 1 
+	setAttr -s 24 ".kot[0:23]"  5 27 18 5 18 5 5 1
 		18 1 5 1 1 18 5 1 1 18 18 18 5 18 5 5;
-	setAttr -s 24 ".kix[0:23]"  0 1 1 1 1 1 1 1 0.38293545256770967 0.39589133811875693 
-		1 1 0.68693477222357624 0.45574749778028589 1 1 0.70121218031488741 0.5375422543480719 
+	setAttr -s 24 ".kix[0:23]"  0 1 1 1 1 1 1 1 0.38293545256770967 0.39589133811875693
+		1 1 0.68693477222357624 0.45574749778028589 1 1 0.70121218031488741 0.5375422543480719
 		1 1 0.97653812001710505 1 0 0;
-	setAttr -s 24 ".kiy[0:23]"  0 0 0 0 0 0 0 0 0.92377510204960789 0.9182973638220574 
-		0 0 -0.72671907826211868 -0.89010910469841187 0 0 0.71295264792133417 0.84323681418116025 
+	setAttr -s 24 ".kiy[0:23]"  0 0 0 0 0 0 0 0 0.92377510204960789 0.9182973638220574
+		0 0 -0.72671907826211868 -0.89010910469841187 0 0 0.71295264792133417 0.84323681418116025
 		0 0 -0.21534460790430313 0 0 0;
-	setAttr -s 24 ".kox[7:23]"  1 0.38293545256770967 0.39589133811875787 
-		0 1 0.6869347722235768 0.45574749778028589 0 1 0.70121218031488752 0.53754225434807201 
+	setAttr -s 24 ".kox[7:23]"  1 0.38293545256770967 0.39589133811875787
+		0 1 0.6869347722235768 0.45574749778028589 0 1 0.70121218031488752 0.53754225434807201
 		1 1 0 1 0 0;
-	setAttr -s 24 ".koy[7:23]"  0 0.92377510204960778 0.91829736382205696 
-		0 0 -0.72671907826211823 -0.89010910469841187 0 0 0.71295264792133384 0.84323681418116037 
+	setAttr -s 24 ".koy[7:23]"  0 0.92377510204960778 0.91829736382205696
+		0 0 -0.72671907826211823 -0.89010910469841187 0 0 0.71295264792133384 0.84323681418116037
 		0 0 0 0 0 0;
 createNode animCurveTA -n "RootX_M_rotateZ";
 	rename -uid "107AA3DB-4115-A006-6721-2CB5A188DAA0";
@@ -41852,23 +41852,23 @@ createNode animCurveTA -n "RootX_M_rotateZ";
 		 202 0.77491293623495383 246 0.77491293623495416 253 0.45620314582760418 265 -2.1253461564719305
 		 267 -2.4121849678385456 276 -2.4121849678385456 298 -1.9496060206234482 313 -1.9496060206234482
 		 344 0 351 0;
-	setAttr -s 24 ".kyts[6:23]" yes no yes yes no no yes yes no no yes 
+	setAttr -s 24 ".kyts[6:23]" yes no yes yes no no yes yes no no yes
 		yes no no no no no no;
-	setAttr -s 24 ".kit[0:23]"  1 27 18 16 18 16 18 1 
+	setAttr -s 24 ".kit[0:23]"  1 27 18 16 18 16 18 1
 		18 1 18 1 1 18 1 1 1 18 18 18 1 18 1 1;
-	setAttr -s 24 ".kot[0:23]"  5 27 18 5 18 5 5 1 
+	setAttr -s 24 ".kot[0:23]"  5 27 18 5 18 5 5 1
 		18 1 5 1 1 18 5 1 1 18 18 18 5 18 5 5;
-	setAttr -s 24 ".kix[0:23]"  0 1 1 1 1 1 1 1 0.98784921699683137 0.98875050978098333 
-		1 1 0.99642011764170579 0.9879541156241457 1 1 0.99845649110526047 0.9963375140022559 
+	setAttr -s 24 ".kix[0:23]"  0 1 1 1 1 1 1 1 0.98784921699683137 0.98875050978098333
+		1 1 0.99642011764170579 0.9879541156241457 1 1 0.99845649110526047 0.9963375140022559
 		1 1 0.99990679391309223 1 0 0;
-	setAttr -s 24 ".kiy[0:23]"  0 0 0 0 0 0 0 0 0.15541532896965884 0.14957416022777939 
-		0 0 -0.084539630699981438 -0.15474710149567306 0 0 -0.055539493783893307 -0.085507649902242355 
+	setAttr -s 24 ".kiy[0:23]"  0 0 0 0 0 0 0 0 0.15541532896965884 0.14957416022777939
+		0 0 -0.084539630699981438 -0.15474710149567306 0 0 -0.055539493783893307 -0.085507649902242355
 		0 0 0.013652966214007535 0 0 0;
-	setAttr -s 24 ".kox[7:23]"  1 0.98784921699683148 0.98875050978098356 
-		0 1 0.99642011764170579 0.9879541156241457 0 1 0.99845649110526036 0.99633751400225601 
+	setAttr -s 24 ".kox[7:23]"  1 0.98784921699683148 0.98875050978098356
+		0 1 0.99642011764170579 0.9879541156241457 0 1 0.99845649110526036 0.99633751400225601
 		1 1 0 1 0 0;
-	setAttr -s 24 ".koy[7:23]"  0 0.15541532896965884 0.14957416022777956 
-		0 0 -0.08453963069998105 -0.15474710149567303 0 0 -0.055539493783893376 -0.085507649902242355 
+	setAttr -s 24 ".koy[7:23]"  0 0.15541532896965884 0.14957416022777956
+		0 0 -0.08453963069998105 -0.15474710149567303 0 0 -0.055539493783893376 -0.085507649902242355
 		0 0 0 0 0 0;
 createNode animCurveTA -n "FKRingFinger2_R_rotateX";
 	rename -uid "221D83C9-442F-5F06-0CC3-528A0D1DA04E";
@@ -41877,9 +41877,9 @@ createNode animCurveTA -n "FKRingFinger2_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41890,9 +41890,9 @@ createNode animCurveTA -n "FKRingFinger2_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41903,9 +41903,9 @@ createNode animCurveTA -n "FKRingFinger2_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41916,9 +41916,9 @@ createNode animCurveTU -n "FKRingFinger2_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41929,9 +41929,9 @@ createNode animCurveTU -n "FKRingFinger2_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41942,9 +41942,9 @@ createNode animCurveTU -n "FKRingFinger2_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41955,9 +41955,9 @@ createNode animCurveTA -n "FKMiddleFinger2_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41968,9 +41968,9 @@ createNode animCurveTA -n "FKMiddleFinger2_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41981,9 +41981,9 @@ createNode animCurveTA -n "FKMiddleFinger2_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -41994,9 +41994,9 @@ createNode animCurveTU -n "FKMiddleFinger2_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42007,9 +42007,9 @@ createNode animCurveTU -n "FKMiddleFinger2_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42020,9 +42020,9 @@ createNode animCurveTU -n "FKMiddleFinger2_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42033,9 +42033,9 @@ createNode animCurveTA -n "FKShoulder_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42046,9 +42046,9 @@ createNode animCurveTA -n "FKShoulder_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42059,9 +42059,9 @@ createNode animCurveTA -n "FKShoulder_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42072,9 +42072,9 @@ createNode animCurveTU -n "FKShoulder_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42085,9 +42085,9 @@ createNode animCurveTU -n "FKShoulder_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42098,9 +42098,9 @@ createNode animCurveTU -n "FKShoulder_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42111,9 +42111,9 @@ createNode animCurveTA -n "FKRingFinger3_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42124,9 +42124,9 @@ createNode animCurveTA -n "FKRingFinger3_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42137,9 +42137,9 @@ createNode animCurveTA -n "FKRingFinger3_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42150,9 +42150,9 @@ createNode animCurveTU -n "FKRingFinger3_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42163,9 +42163,9 @@ createNode animCurveTU -n "FKRingFinger3_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42176,9 +42176,9 @@ createNode animCurveTU -n "FKRingFinger3_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42189,9 +42189,9 @@ createNode animCurveTU -n "PoleLeg_R_follow";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42202,9 +42202,9 @@ createNode animCurveTU -n "PoleLeg_R_lock";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42215,9 +42215,9 @@ createNode animCurveTA -n "FKThumbFinger3_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42228,9 +42228,9 @@ createNode animCurveTA -n "FKThumbFinger3_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42241,9 +42241,9 @@ createNode animCurveTA -n "FKThumbFinger3_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42254,9 +42254,9 @@ createNode animCurveTU -n "FKThumbFinger3_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42267,9 +42267,9 @@ createNode animCurveTU -n "FKThumbFinger3_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42280,9 +42280,9 @@ createNode animCurveTU -n "FKThumbFinger3_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42293,9 +42293,9 @@ createNode animCurveTA -n "FKRingFinger1_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42306,9 +42306,9 @@ createNode animCurveTA -n "FKRingFinger1_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42319,9 +42319,9 @@ createNode animCurveTA -n "FKRingFinger1_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42332,9 +42332,9 @@ createNode animCurveTU -n "FKRingFinger1_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42345,9 +42345,9 @@ createNode animCurveTU -n "FKRingFinger1_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42358,9 +42358,9 @@ createNode animCurveTU -n "FKRingFinger1_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42371,9 +42371,9 @@ createNode animCurveTA -n "FKRingFinger3_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42384,9 +42384,9 @@ createNode animCurveTA -n "FKRingFinger3_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42397,9 +42397,9 @@ createNode animCurveTA -n "FKRingFinger3_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42410,9 +42410,9 @@ createNode animCurveTU -n "FKRingFinger3_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42423,9 +42423,9 @@ createNode animCurveTU -n "FKRingFinger3_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42436,9 +42436,9 @@ createNode animCurveTU -n "FKRingFinger3_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42585,9 +42585,9 @@ createNode animCurveTA -n "FKIndexFinger1_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42598,9 +42598,9 @@ createNode animCurveTA -n "FKIndexFinger1_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42611,9 +42611,9 @@ createNode animCurveTA -n "FKIndexFinger1_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42624,9 +42624,9 @@ createNode animCurveTU -n "FKIndexFinger1_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42637,9 +42637,9 @@ createNode animCurveTU -n "FKIndexFinger1_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42650,9 +42650,9 @@ createNode animCurveTU -n "FKIndexFinger1_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42663,9 +42663,9 @@ createNode animCurveTA -n "FKIndexFinger1_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42676,9 +42676,9 @@ createNode animCurveTA -n "FKIndexFinger1_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42689,9 +42689,9 @@ createNode animCurveTA -n "FKIndexFinger1_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42702,9 +42702,9 @@ createNode animCurveTU -n "FKIndexFinger1_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42715,9 +42715,9 @@ createNode animCurveTU -n "FKIndexFinger1_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42728,9 +42728,9 @@ createNode animCurveTU -n "FKIndexFinger1_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42741,9 +42741,9 @@ createNode animCurveTA -n "FKIndexFinger2_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42754,9 +42754,9 @@ createNode animCurveTA -n "FKIndexFinger2_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42767,9 +42767,9 @@ createNode animCurveTA -n "FKIndexFinger2_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42780,9 +42780,9 @@ createNode animCurveTU -n "FKIndexFinger2_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42793,9 +42793,9 @@ createNode animCurveTU -n "FKIndexFinger2_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42806,9 +42806,9 @@ createNode animCurveTU -n "FKIndexFinger2_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42819,9 +42819,9 @@ createNode animCurveTU -n "FKIKLeg_R_FKIKBlend";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42832,7 +42832,7 @@ createNode animCurveTU -n "FKIKLeg_R_FKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -42844,7 +42844,7 @@ createNode animCurveTU -n "FKIKLeg_R_IKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -42856,9 +42856,9 @@ createNode animCurveTA -n "FKAntenna1_L_rotateX";
 	setAttr -s 12 ".ktv[0:11]"  1 0 9 0 14 0 84 0 97 0 105 0 122 0 126 0
 		 202 0 298 0 345 0 351 0;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42869,9 +42869,9 @@ createNode animCurveTA -n "FKAntenna1_L_rotateY";
 	setAttr -s 12 ".ktv[0:11]"  1 0 9 0 14 0 84 0 97 0 105 0 122 0 126 0
 		 202 0 298 0 345 0 351 0;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42882,9 +42882,9 @@ createNode animCurveTA -n "FKAntenna1_L_rotateZ";
 	setAttr -s 12 ".ktv[0:11]"  1 0 9 0 14 0 84 0 97 -27.545209430582059
 		 105 0 122 0 126 0 202 0 298 0 345 0 351 0;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42895,9 +42895,9 @@ createNode animCurveTU -n "FKAntenna1_L_scaleX";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 84 1 97 1 105 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42908,9 +42908,9 @@ createNode animCurveTU -n "FKAntenna1_L_scaleY";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 84 1 97 1 105 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42921,9 +42921,9 @@ createNode animCurveTU -n "FKAntenna1_L_scaleZ";
 	setAttr -s 12 ".ktv[0:11]"  1 1 9 1 14 1 84 1 97 1 105 1 122 1 126 1
 		 202 1 298 1 345 1 351 1;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 16 18 16 16 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 18 5 5 5 5 5 18
 		18 5 18 5;
 	setAttr -s 12 ".kix[0:11]"  0 1 1 1 1 1 1 1 1 1 1 0;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -42934,9 +42934,9 @@ createNode animCurveTA -n "FKMiddleFinger2_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42947,9 +42947,9 @@ createNode animCurveTA -n "FKMiddleFinger2_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42960,9 +42960,9 @@ createNode animCurveTA -n "FKMiddleFinger2_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42973,9 +42973,9 @@ createNode animCurveTU -n "FKMiddleFinger2_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42986,9 +42986,9 @@ createNode animCurveTU -n "FKMiddleFinger2_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -42999,9 +42999,9 @@ createNode animCurveTU -n "FKMiddleFinger2_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43012,9 +43012,9 @@ createNode animCurveTU -n "Fingers_R_spread";
 	setAttr -s 12 ".ktv[0:11]"  1 0 109 0 209 0 215 0 219 5.0999999046325684
 		 227 0 233 0 253 0 257 0 298 0 344 0 351 0;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5 
+	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5
 		18 5 5 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43027,9 +43027,9 @@ createNode animCurveTU -n "Fingers_R_indexCurl";
 		 233 0.80000019073486328 253 0.80000019073486328 257 0.80000019073486328 298 0.80000019073486328
 		 344 0.80000019073486328 351 0.80000019073486328;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5 
+	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5
 		18 5 5 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43042,9 +43042,9 @@ createNode animCurveTU -n "Fingers_R_middleCurl";
 		 233 1.7000001668930054 253 1.7000001668930054 257 1.7000001668930054 298 1.7000001668930054
 		 344 1.7000001668930054 351 1.7000001668930054;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5 
+	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5
 		18 5 5 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43057,9 +43057,9 @@ createNode animCurveTU -n "Fingers_R_ringCurl";
 		 233 2.5000002384185791 253 2.5000002384185791 257 2.5000002384185791 298 2.5000002384185791
 		 344 2.5000002384185791 351 2.5000002384185791;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5 
+	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5
 		18 5 5 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43072,9 +43072,9 @@ createNode animCurveTU -n "Fingers_R_thumbCurl";
 		 233 2.8000001907348633 253 2.8000001907348633 257 2.8000001907348633 298 2.8000001907348633
 		 344 2.8000001907348633 351 2.8000001907348633;
 	setAttr -s 12 ".kyts[3:11]" yes no no no no no no no no;
-	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 18 18 18 18 18 18 18
 		18 18 18 1;
-	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5 
+	setAttr -s 12 ".kot[0:11]"  5 18 18 18 5 5 5 5
 		18 5 5 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43085,9 +43085,9 @@ createNode animCurveTA -n "FKroot_M_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43098,9 +43098,9 @@ createNode animCurveTA -n "FKroot_M_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43111,9 +43111,9 @@ createNode animCurveTA -n "FKroot_M_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43124,9 +43124,9 @@ createNode animCurveTU -n "FKroot_M_followMain";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43137,9 +43137,9 @@ createNode animCurveTA -n "FKMiddleFinger1_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43150,9 +43150,9 @@ createNode animCurveTA -n "FKMiddleFinger1_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43163,9 +43163,9 @@ createNode animCurveTA -n "FKMiddleFinger1_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43176,9 +43176,9 @@ createNode animCurveTU -n "FKMiddleFinger1_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43189,9 +43189,9 @@ createNode animCurveTU -n "FKMiddleFinger1_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43202,9 +43202,9 @@ createNode animCurveTU -n "FKMiddleFinger1_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43215,9 +43215,9 @@ createNode animCurveTA -n "FKRingFinger2_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43228,9 +43228,9 @@ createNode animCurveTA -n "FKRingFinger2_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43241,9 +43241,9 @@ createNode animCurveTA -n "FKRingFinger2_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43254,9 +43254,9 @@ createNode animCurveTU -n "FKRingFinger2_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43267,9 +43267,9 @@ createNode animCurveTU -n "FKRingFinger2_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43280,9 +43280,9 @@ createNode animCurveTU -n "FKRingFinger2_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43296,9 +43296,9 @@ createNode animCurveTU -n "Fingers_L_spread";
 		 202 1.517974853515625 223 1.517974853515625 280 1.517974853515625 344 2.7999999523162842
 		 351 2.7999999523162842;
 	setAttr -s 15 ".kyts[2:14]" yes no no no no no no no no no no no no;
-	setAttr -s 15 ".kit[0:14]"  1 18 18 18 18 18 18 18 
+	setAttr -s 15 ".kit[0:14]"  1 18 18 18 18 18 18 18
 		18 18 18 18 18 1 1;
-	setAttr -s 15 ".kot[0:14]"  5 5 5 5 18 18 18 18 
+	setAttr -s 15 ".kot[0:14]"  5 5 5 5 18 18 18 18
 		18 5 5 18 5 5 5;
 	setAttr -s 15 ".kix[0:14]"  0 1 1 1 1 1 1 1 1 1 1 1 1 0 0;
 	setAttr -s 15 ".kiy[0:14]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43311,11 +43311,11 @@ createNode animCurveTU -n "Fingers_L_indexCurl";
 		 151 0.29999992251396179 155 0.29999992251396179 161 -0.40000006556510925 166 4.0999999046325684
 		 169 4.0999999046325684 176 4.0999999046325684 202 3.5727355480194092 223 3.5727355480194092
 		 280 3.5727355480194092 344 1.8999999761581421 351 1.8999999761581421;
-	setAttr -s 17 ".kyts[2:16]" yes no no no no no no no no no no no no 
+	setAttr -s 17 ".kyts[2:16]" yes no no no no no no no no no no no no
 		no no;
-	setAttr -s 17 ".kit[0:16]"  1 18 18 18 18 18 18 18 
+	setAttr -s 17 ".kit[0:16]"  1 18 18 18 18 18 18 18
 		18 18 18 18 18 18 18 1 1;
-	setAttr -s 17 ".kot[0:16]"  5 5 5 5 18 18 18 18 
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 18 18 18 18
 		18 18 18 5 5 18 5 5 5;
 	setAttr -s 17 ".kix[0:16]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0;
 	setAttr -s 17 ".kiy[0:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43328,11 +43328,11 @@ createNode animCurveTU -n "Fingers_L_middleCurl";
 		 151 1.2999998331069946 155 1.2999998331069946 159 0.09999983012676239 164 3.7999997138977051
 		 169 3.7999997138977051 176 3.7999997138977051 202 3.2727353572845459 223 3.2727353572845459
 		 280 3.2727353572845459 344 1.8999999761581421 351 1.8999999761581421;
-	setAttr -s 17 ".kyts[2:16]" yes no no no no no no no no no no no no 
+	setAttr -s 17 ".kyts[2:16]" yes no no no no no no no no no no no no
 		no no;
-	setAttr -s 17 ".kit[0:16]"  1 18 18 18 18 18 18 18 
+	setAttr -s 17 ".kit[0:16]"  1 18 18 18 18 18 18 18
 		18 18 18 18 18 18 18 1 1;
-	setAttr -s 17 ".kot[0:16]"  5 5 5 5 18 18 18 18 
+	setAttr -s 17 ".kot[0:16]"  5 5 5 5 18 18 18 18
 		18 18 18 5 5 18 5 5 5;
 	setAttr -s 17 ".kix[0:16]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0;
 	setAttr -s 17 ".kiy[0:16]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43344,11 +43344,11 @@ createNode animCurveTU -n "Fingers_L_ringCurl";
 		 139 2.3999998569488525 143 2.3999998569488525 147 0.99999988079071045 151 0.99999988079071045
 		 155 -0.10000012069940567 162 4.1999998092651367 169 4.1999998092651367 176 4.1999998092651367
 		 202 3.6727354526519775 223 3.6727354526519775 280 3.6727354526519775 344 1.5 351 1.5;
-	setAttr -s 16 ".kyts[2:15]" yes no no no no no no no no no no no no 
+	setAttr -s 16 ".kyts[2:15]" yes no no no no no no no no no no no no
 		no;
-	setAttr -s 16 ".kit[0:15]"  1 18 18 18 18 18 18 18 
+	setAttr -s 16 ".kit[0:15]"  1 18 18 18 18 18 18 18
 		18 18 18 18 18 18 1 1;
-	setAttr -s 16 ".kot[0:15]"  5 5 5 5 18 18 18 18 
+	setAttr -s 16 ".kot[0:15]"  5 5 5 5 18 18 18 18
 		18 18 5 5 18 5 5 5;
 	setAttr -s 16 ".kix[0:15]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0;
 	setAttr -s 16 ".kiy[0:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43361,11 +43361,11 @@ createNode animCurveTU -n "Fingers_L_thumbCurl";
 		 151 3.2999997138977051 155 3.2999997138977051 163 0.69999969005584717 169 3.3999996185302734
 		 176 3.3999996185302734 202 2.8727352619171143 223 2.8727352619171143 280 2.8727352619171143
 		 344 3.6999998092651367 351 3.6999998092651367;
-	setAttr -s 16 ".kyts[2:15]" yes no no no no no no no no no no no no 
+	setAttr -s 16 ".kyts[2:15]" yes no no no no no no no no no no no no
 		no;
-	setAttr -s 16 ".kit[0:15]"  1 18 18 18 18 18 18 18 
+	setAttr -s 16 ".kit[0:15]"  1 18 18 18 18 18 18 18
 		18 18 18 18 18 18 1 1;
-	setAttr -s 16 ".kot[0:15]"  5 5 5 5 18 18 18 18 
+	setAttr -s 16 ".kot[0:15]"  5 5 5 5 18 18 18 18
 		18 18 5 5 18 5 5 5;
 	setAttr -s 16 ".kix[0:15]"  0 1 1 1 1 1 1 1 1 1 1 1 1 1 0 0;
 	setAttr -s 16 ".kiy[0:15]"  0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0;
@@ -43376,9 +43376,9 @@ createNode animCurveTA -n "FKIndexFinger3_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43389,9 +43389,9 @@ createNode animCurveTA -n "FKIndexFinger3_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43402,9 +43402,9 @@ createNode animCurveTA -n "FKIndexFinger3_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43415,9 +43415,9 @@ createNode animCurveTU -n "FKIndexFinger3_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43428,9 +43428,9 @@ createNode animCurveTU -n "FKIndexFinger3_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43441,9 +43441,9 @@ createNode animCurveTU -n "FKIndexFinger3_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43454,9 +43454,9 @@ createNode animCurveTA -n "FKElbow_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43467,9 +43467,9 @@ createNode animCurveTA -n "FKElbow_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43480,9 +43480,9 @@ createNode animCurveTA -n "FKElbow_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43493,9 +43493,9 @@ createNode animCurveTU -n "FKElbow_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43506,9 +43506,9 @@ createNode animCurveTU -n "FKElbow_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43519,9 +43519,9 @@ createNode animCurveTU -n "FKElbow_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43532,9 +43532,9 @@ createNode animCurveTA -n "FKThumbFinger1_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43545,9 +43545,9 @@ createNode animCurveTA -n "FKThumbFinger1_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43558,9 +43558,9 @@ createNode animCurveTA -n "FKThumbFinger1_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43571,9 +43571,9 @@ createNode animCurveTU -n "FKThumbFinger1_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43584,9 +43584,9 @@ createNode animCurveTU -n "FKThumbFinger1_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43597,9 +43597,9 @@ createNode animCurveTU -n "FKThumbFinger1_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43610,9 +43610,9 @@ createNode animCurveTA -n "FKWrist_R_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43623,9 +43623,9 @@ createNode animCurveTA -n "FKWrist_R_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43636,9 +43636,9 @@ createNode animCurveTA -n "FKWrist_R_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43649,9 +43649,9 @@ createNode animCurveTU -n "FKWrist_R_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43662,9 +43662,9 @@ createNode animCurveTU -n "FKWrist_R_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43675,9 +43675,9 @@ createNode animCurveTU -n "FKWrist_R_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43688,9 +43688,9 @@ createNode animCurveTA -n "FKMiddleFinger1_L_rotateX";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43701,9 +43701,9 @@ createNode animCurveTA -n "FKMiddleFinger1_L_rotateY";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43714,9 +43714,9 @@ createNode animCurveTA -n "FKMiddleFinger1_L_rotateZ";
 	setAttr -s 9 ".ktv[0:8]"  1 0 20 0 84 0 122 0 126 0 202 0 298 0 344 0
 		 351 0;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43727,9 +43727,9 @@ createNode animCurveTU -n "FKMiddleFinger1_L_scaleX";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43740,9 +43740,9 @@ createNode animCurveTU -n "FKMiddleFinger1_L_scaleY";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43753,9 +43753,9 @@ createNode animCurveTU -n "FKMiddleFinger1_L_scaleZ";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43766,9 +43766,9 @@ createNode animCurveTU -n "FKIKArm_L_FKIKBlend";
 	setAttr -s 9 ".ktv[0:8]"  1 10 20 10 84 10 122 10 126 10 202 10 298 10
 		 344 10 351 10;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1 
+	setAttr -s 9 ".kit[0:8]"  1 18 18 18 18 18 18 1
 		1;
-	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5 
+	setAttr -s 9 ".kot[0:8]"  5 18 18 5 18 18 5 5
 		5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
 	setAttr -s 9 ".kiy[0:8]"  0 0 0 0 0 0 0 0 0;
@@ -43779,7 +43779,7 @@ createNode animCurveTU -n "FKIKArm_L_FKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -43791,7 +43791,7 @@ createNode animCurveTU -n "FKIKArm_L_IKVis";
 	setAttr -s 9 ".ktv[0:8]"  1 1 20 1 84 1 122 1 126 1 202 1 298 1 344 1
 		 351 1;
 	setAttr -s 9 ".kyts[2:8]" yes no no no no no no;
-	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1 
+	setAttr -s 9 ".kit[0:8]"  1 9 18 9 18 9 9 1
 		1;
 	setAttr -s 9 ".kot[4:8]"  18 5 5 5 5;
 	setAttr -s 9 ".kix[0:8]"  0 1 1 1 1 1 1 0 0;
@@ -43847,13 +43847,13 @@ createNode animCurveTA -n "IKArm_R_rotateX";
 		 219 180.78759860050502 227 199.18227833145087 233 199.18227833145087 240 211.21466122138321
 		 244 328.22044426794474 265 402.12647171835965 298 402.12647171835965 337 402.12647171835965
 		 348 361.0717487301265;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.42011582791402674 0.22054730791573424 
+	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.42011582791402674 0.22054730791573424
 		1 1 1 1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0.9074704905042984 0.97537627865922716 
+	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0.9074704905042984 0.97537627865922716
 		0 0 0 0;
 createNode animCurveTA -n "IKArm_R_rotateY";
 	rename -uid "AC72B910-4DF6-586B-3584-7F9327E87E33";
@@ -43863,13 +43863,13 @@ createNode animCurveTA -n "IKArm_R_rotateY";
 		 219 69.770426813892328 227 68.526239303497235 233 68.526239303497235 240 62.393706947418067
 		 244 31.224984788256513 265 18.754817680647854 298 18.754817680647854 337 18.754817680647854
 		 348 0.72664956337418185;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 0.98143251724505576 1 1 0.67236831620552784 
+	setAttr -s 11 ".kix[0:10]"  1 1 0.98143251724505576 1 1 0.67236831620552784
 		0.80145447264366254 1 1 1 1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 -0.19180775295600952 0 0 -0.74021675701306788 
+	setAttr -s 11 ".kiy[0:10]"  0 0 -0.19180775295600952 0 0 -0.74021675701306788
 		-0.59805579027333955 0 0 0 0;
 createNode animCurveTA -n "IKArm_R_rotateZ";
 	rename -uid "70BC23E6-42AD-D985-CEEA-6DAF726F7C7E";
@@ -43879,13 +43879,13 @@ createNode animCurveTA -n "IKArm_R_rotateZ";
 		 219 270.69322309396227 227 290.35161159102717 233 290.35161159102717 240 292.78464353125457
 		 244 360.24521371460696 265 422.05369310419337 298 422.05369310419337 337 422.05369310419337
 		 348 438.41829483380741;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 0.88172444489178559 1 1 0.91640050878203405 
+	setAttr -s 11 ".kix[0:10]"  1 1 0.88172444489178559 1 1 0.91640050878203405
 		0.26100035093787943 1 1 1 1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 0.47176477537038797 0 0 0.40026254821557949 
+	setAttr -s 11 ".kiy[0:10]"  0 0 0.47176477537038797 0 0 0.40026254821557949
 		0.96533870574545178 0 0 0 0;
 createNode animCurveTL -n "IKArm_R_translateX";
 	rename -uid "F052A9F9-42C7-15D5-1168-8C9002290553";
@@ -43895,13 +43895,13 @@ createNode animCurveTL -n "IKArm_R_translateX";
 		 219 20.194756152609276 227 20.194756152609276 233 20.194756152609276 240 23.770188787525139
 		 244 26.851201786157546 265 38.317211194463503 298 38.317211194463503 337 38.317211194463503
 		 348 28.614163834984357;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.068692919184656184 0.056646654081340342 
+	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.068692919184656184 0.056646654081340342
 		0.20010750145793182 1 1 1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0.9976378515543054 0.99839428913700679 
+	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0.9976378515543054 0.99839428913700679
 		-0.9797739473267616 0 0 0;
 createNode animCurveTL -n "IKArm_R_translateY";
 	rename -uid "284C9A2E-4487-B4A9-5EFA-EC909D871B0B";
@@ -43911,13 +43911,13 @@ createNode animCurveTL -n "IKArm_R_translateY";
 		 219 -101.47223474932112 227 -101.47223474932112 233 -101.47223474932112 240 -108.71555188285836
 		 244 -122.15576421386351 265 -133.4094631272269 298 -133.4094631272269 337 -133.4094631272269
 		 348 -145.93899459842351;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.022153900106577157 0.025908704351740669 
+	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.022153900106577157 0.025908704351740669
 		0.39203144183059419 1 1 1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 -0.99975457223764064 -0.99966431317658533 
+	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 -0.99975457223764064 -0.99966431317658533
 		0.91995181863846853 0 0 0;
 createNode animCurveTL -n "IKArm_R_translateZ";
 	rename -uid "3E89797F-4945-0464-271A-3FAF268B73F6";
@@ -43927,13 +43927,13 @@ createNode animCurveTL -n "IKArm_R_translateZ";
 		 219 -69.970310465108312 227 -69.970310465108312 233 -69.970310465108312 240 -82.665573071094869
 		 244 -91.074265168238966 265 -47.829429263909439 298 -47.829429263909439 337 -47.829429263909439
 		 348 -62.057917357215821;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
-	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.021712768422834504 1 1 1 1 
+	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 0.021712768422834504 1 1 1 1
 		1;
-	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 -0.99976425005468972 0 0 0 0 
+	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 -0.99976425005468972 0 0 0 0
 		0;
 createNode animCurveTU -n "IKArm_R_scaleX";
 	rename -uid "1F85532C-4FC4-343C-98B6-3E9805FB9EE1";
@@ -43941,9 +43941,9 @@ createNode animCurveTU -n "IKArm_R_scaleX";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 1 202 1 219 1 227 1 233 1 240 1 244 1
 		 265 1 298 1 337 1 348 1;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -43953,9 +43953,9 @@ createNode animCurveTU -n "IKArm_R_scaleY";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 1 202 1 219 1 227 1 233 1 240 1 244 1
 		 265 1 298 1 337 1 348 1;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -43965,9 +43965,9 @@ createNode animCurveTU -n "IKArm_R_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 1 202 1 219 1 227 1 233 1 240 1 244 1
 		 265 1 298 1 337 1 348 1;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -43977,9 +43977,9 @@ createNode animCurveTU -n "IKArm_R_followMain";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 10 202 10 219 10 227 10 233 10 240 10
 		 244 10 265 10 298 10 337 10 348 10;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -43989,9 +43989,9 @@ createNode animCurveTU -n "IKArm_R_followRoot";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 202 0 219 0 227 0 233 0 240 0 244 0
 		 265 0 298 0 337 0 348 0;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44001,9 +44001,9 @@ createNode animCurveTU -n "IKArm_R_stretchy";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 202 0 219 0 227 0 233 0 240 0 244 0
 		 265 0 298 0 337 0 348 0;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44013,9 +44013,9 @@ createNode animCurveTU -n "IKArm_R_antiPop";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 202 0 219 0 227 0 233 0 240 0 244 0
 		 265 0 298 0 337 0 348 0;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44025,9 +44025,9 @@ createNode animCurveTU -n "IKArm_R_Lenght1";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 1 202 1 219 1 227 1 233 1 240 1 244 1
 		 265 1 298 1 337 1 348 1;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44037,9 +44037,9 @@ createNode animCurveTU -n "IKArm_R_Lenght2";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 1 202 1 219 1 227 1 233 1 240 1 244 1
 		 265 1 298 1 337 1 348 1;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44049,9 +44049,9 @@ createNode animCurveTU -n "IKArm_R_Fatness1";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 202 0 219 0 227 0 233 0 240 0 244 0
 		 265 0 298 0 337 0 348 0;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44061,9 +44061,9 @@ createNode animCurveTU -n "IKArm_R_Fatness2";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 0 202 0 219 0 227 0 233 0 240 0 244 0
 		 265 0 298 0 337 0 348 0;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44073,9 +44073,9 @@ createNode animCurveTU -n "IKArm_R_volume";
 	setAttr ".wgt" no;
 	setAttr -s 11 ".ktv[0:10]"  1 10 202 10 219 10 227 10 233 10 240 10
 		 244 10 265 10 298 10 337 10 348 10;
-	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1 
+	setAttr -s 11 ".kit[0:10]"  1 18 18 18 18 18 27 1
 		18 27 1;
-	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5 
+	setAttr -s 11 ".kot[1:10]"  18 5 5 5 5 27 5 5
 		27 5;
 	setAttr -s 11 ".kix[0:10]"  1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 11 ".kiy[0:10]"  0 0 0 0 0 0 0 0 0 0 0;
@@ -44087,9 +44087,9 @@ createNode animCurveTA -n "IKArm_L_rotateX";
 		 145 -96.921511610124142 169 -96.921511610124142 186 -96.921511610124142 202 -146.5366095920478
 		 223 -146.5366095920478 256 -146.5366095920478 271 -195.69651712467362 322 -195.69651712467362
 		 337 -195.69651712467362 348 -176.07990201088558;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44101,9 +44101,9 @@ createNode animCurveTA -n "IKArm_L_rotateY";
 		 145 -22.768382360305012 169 -22.768382360305012 186 -22.768382360305012 202 -105.79741075258455
 		 223 -105.79741075258455 256 -105.79741075258455 271 -140.76815308169105 322 -140.76815308169105
 		 337 -140.76815308169105 348 -183.0787719360579;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44115,9 +44115,9 @@ createNode animCurveTA -n "IKArm_L_rotateZ";
 		 145 31.766594471025673 169 31.766594471025673 186 31.766594471025673 202 76.063498537500905
 		 223 76.063498537500905 256 76.063498537500905 271 159.59936997542465 322 159.59936997542465
 		 337 159.59936997542465 348 96.12026846528957;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44129,9 +44129,9 @@ createNode animCurveTL -n "IKArm_L_translateX";
 		 145 -38.315400258267253 169 -38.315400258267253 186 -38.315400258267253 202 -47.142544765378616
 		 223 -47.142544765378616 256 -47.142544765378616 271 -58.95857128954227 322 -58.95857128954227
 		 337 -58.95857128954227 348 -40.484512544902586;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44143,9 +44143,9 @@ createNode animCurveTL -n "IKArm_L_translateY";
 		 145 -120.40703123242093 169 -120.40703123242093 186 -120.40703123242093 202 -136.9908431740345
 		 223 -136.9908431740345 256 -136.9908431740345 271 -146.7013453129085 322 -146.7013453129085
 		 337 -146.7013453129085 348 -146.33630231496707;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44157,9 +44157,9 @@ createNode animCurveTL -n "IKArm_L_translateZ";
 		 145 -90.628438483061771 169 -90.628438483061771 186 -90.628438483061771 202 -61.633343701783005
 		 223 -61.633343701783005 256 -61.633343701783005 271 -109.59078957754464 322 -109.59078957754464
 		 337 -109.59078957754464 348 -64.197554162515274;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		1 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44169,9 +44169,9 @@ createNode animCurveTU -n "IKArm_L_scaleX";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 1 137 1 145 1 169 1 186 1 202 1 223 1
 		 256 1 271 1 322 1 337 1 348 1;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44181,9 +44181,9 @@ createNode animCurveTU -n "IKArm_L_scaleY";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 1 137 1 145 1 169 1 186 1 202 1 223 1
 		 256 1 271 1 322 1 337 1 348 1;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44193,9 +44193,9 @@ createNode animCurveTU -n "IKArm_L_scaleZ";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 1 137 1 145 1 169 1 186 1 202 1 223 1
 		 256 1 271 1 322 1 337 1 348 1;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44205,9 +44205,9 @@ createNode animCurveTU -n "IKArm_L_followMain";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 10 137 10 145 10 169 10 186 10 202 10
 		 223 10 256 10 271 10 322 10 337 10 348 10;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44217,9 +44217,9 @@ createNode animCurveTU -n "IKArm_L_followRoot";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 137 0 145 0 169 0 186 0 202 0 223 0
 		 256 0 271 0 322 0 337 0 348 0;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44229,9 +44229,9 @@ createNode animCurveTU -n "IKArm_L_stretchy";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 137 0 145 0 169 0 186 0 202 0 223 0
 		 256 0 271 0 322 0 337 0 348 0;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44241,9 +44241,9 @@ createNode animCurveTU -n "IKArm_L_antiPop";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 137 0 145 0 169 0 186 0 202 0 223 0
 		 256 0 271 0 322 0 337 0 348 0;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44254,9 +44254,9 @@ createNode animCurveTU -n "IKArm_L_Lenght1";
 	setAttr -s 12 ".ktv[0:11]"  1 1 137 1 145 1 169 1 186 1 202 1.02452392578125
 		 223 1.02452392578125 256 1.02452392578125 271 1.9245239257812501 322 1.9245239257812501
 		 337 1.9245239257812501 348 1;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44266,9 +44266,9 @@ createNode animCurveTU -n "IKArm_L_Lenght2";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 1 137 1 145 1 169 1 186 1 202 1 223 1
 		 256 1 271 1 322 1 337 1 348 1;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44278,9 +44278,9 @@ createNode animCurveTU -n "IKArm_L_Fatness1";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 137 0 145 0 169 0 186 0 202 0 223 0
 		 256 0 271 0 322 0 337 0 348 0;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44290,9 +44290,9 @@ createNode animCurveTU -n "IKArm_L_Fatness2";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 0 137 0 145 0 169 0 186 0 202 0 223 0
 		 256 0 271 0 322 0 337 0 348 0;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -44302,9 +44302,9 @@ createNode animCurveTU -n "IKArm_L_volume";
 	setAttr ".wgt" no;
 	setAttr -s 12 ".ktv[0:11]"  1 10 137 10 145 10 169 10 186 10 202 10
 		 223 10 256 10 271 10 322 10 337 10 348 10;
-	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18 
+	setAttr -s 12 ".kit[0:11]"  1 27 27 27 27 27 18 18
 		18 18 27 1;
-	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18 
+	setAttr -s 12 ".kot[0:11]"  5 27 27 27 27 27 5 18
 		5 18 27 5;
 	setAttr -s 12 ".kix[0:11]"  1 1 1 1 1 1 1 1 1 1 1 1;
 	setAttr -s 12 ".kiy[0:11]"  0 0 0 0 0 0 0 0 0 0 0 0;
@@ -45454,18 +45454,18 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		1 1 1
 		1 4 1
 		1 4 1
-		4 4 0.22589535059942278 8 0.040787977722131108 11 0.1823222566102228 
+		4 4 0.22589535059942278 8 0.040787977722131108 11 0.1823222566102228
 		14 0.55099441506822333
-		4 4 0.030941480018125099 8 0.013335586813882673 11 0.78413724241635474 
+		4 4 0.030941480018125099 8 0.013335586813882673 11 0.78413724241635474
 		14 0.17158569075163749
 		3 4 0.008882001450494904 11 0.34773500859556911 14 0.64338298995393595
 		2 14 0.9651212635356814 15 0.034878736464318605
 		1 4 1
 		1 4 1
 		2 14 0.96699007466766407 15 0.033009925332335932
-		4 4 0.021206138667475019 8 0.16792089585954995 11 0.80145308937134752 
+		4 4 0.021206138667475019 8 0.16792089585954995 11 0.80145308937134752
 		14 0.009419876101627497
-		4 4 0.21723189384761898 8 0.56921995060830721 11 0.17783895979848027 
+		4 4 0.21723189384761898 8 0.56921995060830721 11 0.17783895979848027
 		14 0.03570919574559353
 		2 4 0.054514137052321061 8 0.94548586294767889
 		3 4 0.0096587617115736213 8 0.6306670568658832 11 0.35967418142254315
@@ -45474,17 +45474,17 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		1 4 1
 		1 4 1
 		1 4 1
-		4 4 0.070762264891775339 8 0.41574023066108112 11 0.50856460131617975 
+		4 4 0.070762264891775339 8 0.41574023066108112 11 0.50856460131617975
 		14 0.0049329031309638463
 		1 4 1
 		1 4 1
 		3 4 0.012755246102970933 14 0.98215376409937483 15 0.0050909897976542948
 		2 14 0.73399099424302872 15 0.26600900575697128
-		4 4 0.059135203261347781 11 0.011155245974857569 14 0.9226372513399671 
+		4 4 0.059135203261347781 11 0.011155245974857569 14 0.9226372513399671
 		15 0.0070722994238275379
 		3 11 0.084396777038477561 14 0.88933555105172446 15 0.026267671909798
 		2 14 0.50329806906605801 15 0.49670193093394199
-		4 4 0.053673053343365806 8 0.84855912710862968 9 0.0068073829242829148 
+		4 4 0.053673053343365806 8 0.84855912710862968 9 0.0068073829242829148
 		11 0.090960436623721594
 		3 8 0.86453138763712944 9 0.007525497865163858 11 0.12794311449770671
 		2 8 0.70551632774950079 9 0.29448367225049926
@@ -45492,22 +45492,22 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		2 8 0.50695763787174342 9 0.49304236212825664
 		3 8 0.88767224993578997 9 0.029814749308326907 11 0.082513000755883095
 		3 11 0.13664134039459583 14 0.85365906412533277 15 0.0096995954800713907
-		4 4 0.039446464772276001 11 0.093856566551894394 14 0.85932385505927156 
+		4 4 0.039446464772276001 11 0.093856566551894394 14 0.85932385505927156
 		15 0.0073731136165580422
 		1 4 1
 		2 4 0.1166807511026363 8 0.88331924889736368
 		1 4 1
 		2 8 0.73587618331365945 9 0.2641238166863405
 		3 4 0.025486217699404422 8 0.96630022262137194 9 0.0082135596792236743
-		4 4 0.072718408089933545 8 0.90958411722200216 9 0.0079539342843523101 
+		4 4 0.072718408089933545 8 0.90958411722200216 9 0.0079539342843523101
 		11 0.0097435404037119876
 		3 8 0.12181703313040859 11 0.86721279499923509 12 0.010970171870356364
-		5 4 0.029915595906562256 8 0.082766817106004448 11 0.85581334900885797 
+		5 4 0.029915595906562256 8 0.082766817106004448 11 0.85581334900885797
 		12 0.0079567553678511153 14 0.023547482610724216
 		2 11 0.734393456093835 12 0.265606543906165
 		2 11 0.73044349907270834 12 0.26955650092729172
 		2 11 0.73136401758256542 12 0.26863598241743464
-		5 4 0.025556099729221939 8 0.019673954362427731 11 0.86173850792304063 
+		5 4 0.025556099729221939 8 0.019673954362427731 11 0.86173850792304063
 		12 0.007694410962511355 14 0.085337027022798315
 		3 11 0.87851902442431262 12 0.0074027681022591748 14 0.1140782074734282
 		2 11 0.70607708787916612 12 0.29392291212083388
@@ -46970,18 +46970,18 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		1 1 1
 		1 19 1
 		1 19 1
-		4 19 0.22589535059942278 23 0.040787977722131108 26 0.1823222566102228 
+		4 19 0.22589535059942278 23 0.040787977722131108 26 0.1823222566102228
 		29 0.55099441506822333
-		4 19 0.030941480018125099 23 0.013335586813882673 26 0.78413724241635474 
+		4 19 0.030941480018125099 23 0.013335586813882673 26 0.78413724241635474
 		29 0.17158569075163749
 		3 19 0.008882001450494904 26 0.34773500859556911 29 0.64338298995393595
 		2 29 0.9651212635356814 30 0.034878736464318605
 		1 19 1
 		1 19 1
 		2 29 0.96699007466766407 30 0.033009925332335932
-		4 19 0.021206138667475019 23 0.16792089585954995 26 0.80145308937134752 
+		4 19 0.021206138667475019 23 0.16792089585954995 26 0.80145308937134752
 		29 0.009419876101627497
-		4 19 0.21723189384761898 23 0.56921995060830721 26 0.17783895979848027 
+		4 19 0.21723189384761898 23 0.56921995060830721 26 0.17783895979848027
 		29 0.03570919574559353
 		2 19 0.054514137052321061 23 0.94548586294767889
 		3 19 0.0096587617115736213 23 0.6306670568658832 26 0.35967418142254315
@@ -46990,17 +46990,17 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		1 19 1
 		1 19 1
 		1 19 1
-		4 19 0.070762264891775339 23 0.41574023066108112 26 0.50856460131617975 
+		4 19 0.070762264891775339 23 0.41574023066108112 26 0.50856460131617975
 		29 0.0049329031309638463
 		1 19 1
 		1 19 1
 		3 19 0.012755246102970933 29 0.98215376409937483 30 0.0050909897976542948
 		2 29 0.73399099424302872 30 0.26600900575697128
-		4 19 0.059135203261347781 26 0.011155245974857569 29 0.9226372513399671 
+		4 19 0.059135203261347781 26 0.011155245974857569 29 0.9226372513399671
 		30 0.0070722994238275379
 		3 26 0.084396777038477561 29 0.88933555105172446 30 0.026267671909798
 		2 29 0.50329806906605801 30 0.49670193093394199
-		4 19 0.053673053343365806 23 0.84855912710862968 24 0.0068073829242829148 
+		4 19 0.053673053343365806 23 0.84855912710862968 24 0.0068073829242829148
 		26 0.090960436623721594
 		3 23 0.86453138763712944 24 0.007525497865163858 26 0.12794311449770671
 		2 23 0.70551632774950079 24 0.29448367225049926
@@ -47008,22 +47008,22 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 		2 23 0.50695763787174342 24 0.49304236212825664
 		3 23 0.88767224993578997 24 0.029814749308326907 26 0.082513000755883095
 		3 26 0.13664134039459583 29 0.85365906412533277 30 0.0096995954800713907
-		4 19 0.039446464772276001 26 0.093856566551894394 29 0.85932385505927156 
+		4 19 0.039446464772276001 26 0.093856566551894394 29 0.85932385505927156
 		30 0.0073731136165580422
 		1 19 1
 		2 19 0.1166807511026363 23 0.88331924889736368
 		1 19 1
 		2 23 0.73587618331365945 24 0.2641238166863405
 		3 19 0.025486217699404422 23 0.96630022262137194 24 0.0082135596792236743
-		4 19 0.072718408089933545 23 0.90958411722200216 24 0.0079539342843523101 
+		4 19 0.072718408089933545 23 0.90958411722200216 24 0.0079539342843523101
 		26 0.0097435404037119876
 		3 23 0.12181703313040859 26 0.86721279499923509 27 0.010970171870356364
-		5 19 0.029915595906562256 23 0.082766817106004448 26 0.85581334900885797 
+		5 19 0.029915595906562256 23 0.082766817106004448 26 0.85581334900885797
 		27 0.0079567553678511153 29 0.023547482610724216
 		2 26 0.734393456093835 27 0.265606543906165
 		2 26 0.73044349907270834 27 0.26955650092729172
 		2 26 0.73136401758256542 27 0.26863598241743464
-		5 19 0.025556099729221939 23 0.019673954362427731 26 0.86173850792304063 
+		5 19 0.025556099729221939 23 0.019673954362427731 26 0.86173850792304063
 		27 0.007694410962511355 29 0.085337027022798315
 		3 26 0.87851902442431262 27 0.0074027681022591748 29 0.1140782074734282
 		2 26 0.70607708787916612 27 0.29392291212083388
@@ -47754,7 +47754,7 @@ createNode skinCluster -n "Odie_rig:skinCluster1";
 	setAttr ".gm" -type "matrix" 40.000000999999997 0 0 0 0 0 -40.000000999999997 0 0 40.000000999999997 0 0
 		 0 0 0 1;
 	setAttr -s 40 ".ma";
-	setAttr -s 40 ".dpf[0:39]"  4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+	setAttr -s 40 ".dpf[0:39]"  4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
 		4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4;
 	setAttr -s 40 ".lw";
 	setAttr -s 40 ".lw";
@@ -47895,7 +47895,7 @@ createNode dagPose -n "Odie_rig:bindPose1";
 		 0.99999998497278009 0.99999998497274012 no;
 	setAttr ".xm[20]" -type "matrix" "xform" 0.99999999999999989 0.99999996841125416
 		 0.99999996843311356 0.01556220364353047 8.7196531628688205e-10 4.9553307325752914e-09 0 1.1874304095549348e-07
-		 0.18610733647013367 3.2791067604287516e-09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 0.18610733647013367 3.2791067604287516e-09 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 0 1 1.0000000000000002 0.99999998342402718 1.0000000430794267 no;
 	setAttr ".xm[21]" -type "matrix" "xform" 0.99999997956262143 1.0000000539070022 1.0000000165961092 -0.95531616031012057
 		 0.52359953627851574 -0.61547948900159699 0 -0.033386010185322279 0.22266286605907726
@@ -47907,7 +47907,7 @@ createNode dagPose -n "Odie_rig:bindPose1";
 		 0.99999994609300069 0.99999998340389107 no;
 	setAttr ".xm[23]" -type "matrix" "xform" 0.99999997019767461 0.99999991570629354
 		 1.000000002556642 -1.2041451651620689e-07 -2.9802334322593284e-08 -8.4293694538597416e-08 0 1.0488182866641438e-07
-		 0.068000034518256536 -1.0891715995775542e-07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 0.068000034518256536 -1.0891715995775542e-07 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 0 1 0.99999998765566256 1.0000000000003291 1.0000000123446495 no;
 	setAttr ".xm[24]" -type "matrix" "xform" 1.0000000000000004 0.99999999999999989 0.99999999999999989 2.2278696185225567e-13
 		 9.4897251447997183e-10 4.9411617002596094e-09 0 -0.030444042943700067 0.35399657482258862
@@ -47955,7 +47955,7 @@ createNode dagPose -n "Odie_rig:bindPose1";
 		 0.99999992394687909 0.99999998354242869 no;
 	setAttr ".xm[35]" -type "matrix" "xform" 0.99999999999999978 0.99999999644521143
 		 1.0000000322556 -1.2067052347197855 1.6734405785306188e-07 -1.5295516962797489e-07 0 2.140580240839185e-09
-		 0.40012768193010373 9.3422342691690252e-10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 0.40012768193010373 9.3422342691690252e-10 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 0 1 1 0.99999997577791533 0.99999997599420964 no;
 	setAttr ".xm[36]" -type "matrix" "xform" 1.0000000000000113 1.0000000760531267 1.0000000164575715 -0.017453376215737192
 		 1.5097280936515625e-07 3.1415926509545402 0 -0.16613881289958954 0.0025280117988587536
@@ -47979,7 +47979,7 @@ createNode dagPose -n "Odie_rig:bindPose1";
 		 1.0000000000000004 1.0000000000000004 no;
 	setAttr -s 41 ".m";
 	setAttr -s 41 ".p";
-	setAttr -s 41 ".g[0:40]" yes no no no no no no no no no no no no no 
+	setAttr -s 41 ".g[0:40]" yes no no no no no no no no no no no no no
 		no no no no no no no no no no no no no no no no no no no no no no no no no no no;
 	setAttr ".bp" yes;
 createNode ikRPsolver -n "Odie_rig:ikRPsolver";
@@ -49067,8 +49067,8 @@ createNode animCurveUU -n "Odie_rig:IKdistanceArm_RShape_antiPop";
 	rename -uid "8F0F5EFB-4FD6-2C78-4E17-C88EE1CDF3E9";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  3.5205135345458984 35.205135601703887 24.643594741821289 
-		35.205135601703887 29.924365997314453 31.684622041533498 35.205135345458984 35.205135601703887 
+	setAttr -s 5 ".ktv[0:4]"  3.5205135345458984 35.205135601703887 24.643594741821289
+		35.205135601703887 29.924365997314453 31.684622041533498 35.205135345458984 35.205135601703887
 		42.246162414550781 42.246162722044666;
 	setAttr -s 5 ".kit[1:4]"  2 9 9 9;
 	setAttr -s 5 ".kot[3:4]"  2 9;
@@ -49077,7 +49077,7 @@ createNode animCurveUU -n "Odie_rig:IKdistanceArm_RShape_normal";
 	rename -uid "E59C54A0-43B2-1A0E-713C-C38497379FF3";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  35.205135345458984 35.205135601703887 42.246162414550781 
+	setAttr -s 2 ".ktv[0:1]"  35.205135345458984 35.205135601703887 42.246162414550781
 		42.246162722044666;
 	setAttr -s 2 ".kot[0:1]"  2 9;
 	setAttr ".pst" 1;
@@ -49183,8 +49183,8 @@ createNode animCurveUU -n "Odie_rig:IKdistanceLeg_RShape_antiPop";
 	rename -uid "0B1D022B-4E1F-669B-4806-48AC960F595B";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  8.1404399871826172 81.404395702816018 56.983078002929688 
-		81.404395702816018 69.193733215332031 73.263956132534418 81.404396057128906 81.404395702816018 
+	setAttr -s 5 ".ktv[0:4]"  8.1404399871826172 81.404395702816018 56.983078002929688
+		81.404395702816018 69.193733215332031 73.263956132534418 81.404396057128906 81.404395702816018
 		97.685272216796875 97.685274843379219;
 	setAttr -s 5 ".kit[1:4]"  2 9 9 9;
 	setAttr -s 5 ".kot[3:4]"  2 9;
@@ -49193,7 +49193,7 @@ createNode animCurveUU -n "Odie_rig:IKdistanceLeg_RShape_normal";
 	rename -uid "25A32A98-4DA1-4A2F-EDA0-7FBCD621228B";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  81.404396057128906 81.404395702816018 97.685272216796875 
+	setAttr -s 2 ".ktv[0:1]"  81.404396057128906 81.404395702816018 97.685272216796875
 		97.685274843379219;
 	setAttr -s 2 ".kot[0:1]"  2 9;
 	setAttr ".pst" 1;
@@ -49299,8 +49299,8 @@ createNode animCurveUU -n "Odie_rig:IKdistanceArm_LShape_antiPop";
 	rename -uid "16FA7CDD-453A-74A7-7698-E28C8DA6D1D0";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  3.5205135345458984 35.205135601703887 24.643594741821289 
-		35.205135601703887 29.924365997314453 31.684622041533498 35.205135345458984 35.205135601703887 
+	setAttr -s 5 ".ktv[0:4]"  3.5205135345458984 35.205135601703887 24.643594741821289
+		35.205135601703887 29.924365997314453 31.684622041533498 35.205135345458984 35.205135601703887
 		42.246162414550781 42.246162722044666;
 	setAttr -s 5 ".kit[1:4]"  2 9 9 9;
 	setAttr -s 5 ".kot[3:4]"  2 9;
@@ -49309,7 +49309,7 @@ createNode animCurveUU -n "Odie_rig:IKdistanceArm_LShape_normal";
 	rename -uid "1D96EBB3-4441-2F2F-4314-5697B7693519";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  35.205135345458984 35.205135601703887 42.246162414550781 
+	setAttr -s 2 ".ktv[0:1]"  35.205135345458984 35.205135601703887 42.246162414550781
 		42.246162722044666;
 	setAttr -s 2 ".kot[0:1]"  2 9;
 	setAttr ".pst" 1;
@@ -49417,8 +49417,8 @@ createNode animCurveUU -n "Odie_rig:IKdistanceLeg_LShape_antiPop";
 	rename -uid "E5B4DAE9-4617-C3D5-4DF7-62B2124A8A3A";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 5 ".ktv[0:4]"  8.1404399871826172 81.404395702816018 56.983078002929688 
-		81.404395702816018 69.193733215332031 73.263956132534418 81.404396057128906 81.404395702816018 
+	setAttr -s 5 ".ktv[0:4]"  8.1404399871826172 81.404395702816018 56.983078002929688
+		81.404395702816018 69.193733215332031 73.263956132534418 81.404396057128906 81.404395702816018
 		97.685272216796875 97.685274843379219;
 	setAttr -s 5 ".kit[1:4]"  2 9 9 9;
 	setAttr -s 5 ".kot[3:4]"  2 9;
@@ -49427,7 +49427,7 @@ createNode animCurveUU -n "Odie_rig:IKdistanceLeg_LShape_normal";
 	rename -uid "727B32D2-42F6-4E94-9B97-B2A0D780D7A0";
 	setAttr ".tan" 9;
 	setAttr ".wgt" no;
-	setAttr -s 2 ".ktv[0:1]"  81.404396057128906 81.404395702816018 97.685272216796875 
+	setAttr -s 2 ".ktv[0:1]"  81.404396057128906 81.404395702816018 97.685272216796875
 		97.685274843379219;
 	setAttr -s 2 ".kot[0:1]"  2 9;
 	setAttr ".pst" 1;
@@ -51290,18 +51290,18 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		1 21 1
 		1 15 1
 		1 15 1
-		4 3 0.1823222566102228 10 0.040787977722131108 13 0.55099441506822333 
+		4 3 0.1823222566102228 10 0.040787977722131108 13 0.55099441506822333
 		15 0.22589535059942278
-		4 3 0.78413724241635474 10 0.013335586813882673 13 0.17158569075163749 
+		4 3 0.78413724241635474 10 0.013335586813882673 13 0.17158569075163749
 		15 0.030941480018125099
 		3 3 0.34773500859556911 13 0.64338298995393595 15 0.008882001450494904
 		2 11 0.034878736464318605 13 0.9651212635356814
 		1 15 1
 		1 15 1
 		2 11 0.033009925332335932 13 0.96699007466766407
-		4 3 0.80145308937134752 10 0.16792089585954995 13 0.009419876101627497 
+		4 3 0.80145308937134752 10 0.16792089585954995 13 0.009419876101627497
 		15 0.021206138667475019
-		4 3 0.17783895979848027 10 0.56921995060830721 13 0.03570919574559353 
+		4 3 0.17783895979848027 10 0.56921995060830721 13 0.03570919574559353
 		15 0.21723189384761898
 		2 10 0.94548586294767889 15 0.054514137052321061
 		3 3 0.35967418142254315 10 0.6306670568658832 15 0.0096587617115736213
@@ -51310,17 +51310,17 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		1 15 1
 		1 15 1
 		1 15 1
-		4 3 0.50856460131617975 10 0.41574023066108112 13 0.0049329031309638463 
+		4 3 0.50856460131617975 10 0.41574023066108112 13 0.0049329031309638463
 		15 0.070762264891775339
 		1 15 1
 		1 15 1
 		3 11 0.0050909897976542948 13 0.98215376409937483 15 0.012755246102970933
 		2 11 0.26600900575697128 13 0.73399099424302872
-		4 3 0.011155245974857569 11 0.0070722994238275379 13 0.9226372513399671 
+		4 3 0.011155245974857569 11 0.0070722994238275379 13 0.9226372513399671
 		15 0.059135203261347781
 		3 3 0.084396777038477561 11 0.026267671909798 13 0.88933555105172446
 		2 11 0.49670193093394199 13 0.50329806906605801
-		4 3 0.090960436623721594 7 0.0068073829242829148 10 0.84855912710862968 
+		4 3 0.090960436623721594 7 0.0068073829242829148 10 0.84855912710862968
 		15 0.053673053343365806
 		3 3 0.12794311449770671 7 0.007525497865163858 10 0.86453138763712944
 		2 7 0.29448367225049926 10 0.70551632774950079
@@ -51328,22 +51328,22 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		2 7 0.49304236212825664 10 0.50695763787174342
 		3 3 0.082513000755883095 7 0.029814749308326907 10 0.88767224993578997
 		3 3 0.13664134039459583 11 0.0096995954800713907 13 0.85365906412533277
-		4 3 0.093856566551894394 11 0.0073731136165580422 13 0.85932385505927156 
+		4 3 0.093856566551894394 11 0.0073731136165580422 13 0.85932385505927156
 		15 0.039446464772276001
 		1 15 1
 		2 10 0.88331924889736368 15 0.1166807511026363
 		1 15 1
 		2 7 0.2641238166863405 10 0.73587618331365945
 		3 7 0.0082135596792236743 10 0.96630022262137194 15 0.025486217699404422
-		4 3 0.0097435404037119876 7 0.0079539342843523101 10 0.90958411722200216 
+		4 3 0.0097435404037119876 7 0.0079539342843523101 10 0.90958411722200216
 		15 0.072718408089933545
 		3 3 0.86721279499923509 5 0.010970171870356364 10 0.12181703313040859
-		5 3 0.85581334900885797 5 0.0079567553678511153 10 0.082766817106004448 
+		5 3 0.85581334900885797 5 0.0079567553678511153 10 0.082766817106004448
 		13 0.023547482610724216 15 0.029915595906562256
 		2 3 0.734393456093835 5 0.265606543906165
 		2 3 0.73044349907270834 5 0.26955650092729172
 		2 3 0.73136401758256542 5 0.26863598241743464
-		5 3 0.86173850792304063 5 0.007694410962511355 10 0.019673954362427731 
+		5 3 0.86173850792304063 5 0.007694410962511355 10 0.019673954362427731
 		13 0.085337027022798315 15 0.025556099729221939
 		3 3 0.87851902442431262 5 0.0074027681022591748 13 0.1140782074734282
 		2 3 0.70607708787916612 5 0.29392291212083388
@@ -52806,18 +52806,18 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		1 21 1
 		1 34 1
 		1 34 1
-		4 24 0.1823222566102228 30 0.040787977722131108 33 0.55099441506822333 
+		4 24 0.1823222566102228 30 0.040787977722131108 33 0.55099441506822333
 		34 0.22589535059942278
-		4 24 0.78413724241635474 30 0.013335586813882673 33 0.17158569075163749 
+		4 24 0.78413724241635474 30 0.013335586813882673 33 0.17158569075163749
 		34 0.030941480018125099
 		3 24 0.34773500859556911 33 0.64338298995393595 34 0.008882001450494904
 		2 32 0.034878736464318605 33 0.9651212635356814
 		1 34 1
 		1 34 1
 		2 32 0.033009925332335932 33 0.96699007466766407
-		4 24 0.80145308937134752 30 0.16792089585954995 33 0.009419876101627497 
+		4 24 0.80145308937134752 30 0.16792089585954995 33 0.009419876101627497
 		34 0.021206138667475019
-		4 24 0.17783895979848027 30 0.56921995060830721 33 0.03570919574559353 
+		4 24 0.17783895979848027 30 0.56921995060830721 33 0.03570919574559353
 		34 0.21723189384761898
 		2 30 0.94548586294767889 34 0.054514137052321061
 		3 24 0.35967418142254315 30 0.6306670568658832 34 0.0096587617115736213
@@ -52826,17 +52826,17 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		1 34 1
 		1 34 1
 		1 34 1
-		4 24 0.50856460131617975 30 0.41574023066108112 33 0.0049329031309638463 
+		4 24 0.50856460131617975 30 0.41574023066108112 33 0.0049329031309638463
 		34 0.070762264891775339
 		1 34 1
 		1 34 1
 		3 32 0.0050909897976542948 33 0.98215376409937483 34 0.012755246102970933
 		2 32 0.26600900575697128 33 0.73399099424302872
-		4 24 0.011155245974857569 32 0.0070722994238275379 33 0.9226372513399671 
+		4 24 0.011155245974857569 32 0.0070722994238275379 33 0.9226372513399671
 		34 0.059135203261347781
 		3 24 0.084396777038477561 32 0.026267671909798 33 0.88933555105172446
 		2 32 0.49670193093394199 33 0.50329806906605801
-		4 24 0.090960436623721594 29 0.0068073829242829148 30 0.84855912710862968 
+		4 24 0.090960436623721594 29 0.0068073829242829148 30 0.84855912710862968
 		34 0.053673053343365806
 		3 24 0.12794311449770671 29 0.007525497865163858 30 0.86453138763712944
 		2 29 0.29448367225049926 30 0.70551632774950079
@@ -52844,22 +52844,22 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		2 29 0.49304236212825664 30 0.50695763787174342
 		3 24 0.082513000755883095 29 0.029814749308326907 30 0.88767224993578997
 		3 24 0.13664134039459583 32 0.0096995954800713907 33 0.85365906412533277
-		4 24 0.093856566551894394 32 0.0073731136165580422 33 0.85932385505927156 
+		4 24 0.093856566551894394 32 0.0073731136165580422 33 0.85932385505927156
 		34 0.039446464772276001
 		1 34 1
 		2 30 0.88331924889736368 34 0.1166807511026363
 		1 34 1
 		2 29 0.2641238166863405 30 0.73587618331365945
 		3 29 0.0082135596792236743 30 0.96630022262137194 34 0.025486217699404422
-		4 24 0.0097435404037119876 29 0.0079539342843523101 30 0.90958411722200216 
+		4 24 0.0097435404037119876 29 0.0079539342843523101 30 0.90958411722200216
 		34 0.072718408089933545
 		3 24 0.86721279499923509 25 0.010970171870356364 30 0.12181703313040859
-		5 24 0.85581334900885797 25 0.0079567553678511153 30 0.082766817106004448 
+		5 24 0.85581334900885797 25 0.0079567553678511153 30 0.082766817106004448
 		33 0.023547482610724216 34 0.029915595906562256
 		2 24 0.734393456093835 25 0.265606543906165
 		2 24 0.73044349907270834 25 0.26955650092729172
 		2 24 0.73136401758256542 25 0.26863598241743464
-		5 24 0.86173850792304063 25 0.007694410962511355 30 0.019673954362427731 
+		5 24 0.86173850792304063 25 0.007694410962511355 30 0.019673954362427731
 		33 0.085337027022798315 34 0.025556099729221939
 		3 24 0.87851902442431262 25 0.0074027681022591748 33 0.1140782074734282
 		2 24 0.70607708787916612 25 0.29392291212083388
@@ -53626,7 +53626,7 @@ createNode skinCluster -n "Odie_rig:skinCluster3";
 		 -54.952885841903615 -1.6169884979693523 16.621383308361203 1;
 	setAttr ".gm" -type "matrix" 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1;
 	setAttr -s 41 ".ma";
-	setAttr -s 41 ".dpf[0:40]"  4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 
+	setAttr -s 41 ".dpf[0:40]"  4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4
 		4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4 4;
 	setAttr -s 41 ".lw";
 	setAttr -s 41 ".lw";
@@ -53655,7 +53655,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.70710679638047469 -0.00067860996674368179 0.70701019564978729 0.011666243967295209 1
 		 1 1 yes;
 	setAttr ".xm[5]" -type "matrix" "xform" 1 1 1 0 0 -5.5511151231257827e-17 5 -16.5943910721492
-		 1.383337888682945e-13 5.6616045185364783e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 1.383337888682945e-13 5.6616045185364783e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 0.016512405303754054 0.9998636609413728 1 1 1 yes;
 	setAttr ".xm[6]" -type "matrix" "xform" 1 1 1 0 0 0 5 -9.3053722381591797 0
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
@@ -53672,7 +53672,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.00067858819081378918 0.70710679652373987 -0.011666248134721058 0.70701019545863752 1
 		 1 1 yes;
 	setAttr ".xm[10]" -type "matrix" "xform" 1 1 1 0 0 -1.1796119636642288e-16 5 16.594391072149179
-		 -6.4059868520871532e-14 -5.6701310313655995e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 -6.4059868520871532e-14 -5.6701310313655995e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 0.016512405303756306 0.9998636609413728 1 1 1 yes;
 	setAttr ".xm[11]" -type "matrix" "xform" 1 1 1 0 0 0 5 9.3053722381591797 0
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 0 0 0 1 1 1 1 yes;
@@ -53685,7 +53685,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.0005270409035285534 -0.042818125693298459 -0.0023470367438708055 0.99907998766791528 1
 		 1 1 no;
 	setAttr ".xm[14]" -type "matrix" "xform" 1 1 1 -4.5211230592645535e-16 0 0 0 7.0123867470709342
-		 4.4408920985006262e-15 5.4001247917767614e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 4.4408920985006262e-15 5.4001247917767614e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0.00031799953477012772 0 0 0.99999994943814663 1 1 1 no;
 	setAttr ".xm[15]" -type "matrix" "xform" 1 1 1 1.5585406229479129e-16 -7.1710571644201605e-16
 		 -9.5282736236636319e-17 0 6.8000038565730705 -1.6545028458381239e-08 3.0245843163356767e-07 0
@@ -53731,7 +53731,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.0061052033766486359 0.9999805874347889 -0.00124413421477016 5.8097847530938425e-05 1
 		 1 1 yes;
 	setAttr ".xm[27]" -type "matrix" "xform" 1 1 1 0 0 -2.6879440610805269e-08 2 41.342868804931634
-		 7.9999316060508363e-09 2.2737367544323206e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 7.9999316060508363e-09 2.2737367544323206e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 -0.02295886518272848 0.99973641051505235 1 1 1 yes;
 	setAttr ".xm[28]" -type "matrix" "xform" 1 1 1 -4.5661836192645525e-12 -2.4117585906156122e-10
 		 2.6933842563306841e-08 3 40.061527252197259 7.7526562947127786e-09 2.6645352591003757e-13 0
@@ -53746,7 +53746,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.0005270409035285534 -0.042818125693298459 -0.0023470367438708055 0.99907998766791528 1
 		 1 1 no;
 	setAttr ".xm[31]" -type "matrix" "xform" 1 1 1 -5.7668713554503981e-16 0 0 0 -7.0123867470709342
-		 3.5527136788005009e-15 -4.8316906031686813e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 3.5527136788005009e-15 -4.8316906031686813e-13 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0.00031799953477012772 0 0 0.99999994943814663 1 1 1 no;
 	setAttr ".xm[32]" -type "matrix" "xform" 1 1 1 -1.2044130883598347e-15 2.5481630965429994e-16
 		 -3.7908112521418977e-16 0 -6.8000038565730989 1.6545030234738078e-08 -3.0245857374211482e-07 0
@@ -53784,7 +53784,7 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 -0.99998058743696361 -0.0061052033762057289 5.8055126983430484e-05 0.0012441344632049065 1
 		 1 1 yes;
 	setAttr ".xm[42]" -type "matrix" "xform" 1 1 1 0 0 -2.6879418961456288e-08 2 -41.342868804931648
-		 -7.9999347146753053e-09 1.9667822925839573e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1 
+		 -7.9999347146753053e-09 1.9667822925839573e-11 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1
 		0 0 -0.022958865182728314 0.99973641051505235 1 1 1 yes;
 	setAttr ".xm[43]" -type "matrix" "xform" 1 1 1 -4.5666813121975783e-12 -2.418580669322376e-10
 		 2.7039238883373382e-08 3 -40.061527252197273 -7.7518362839867905e-09 1.9014123608940281e-11 0
@@ -53792,8 +53792,8 @@ createNode dagPose -n "Odie_rig:bindPose2";
 		 1 1 yes;
 	setAttr -s 44 ".m";
 	setAttr -s 44 ".p";
-	setAttr -s 44 ".g[0:43]" yes yes yes no no no no no no no no no no 
-		no no no no no no no no no no no no no no no no no no no no no no no no no no no 
+	setAttr -s 44 ".g[0:43]" yes yes yes no no no no no no no no no no
+		no no no no no no no no no no no no no no no no no no no no no no no no no no no
 		no no no no;
 	setAttr ".bp" yes;
 createNode multiplyDivide -n "Odie_rig:GameEngineScalingSSCMPD2Antenna1_R";
@@ -59849,15 +59849,15 @@ connectAttr "Odie_rig:Wrist_L_orientConstraint1.iog" "Odie_rig:AllSet.dsm" -na;
 connectAttr "Odie_rig:Wrist_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm" -na;
 connectAttr "Odie_rig:RingFinger1_L_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger1_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger1_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:RingFinger2_L_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger2_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger2_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:RingFinger3_L_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger3_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger3_L_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:IndexFinger1_L_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
@@ -59917,15 +59917,15 @@ connectAttr "Odie_rig:Wrist_R_orientConstraint1.iog" "Odie_rig:AllSet.dsm" -na;
 connectAttr "Odie_rig:Wrist_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm" -na;
 connectAttr "Odie_rig:RingFinger1_R_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger1_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger1_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:RingFinger2_R_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger2_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger2_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:RingFinger3_R_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
-connectAttr "Odie_rig:RingFinger3_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm" 
+connectAttr "Odie_rig:RingFinger3_R_pointConstraint1.iog" "Odie_rig:AllSet.dsm"
 		-na;
 connectAttr "Odie_rig:IndexFinger1_R_orientConstraint1.iog" "Odie_rig:AllSet.dsm"
 		 -na;
@@ -60392,7 +60392,7 @@ connectAttr "Odie_rig:SDKFKThumbFinger2_L_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKThumbFinger2_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKThumbFinger2_L_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKThumbFinger2_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKThumbFinger2_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60402,7 +60402,7 @@ connectAttr "Odie_rig:SDKFKThumbFinger3_L_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKThumbFinger3_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKThumbFinger3_L_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKThumbFinger3_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKThumbFinger3_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60444,7 +60444,7 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger3_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger3_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger3_L_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger3_L_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKMiddleFinger2_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60454,7 +60454,7 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger2_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger2_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger2_L_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger2_L_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKMiddleFinger1_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60464,13 +60464,13 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger1_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger1_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger1_L_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger1_L_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger1_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger1_L_rotateY1.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60478,7 +60478,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger2_L_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger2_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger2_L_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger2_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger2_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60488,7 +60488,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger3_L_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger3_L_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger3_L_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger3_L_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger3_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60508,7 +60508,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger1_L_rotateZ_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateZ_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateZ.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger1_L_rotateZ.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger1_LScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60518,7 +60518,7 @@ connectAttr "Odie_rig:SDKFKThumbFinger2_R_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKThumbFinger2_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKThumbFinger2_R_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKThumbFinger2_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKThumbFinger2_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60528,7 +60528,7 @@ connectAttr "Odie_rig:SDKFKThumbFinger3_R_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKThumbFinger3_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKThumbFinger3_R_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKThumbFinger3_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKThumbFinger3_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60570,7 +60570,7 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger1_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger1_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger1_R_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger1_R_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKMiddleFinger3_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60580,7 +60580,7 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger3_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger3_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger3_R_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger3_R_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKMiddleFinger2_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60590,13 +60590,13 @@ connectAttr "Odie_rig:bwSDKFKMiddleFinger2_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:SDKFKMiddleFinger2_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
-connectAttr "Odie_rig:SDKFKMiddleFinger2_R_rotateY1.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:SDKFKMiddleFinger2_R_rotateY1.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger3_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger3_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger3_R_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger3_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger3_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60606,7 +60606,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger1_R_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger1_R_rotateY1.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60614,7 +60614,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger2_R_rotateY_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger2_R_rotateY_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger2_R_rotateY.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger2_R_rotateY.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger2_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60624,7 +60624,7 @@ connectAttr "Odie_rig:SDKFKIndexFinger1_R_rotateZ_outputUC.msg" "Odie_rig:AllSet
 		 -na;
 connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateZ_outputUC.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateZ.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:bwSDKFKIndexFinger1_R_rotateZ.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:SDKFKIndexFinger1_RScaleMPD.msg" "Odie_rig:AllSet.dnsm" -na
 		;
@@ -60684,7 +60684,7 @@ connectAttr "Odie_rig:twistCMElbowPart1_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:twistAdditionElbowPart1_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:ElbowQTETwist_L_outputRotateXUC1.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:twistAmountDivideElbowPart1_L.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:twistAmountDivideElbowPart1_L.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:twistAdditionElbow_L_output1DUC1.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60721,7 +60721,7 @@ connectAttr "Odie_rig:twistCMElbowPart1_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:twistAdditionElbowPart1_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:ElbowQTETwist_R_outputRotateXUC1.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
-connectAttr "Odie_rig:twistAmountDivideElbowPart1_R.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:twistAmountDivideElbowPart1_R.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:twistAdditionElbow_R_output1DUC1.msg" "Odie_rig:AllSet.dnsm"
 		 -na;
@@ -60957,9 +60957,9 @@ connectAttr "Odie_rig:PoleAimLegDM_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimSwivelMMLeg_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimSwivelCMLeg_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimLegAM_L.msg" "Odie_rig:AllSet.dnsm" -na;
-connectAttr "Odie_rig:IKXAnkleOrientConstrainedDM_L.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXAnkleOrientConstrainedDM_L.msg" "Odie_rig:AllSet.dnsm"
 		-na;
-connectAttr "Odie_rig:IKXAnkleOrientConstrainedMM_L.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXAnkleOrientConstrainedMM_L.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:IKOffsetArmDM_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:IKOffsetArmMMRoot_L.msg" "Odie_rig:AllSet.dnsm" -na;
@@ -60974,9 +60974,9 @@ connectAttr "Odie_rig:PoleOffsetArmMMStatic_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleOffsetArmMMFollow_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleArm_LFollowMDL_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleOffsetArmBM_L.msg" "Odie_rig:AllSet.dnsm" -na;
-connectAttr "Odie_rig:IKXWristOrientConstrainedDM_L.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXWristOrientConstrainedDM_L.msg" "Odie_rig:AllSet.dnsm"
 		-na;
-connectAttr "Odie_rig:IKXWristOrientConstrainedMM_L.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXWristOrientConstrainedMM_L.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:IKOffsetLegDM_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:IKOffsetLegMMRoot_R.msg" "Odie_rig:AllSet.dnsm" -na;
@@ -60995,9 +60995,9 @@ connectAttr "Odie_rig:PoleAimLegDM_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimSwivelMMLeg_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimSwivelCMLeg_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleAimLegAM_R.msg" "Odie_rig:AllSet.dnsm" -na;
-connectAttr "Odie_rig:IKXAnkleOrientConstrainedDM_R.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXAnkleOrientConstrainedDM_R.msg" "Odie_rig:AllSet.dnsm"
 		-na;
-connectAttr "Odie_rig:IKXAnkleOrientConstrainedMM_R.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXAnkleOrientConstrainedMM_R.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:IKOffsetArmDM_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:IKOffsetArmMMRoot_R.msg" "Odie_rig:AllSet.dnsm" -na;
@@ -61012,9 +61012,9 @@ connectAttr "Odie_rig:PoleOffsetArmMMStatic_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleOffsetArmMMFollow_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleArm_RFollowMDL_R.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:PoleOffsetArmBM_R.msg" "Odie_rig:AllSet.dnsm" -na;
-connectAttr "Odie_rig:IKXWristOrientConstrainedDM_R.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXWristOrientConstrainedDM_R.msg" "Odie_rig:AllSet.dnsm"
 		-na;
-connectAttr "Odie_rig:IKXWristOrientConstrainedMM_R.msg" "Odie_rig:AllSet.dnsm" 
+connectAttr "Odie_rig:IKXWristOrientConstrainedMM_R.msg" "Odie_rig:AllSet.dnsm"
 		-na;
 connectAttr "Odie_rig:HipBM_L.msg" "Odie_rig:AllSet.dnsm" -na;
 connectAttr "Odie_rig:KneeBM_L.msg" "Odie_rig:AllSet.dnsm" -na;
