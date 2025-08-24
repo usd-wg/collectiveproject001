@@ -32,14 +32,14 @@ def Scope "Render"
             rel camera = </World/cameras/renderCam/mono>
             uniform float4 dataWindowNDC = (0, 0, 1, 1)
             custom string driver:aovNames = "rgba"
-            custom string driver:imagePath = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_GL_rgba.####.jpg"
+            custom string driver:imagePath = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_RenderMan RIS_rgba.####.jpg"
             custom string driver:parameters:subimage = "rgba"
             custom string imageName = "beauty"
             uniform bool instantaneousShutter = 0
             prepend rel orderedVars = </Render/Products/Vars/rgba>
             custom string partName = "rgba"
             uniform float pixelAspectRatio = 1
-            token productName = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_GL_rgba.####.jpg"
+            token productName = "C:\\Users\\paolo\\Desktop\\code\\collectiveproject001\\shots\\s001_001\\usdrecord_renders\\s001_001_proxy_RenderMan RIS_rgba.####.jpg"
             uniform int2 resolution = (1024, 768)
         }
     }

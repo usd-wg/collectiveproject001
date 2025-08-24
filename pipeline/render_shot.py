@@ -27,7 +27,17 @@ def main(args):
     render_filepath = shot_filepath
 
     renderer = "GL"
+    input_renderer = pipe_globals.get_value_from_args(args,"-r","--renderer")
+    if input_renderer in ["GL", "storm", "Storm"]:
+        renderer = "GL"
+    elif input_renderer in ["RenderMan RIS", "renderman", "prman", "RenderMan", "Renderman"]:
+        renderer = "RenderMan RIS"
+
     purpose = "proxy"
+    input_purpose = pipe_globals.get_value_from_args(args,"-p","--purpose")
+    if input_purpose != "":
+        purpose = input_purpose
+
     render_jpg_filename = os.path.join(renders_folder, f"{input_shot}_{purpose}_{renderer}_rgba.####.jpg")
 
     # open the stage to find all necessary details for rendering
@@ -88,6 +98,8 @@ def main(args):
         "usdrecord",
         "--renderSettingsPrimPath",
         str(rendersettings_prim.GetPath()),
+        "--renderer",
+        renderer,
         "--purposes",
         purpose,
         "--frames",
@@ -95,7 +107,7 @@ def main(args):
         render_filepath,
         render_jpg_filename,
     ]
-    print(usdrecord_args)
+    print(" ".join(usdrecord_args))
     subprocess.run(usdrecord_args, shell=True)
 
 if __name__ == '__main__':

@@ -59,3 +59,7 @@ Artists update the fragments, as needed by their tasks, and then those will be m
 More details in the assets and shots READMEs.
 
 
+## Make your own OpenUSD environment on Windows
+
+https://paoloemilioselva.github.io/
+
