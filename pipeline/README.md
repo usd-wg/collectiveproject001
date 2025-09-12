@@ -23,7 +23,9 @@ There are fragments that are applied to the asset, and fragments that are applie
 For the asset-fragments, in this projects we are using:
 
 - model
-    - it contains the actual geometry of the asset, under a payload composition arc.
+    - it contains the actual geometry of the asset, under a payload composition arc
+- skeleton
+    - it defines the skel-root and the skeleton prim for the model
 - surface
     - it contains the materials/shaders for the asset
 - binding
