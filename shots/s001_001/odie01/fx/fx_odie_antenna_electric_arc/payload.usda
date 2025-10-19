@@ -1,0 +1,32 @@
+#usda 1.0
+(
+    defaultPrim = "main"
+    metersPerUnit = 0.01
+    upAxis = "Y"
+)
+
+def Xform "main"
+{
+    def Scope "render"
+    {
+        uniform token purpose = "render"
+
+        def Scope "fx" (
+            prepend payload = @geo/render.usda@
+        )
+        {
+        }
+    }
+
+    def Scope "proxy"
+    {
+        uniform token purpose = "proxy"
+
+        def Scope "fx" (
+            prepend payload = @geo/proxy.usda@
+        )
+        {
+        }
+    }
+}
+

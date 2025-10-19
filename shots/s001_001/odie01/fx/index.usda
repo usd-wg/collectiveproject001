@@ -3,6 +3,9 @@
     endTimeCode = 1
     metersPerUnit = 0.01
     startTimeCode = 1
+    subLayers = [
+        @fx_odie_antenna_electric_arc/index.usda@
+    ]
     upAxis = "Y"
 )
 

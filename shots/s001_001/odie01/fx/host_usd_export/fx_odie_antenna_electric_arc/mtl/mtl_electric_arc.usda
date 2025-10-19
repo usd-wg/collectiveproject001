@@ -1,0 +1,425 @@
+#usda 1.0
+(
+    defaultPrim = "root"
+    metersPerUnit = 0.01
+    upAxis = "Y"
+)
+
+def Xform "root"
+{
+    def Scope "mtl"
+    {
+        def Material "mtl_electric_arc" (
+            prepend apiSchemas = ["NodeGraphNodeAPI"]
+            customData = {
+                dictionary Autodesk = {
+                    string ldx_inputPos = "-1999.05 556.103"
+                    string ldx_outputPos = "1605.89 3.10745"
+                }
+            }
+        )
+        {
+            float inputs:color_noise_frequency = 1 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "11"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:color_noise_lacunarity = 2 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "14"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            int inputs:color_noise_octaves = 6 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "13"
+                }
+            )
+            float inputs:color_noise_speed = 2 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "12"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:color_noisediminish = 0.5 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "15"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            color3f inputs:cool_color = (0, 0.5222, 1) (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "9"
+                    string uisoftmax = "1,1,1"
+                    string uisoftmin = "0,0,0"
+                }
+            )
+            color3f inputs:hot_color = (1, 1, 1) (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "10"
+                    string uisoftmax = "1,1,1"
+                    string uisoftmin = "0,0,0"
+                }
+            )
+            float inputs:intensity = 5000 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "0"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_max_mult = 1 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "3"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_min_mult = 0.2 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "2"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_noise_frequency = 10 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "1"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_noise_lacunarity = 2 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "7"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            int inputs:intensity_noise_octaves = 6 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "6"
+                }
+            )
+            float inputs:intensity_noise_power = 3 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "4"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_noise_ratio = 0.5 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "8"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            float inputs:intensity_noise_speed = 1 (
+                displayName = ""
+                sdrMetadata = {
+                    string uiorder = "5"
+                    string uisoftmax = "1"
+                    string uisoftmin = "0"
+                }
+            )
+            token outputs:mtlx:surface.connect = </root/mtl/mtl_electric_arc/open_pbr_surface1.outputs:out>
+            uniform float2 ui:nodegraph:node:pos = (0.05985278, 0.056813337)
+
+            def Shader "open_pbr_surface1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_open_pbr_surface_surfaceshader"
+                color3f inputs:emission_color.connect = </root/mtl/mtl_electric_arc/mix1.outputs:out>
+                float inputs:emission_luminance = 10000
+                float inputs:emission_luminance.connect = </root/mtl/mtl_electric_arc/multiply1.outputs:out>
+                token outputs:out
+                uniform float2 ui:nodegraph:node:pos = (7.21, 0.14201723)
+            }
+
+            def Shader "multiply1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/range1.outputs:out>
+                float inputs:in2 = 1000
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:intensity>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (5.080183, 0.55407554)
+            }
+
+            def Shader "UsdPrimvarReader1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_UsdPrimvarReader_float"
+                string inputs:varname = "strand_u"
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-10.354055, 0.51381665)
+            }
+
+            def Shader "fractal3d1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_fractal3d_float"
+                float inputs:amplitude = 2
+                float inputs:diminish.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_ratio>
+                float inputs:lacunarity.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_lacunarity>
+                int inputs:octaves = 6
+                int inputs:octaves.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_octaves>
+                float3 inputs:position.connect = </root/mtl/mtl_electric_arc/combine1.outputs:out>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-4.2081447, -0.96015)
+            }
+
+            def Shader "multiply2" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/UsdPrimvarReader1.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_frequency>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-7.5168333, 0.95954996)
+            }
+
+            def Shader "range1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_range_float"
+                bool inputs:doclamp = 1
+                float inputs:in.connect = </root/mtl/mtl_electric_arc/power1.outputs:out>
+                float inputs:inlow = 0
+                float inputs:outhigh.connect = </root/mtl/mtl_electric_arc.inputs:intensity_max_mult>
+                float inputs:outlow = 0.5
+                float inputs:outlow.connect = </root/mtl/mtl_electric_arc.inputs:intensity_min_mult>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (3.0303388, 1.984489)
+            }
+
+            def Shader "range2" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_range_float"
+                bool inputs:doclamp = 1
+                float inputs:in = -1
+                float inputs:in.connect = </root/mtl/mtl_electric_arc/fractal3d1.outputs:out>
+                float inputs:inlow = -1
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-2.8491724, -1.2103833)
+            }
+
+            def Shader "power1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_power_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/range2.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_power>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-0.230795, -0.036687445)
+            }
+
+            def Shader "mix1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_mix_color3"
+                color3f inputs:bg.connect = </root/mtl/mtl_electric_arc.inputs:hot_color>
+                color3f inputs:fg.connect = </root/mtl/mtl_electric_arc.inputs:cool_color>
+                float inputs:mix.connect = </root/mtl/mtl_electric_arc/range3.outputs:out>
+                color3f outputs:out
+                uniform float2 ui:nodegraph:node:pos = (3.1284668, 4.665989)
+            }
+
+            def Shader "fractal3d2" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+                customData = {
+                    dictionary ClipboardMetadata = {
+                        string materialName = "mtl_electric_arc"
+                        string shaderName = "fractal3d1"
+                        string stagePath = "|world|fx_antenna_lookdev|fx_antenna_lookdevShape"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_fractal3d_float"
+                float inputs:amplitude = 2
+                float inputs:diminish.connect = </root/mtl/mtl_electric_arc.inputs:color_noisediminish>
+                float inputs:lacunarity.connect = </root/mtl/mtl_electric_arc.inputs:color_noise_lacunarity>
+                int inputs:octaves = 6
+                int inputs:octaves.connect = </root/mtl/mtl_electric_arc.inputs:color_noise_octaves>
+                float3 inputs:position.connect = </root/mtl/mtl_electric_arc/combine2.outputs:out>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-4.8904448, 6.128278)
+            }
+
+            def Shader "time1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_time_float"
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-11.513833, -1.4559445)
+            }
+
+            def Shader "add1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_add_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/multiply3.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc/multiply2.outputs:out>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-6.155333, 0.14882056)
+            }
+
+            def Shader "combine1" (
+                customData = {
+                    dictionary Autodesk = {
+                        string hidden = "true"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_combine3_vector3"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/add1.outputs:out>
+                float3 outputs:out
+            }
+
+            def Shader "multiply3" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/time1.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:intensity_noise_speed>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-7.972556, -1.0474445)
+            }
+
+            def Shader "UsdPrimvarReader2" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+                customData = {
+                    dictionary ClipboardMetadata = {
+                        string materialName = "mtl_electric_arc"
+                        string shaderName = "UsdPrimvarReader1"
+                        string stagePath = "|world|fx_antenna_lookdev|fx_antenna_lookdevShape"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_UsdPrimvarReader_float"
+                string inputs:varname = "strand_u"
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-11.172777, 7.7445)
+            }
+
+            def Shader "multiply4" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+                customData = {
+                    dictionary ClipboardMetadata = {
+                        string materialName = "mtl_electric_arc"
+                        string shaderName = "multiply2"
+                        string stagePath = "|world|fx_antenna_lookdev|fx_antenna_lookdevShape"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/UsdPrimvarReader2.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:color_noise_frequency>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-8.867556, 7.255)
+            }
+
+            def Shader "add2" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+                customData = {
+                    dictionary ClipboardMetadata = {
+                        string materialName = "mtl_electric_arc"
+                        string shaderName = "add1"
+                        string stagePath = "|world|fx_antenna_lookdev|fx_antenna_lookdevShape"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_add_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/multiply5.outputs:out>
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc/multiply4.outputs:out>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-6.6308894, 6.3671107)
+            }
+
+            def Shader "multiply5" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+                customData = {
+                    dictionary ClipboardMetadata = {
+                        string materialName = "mtl_electric_arc"
+                        string shaderName = "multiply3"
+                        string stagePath = "|world|fx_antenna_lookdev|fx_antenna_lookdevShape"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_multiply_float"
+                float inputs:in1.connect = </root/mtl/mtl_electric_arc/time1.outputs:out>
+                float inputs:in2 = 2
+                float inputs:in2.connect = </root/mtl/mtl_electric_arc.inputs:color_noise_speed>
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-8.079166, 5.3591113)
+            }
+
+            def Shader "combine2" (
+                customData = {
+                    dictionary Autodesk = {
+                        string hidden = "true"
+                    }
+                }
+            )
+            {
+                uniform token info:id = "ND_combine3_vector3"
+                float inputs:in3.connect = </root/mtl/mtl_electric_arc/add2.outputs:out>
+                float3 outputs:out
+            }
+
+            def Shader "range3" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_range_float"
+                bool inputs:doclamp = 1
+                float inputs:in.connect = </root/mtl/mtl_electric_arc/fractal3d2.outputs:out>
+                float inputs:inlow = -1
+                float outputs:out
+                uniform float2 ui:nodegraph:node:pos = (-3.0344, 6.106389)
+            }
+        }
+    }
+}
+

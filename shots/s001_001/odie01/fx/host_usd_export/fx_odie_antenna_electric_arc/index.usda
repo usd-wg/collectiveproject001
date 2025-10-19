@@ -1,0 +1,12 @@
+#usda 1.0
+(
+    defaultPrim = "root"
+    metersPerUnit = 0.01
+    subLayers = [
+        @bind.usda@,
+        @mtl/mtl.usda@,
+        @payload.usda@
+    ]
+    upAxis = "Y"
+)
+

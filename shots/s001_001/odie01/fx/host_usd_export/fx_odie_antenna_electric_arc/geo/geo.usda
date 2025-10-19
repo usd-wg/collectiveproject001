@@ -1,0 +1,24 @@
+#usda 1.0
+(
+    defaultPrim = "geo"
+    metersPerUnit = 0.01
+    upAxis = "Y"
+)
+
+def Scope "geo"
+{
+    def Scope "render" (
+        prepend references = @render.usda@</root>
+    )
+    {
+        uniform token purpose = "render"
+    }
+
+    def Scope "proxy" (
+        prepend references = @proxy.usda@</root>
+    )
+    {
+        uniform token purpose = "proxy"
+    }
+}
+
