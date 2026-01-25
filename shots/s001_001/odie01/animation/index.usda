@@ -1,11 +1,10 @@
 #usda 1.0
 (
-    endTimeCode = 1456
+    endTimeCode = 1480
     framesPerSecond = 24
     metersPerUnit = 0.01
     startTimeCode = 1000
     subLayers = [
-        @animated_render.usd@,
         @animated_proxy.usd@
     ]
     timeCodesPerSecond = 24

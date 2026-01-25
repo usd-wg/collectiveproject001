@@ -3,6 +3,7 @@
 import sys
 sys.dont_write_bytecode = True
 import subprocess
+from datetime import datetime
 
 import os
 import pipe_globals
@@ -23,7 +24,6 @@ def main(args):
     shot_folder = pipe_globals.get_subfolder(shots_root, input_shot)
     shot_filepath = os.path.join(shot_folder, "index.usda")
     renders_folder = pipe_globals.get_subfolder(shot_folder, "usdrecord_renders")
-    snapshot_filepath = os.path.join(renders_folder, "snapshot.usda")
     render_filepath = shot_filepath
 
     renderer = "GL"
@@ -33,82 +33,94 @@ def main(args):
     elif input_renderer in ["RenderMan RIS", "renderman", "prman", "RenderMan", "Renderman"]:
         renderer = "RenderMan RIS"
 
-    purpose = "proxy"
+    purposes = ["proxy", "render"]
     input_purpose = pipe_globals.get_value_from_args(args,"-p","--purpose")
     if input_purpose != "":
-        purpose = input_purpose
+        purposes = [input_purpose]
 
-    render_jpg_filename = os.path.join(renders_folder, f"{input_shot}_{purpose}_{renderer}_rgba.####.jpg")
+    input_makefinal = pipe_globals.get_value_from_args(args,"-mf","--makefinal")
+    timestamp = ""
+    if input_makefinal == "":
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S") + "/"
 
-    # open the stage to find all necessary details for rendering
-    shot_stage = Usd.Stage.Open(shot_filepath)
-    # frame-range metadata
-    framestart = shot_stage.GetStartTimeCode()
-    frameend = shot_stage.GetEndTimeCode()
-    fps = shot_stage.GetFramesPerSecond()
-    # overridden by inputs ?
-    input_framestart = pipe_globals.get_value_from_args(args,"-fs","--framestart")
-    if input_framestart != "":
-        framestart = int(input_framestart)
-    input_frameend = pipe_globals.get_value_from_args(args,"-fe","--frameend")
-    if input_frameend != "":
-        frameend = int(input_frameend)
-    
-    # find rendersettings
-    rendersettings_prim = UsdRender.Settings.GetStageRenderSettings(shot_stage)
-    # are we overriding the rendersettings ?
-    input_rendersettings_primpath = pipe_globals.get_value_from_args(args,"-rs","--rendersettings")
-    if input_rendersettings_primpath != "":
-        rendersettings_prim = shot_stage.GetPrimAtPath(input_rendersettings_primpath)
-    # last chance is to find the first rendersettings prim in this shot
-    for prim in shot_stage.Traverse():
-        if prim.IsA(UsdRender.Settings):
-            rendersettings_prim = prim
-            break
-    # If no rendersettings has been found, we now have to create one
-    # and for that, we need a snapshot file to hold our overrides
-    if not rendersettings_prim:
-        # we need to create a snapshot file for overrides and we are going to render that one
-        render_filepath = snapshot_filepath
-        shot_stage = pipe_globals.stage_begin(snapshot_filepath, start=framestart, end=frameend, fps=fps)
-        # sublayer original shot file
-        shot_stage.GetRootLayer().subLayerPaths.append(shot_filepath)
-        # search for the first camera prim and add it to the rendersettings
-        camera_prim = None
+
+    for purpose in purposes:
+        output_folder = pipe_globals.get_subfolder(renders_folder, f"{timestamp}{purpose}/{renderer}")
+        snapshot_filepath = os.path.join(output_folder, "snapshot.usda")
+        render_jpg_filename = os.path.join(output_folder, "rgba.####.jpg")
+
+        # open the stage to find all necessary details for rendering
+        shot_stage = Usd.Stage.Open(shot_filepath)
+        # frame-range metadata
+        framestart = int(shot_stage.GetStartTimeCode())
+        frameend = int(shot_stage.GetEndTimeCode())
+        fps = shot_stage.GetFramesPerSecond()
+        # overridden by inputs ?
+        input_framestart = pipe_globals.get_value_from_args(args,"-fs","--framestart")
+        if input_framestart != "":
+            framestart = int(input_framestart)
+        input_frameend = pipe_globals.get_value_from_args(args,"-fe","--frameend")
+        if input_frameend != "":
+            frameend = int(input_frameend)
+        
+        # find rendersettings
+        rendersettings_prim = UsdRender.Settings.GetStageRenderSettings(shot_stage)
+        # are we overriding the rendersettings ?
+        input_rendersettings_primpath = pipe_globals.get_value_from_args(args,"-rs","--rendersettings")
+        if input_rendersettings_primpath != "":
+            rendersettings_prim = shot_stage.GetPrimAtPath(input_rendersettings_primpath)
+        # last chance is to find the first rendersettings prim in this shot
         for prim in shot_stage.Traverse():
-            if prim.IsA(UsdGeom.Camera):
-                camera_prim = prim
+            if prim.IsA(UsdRender.Settings):
+                rendersettings_prim = prim
                 break
-        if not camera_prim:
-            print("ERROR camera not found in input shot file")
-            exit(1)
-        # create default render products
-        rendervar_prim = pipe_globals.create_rendervar(shot_stage, aov_name="rgba", aov_source="rgba", aov_format="")
-        # NOTE: usdrecord with storm don't use RenderProduct for output images
-        #       we are going to pass the filename-pattern directly to usdrecord
-        default_resolution = [1024, 768]
-        renderproduct_prim = pipe_globals.create_renderproduct(shot_stage, product_name="rgba", camera_prim=camera_prim, product_filepath=render_jpg_filename, resolution=default_resolution)
-        pipe_globals.add_var_to_product(rendervar_prim, renderproduct_prim)
-        rendersettings_prim = pipe_globals.create_rendersettings(shot_stage, camera_prim=camera_prim)
-        pipe_globals.add_product_to_rendersettings( renderproduct_prim, rendersettings_prim )
-        # save snapshot file
-        pipe_globals.stage_end(shot_stage)
+        # If no rendersettings has been found, we now have to create one
+        # and for that, we need a snapshot file to hold our overrides
+        if not rendersettings_prim:
+            # we need to create a snapshot file for overrides and we are going to render that one
+            render_filepath = snapshot_filepath
+            shot_stage = pipe_globals.stage_begin(snapshot_filepath, start=framestart, end=frameend, fps=fps)
+            # sublayer original shot file
+            shot_stage.GetRootLayer().subLayerPaths.append(shot_filepath)
+            # search for the first camera prim and add it to the rendersettings
+            camera_prim = None
+            for prim in shot_stage.Traverse():
+                if prim.IsA(UsdGeom.Camera):
+                    camera_prim = prim
+                    break
+            if not camera_prim:
+                print("ERROR camera not found in input shot file")
+                exit(1)
+            # create default render products
+            rendervar_prim = pipe_globals.create_rendervar(shot_stage, aov_name="rgba", aov_source="rgba", aov_format="")
+            # NOTE: usdrecord with storm don't use RenderProduct for output images
+            #       we are going to pass the filename-pattern directly to usdrecord
+            default_resolution = [1024, 768]
+            renderproduct_prim = pipe_globals.create_renderproduct(shot_stage, product_name="rgba", camera_prim=camera_prim, product_filepath=render_jpg_filename, resolution=default_resolution)
+            pipe_globals.add_var_to_product(rendervar_prim, renderproduct_prim)
+            rendersettings_prim = pipe_globals.create_rendersettings(shot_stage, camera_prim=camera_prim)
+            pipe_globals.add_product_to_rendersettings( renderproduct_prim, rendersettings_prim )
+            # save snapshot file
+            pipe_globals.stage_end(shot_stage)
 
-    usdrecord_args = [
-        "usdrecord",
-        "--renderSettingsPrimPath",
-        str(rendersettings_prim.GetPath()),
-        "--renderer",
-        renderer,
-        "--purposes",
-        purpose,
-        "--frames",
-        f"{framestart}:{frameend}x1",
-        render_filepath,
-        render_jpg_filename,
-    ]
-    print(" ".join(usdrecord_args))
-    subprocess.run(usdrecord_args, shell=True)
+        # apparently, not all renderers support a single-call multi-frame.
+        # for now run a usdrecord per frame
+        for frame in range(framestart, frameend+1):
+            usdrecord_args = [
+                "usdrecord",
+                "--renderSettingsPrimPath",
+                str(rendersettings_prim.GetPath()),
+                "--renderer",
+                renderer,
+                "--purposes",
+                purpose,
+                "--frames",
+                str(frame),
+                render_filepath,
+                render_jpg_filename,
+            ]
+            print(" ".join(usdrecord_args))
+            subprocess.run(usdrecord_args, shell=True)
 
 if __name__ == '__main__':
     main(sys.argv)
