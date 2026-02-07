@@ -5,6 +5,7 @@
     metersPerUnit = 0.01
     startTimeCode = 1000
     subLayers = [
+        @animated_render.usd@,
         @animated_proxy.usd@
     ]
     timeCodesPerSecond = 24
