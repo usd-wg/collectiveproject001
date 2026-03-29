@@ -7,3 +7,6 @@
 # backup files
 pipeline/dcc_files/backup
 pipeline/dcc_files/*.nk~
+
+# Mac stuff
+**DS_Store

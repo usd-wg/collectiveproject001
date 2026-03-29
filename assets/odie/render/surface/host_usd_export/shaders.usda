@@ -1,49 +1,98 @@
 #usda 1.0
 (
     defaultPrim = "main"
-    endTimeCode = 196
+    endTimeCode = 33
     framesPerSecond = 24
-    metersPerUnit = 1
-    startTimeCode = 196
+    metersPerUnit = 0.01
+    startTimeCode = 33
     timeCodesPerSecond = 24
     upAxis = "Y"
 )
 
 over "main"
 {
+    over "proxy"
+    {
+        over "mtl"
+        {
+            def Material "body_primary_mtl" (
+                prepend inherits = </__class_mtl__/body_primary_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+
+            def Material "body_secondary_mtl" (
+                prepend inherits = </__class_mtl__/body_secondary_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+
+            def Material "body_tertiary_mtl" (
+                prepend inherits = </__class_mtl__/body_tertiary_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+
+            def Material "pupil_mtl" (
+                prepend inherits = </__class_mtl__/pupil_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+
+            def Material "iris_mtl" (
+                prepend inherits = </__class_mtl__/iris_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+
+            def Material "sclera_mtl" (
+                prepend inherits = </__class_mtl__/sclera_mtl>
+            )
+            {
+                int inputs:inputnum = 1
+            }
+        }
+    }
+
     over "mtl"
     {
-        def Material "odie_mtl" (
+        over "odie_mtl" (
             prepend inherits = </__class_mtl__/odie_mtl>
         )
         {
-            int inputs:inputnum = 1
-            token outputs:mtlx:surface.connect = </main/mtl/odie_mtl/mtlxmaterial.outputs:surface>
+            int inputs:inputnum = 2
+            token outputs:mtlx:surface.connect = </main/mtl/odie_mtl/mtlxmaterial_karma.outputs:surface>
+            token outputs:ri:surface.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman.outputs:surface>
 
-            def NodeGraph "mtlxmaterial"
+            def NodeGraph "mtlxmaterial_karma"
             {
-                token outputs:surface.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+                token outputs:surface.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxsurface1.outputs:out>
 
                 def Shader "mtlxsurface1"
                 {
                     uniform token info:id = "ND_surface"
-                    string inputs:bsdf.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxlayer3.outputs:out>
+                    string inputs:bsdf.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxlayer3.outputs:out>
                     token outputs:out
                 }
 
                 def Shader "mtlxlayer3"
                 {
                     uniform token info:id = "ND_layer_bsdf"
-                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
-                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxlayer2.outputs:out>
+                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxlayer1.outputs:out>
+                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxlayer2.outputs:out>
                     token outputs:out
                 }
 
                 def Shader "mtlxlayer2"
                 {
                     uniform token info:id = "ND_layer_bsdf"
-                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
-                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
+                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxdielectric_bsdf2.outputs:out>
+                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxdielectric_bsdf1.outputs:out>
                     token outputs:out
                 }
 
@@ -66,17 +115,17 @@ over "main"
                 def Shader "mtlxlayer1"
                 {
                     uniform token info:id = "ND_layer_bsdf"
-                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxconductor_bsdf1.outputs:out>
-                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxburley_diffuse_bsdf1.outputs:out>
+                    string inputs:base.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxconductor_bsdf1.outputs:out>
+                    string inputs:top.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxburley_diffuse_bsdf1.outputs:out>
                     token outputs:out
                 }
 
                 def Shader "mtlxburley_diffuse_bsdf1"
                 {
                     uniform token info:id = "ND_burley_diffuse_bsdf"
-                    color3f inputs:color.connect = </main/mtl/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:rgb>
-                    vector3f inputs:normal.connect = </main/mtl/odie_mtl/mtlxmaterial/cartoon_normal_map.outputs:rgb>
-                    float inputs:roughness.connect = </main/mtl/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:r>
+                    color3f inputs:color.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/cartoon_base_color_texture.outputs:rgb>
+                    vector3f inputs:normal.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/cartoon_normal_map.outputs:rgb>
+                    float inputs:roughness.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/cartoon_roughness_texture.outputs:r>
                     token outputs:out
                 }
 
@@ -104,8 +153,8 @@ over "main"
                 def Shader "mtlxconductor_bsdf1"
                 {
                     uniform token info:id = "ND_conductor_bsdf"
-                    color3f inputs:extinction.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:extinction>
-                    color3f inputs:ior.connect = </main/mtl/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:ior>
+                    color3f inputs:extinction.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxartistic_ior1.outputs:extinction>
+                    color3f inputs:ior.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/mtlxartistic_ior1.outputs:ior>
                     float2 inputs:roughness = (0.1, 0.1)
                     token outputs:out
                 }
@@ -114,7 +163,7 @@ over "main"
                 {
                     uniform token info:id = "ND_artistic_ior"
                     color3f inputs:edge_color = (0.1709999, 0.1709999, 0.261)
-                    color3f inputs:reflectivity.connect = </main/mtl/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:rgb>
+                    color3f inputs:reflectivity.connect = </main/mtl/odie_mtl/mtlxmaterial_karma/cartoon_metallic_texture.outputs:rgb>
                     color3f outputs:extinction
                     color3f outputs:ior
                 }
@@ -122,35 +171,150 @@ over "main"
                 def Shader "cartoon_metallic_texture"
                 {
                     uniform token info:id = "ND_UsdUVTexture"
+                    color4f inputs:fallback = (1, 0, 0.5, 1)
                     asset inputs:file = @../textures/odie_cartoon_metal_01.exr@
                     color3f outputs:rgb
                 }
             }
+
+            def NodeGraph "pxrmaterialbuilder_prman"
+            {
+                token outputs:surface.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamasurface1.outputs:bxdf_out>
+
+                def Shader "lamasurface1"
+                {
+                    uniform token info:id = "LamaSurface"
+                    int inputs:computeInterior = 1
+                    int inputs:computeOpacity = 1
+                    int inputs:computePresence = 1
+                    int inputs:computeSubsurface = 1
+                    token inputs:materialFront.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamalayer2.outputs:bxdf_out>
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamalayer2"
+                {
+                    uniform token info:id = "LamaLayer"
+                    token inputs:materialBase.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamalayer3.outputs:bxdf_out>
+                    token inputs:materialTop.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamalayer1.outputs:bxdf_out>
+                    float inputs:topMix = 0.5
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamalayer1"
+                {
+                    uniform token info:id = "LamaLayer"
+                    token inputs:materialBase.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamadielectric2.outputs:bxdf_out>
+                    token inputs:materialTop.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamadielectric1.outputs:bxdf_out>
+                    float inputs:topMix = 0.5
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamadielectric1"
+                {
+                    uniform token info:id = "LamaDielectric"
+                    int inputs:fresnelMode = 1
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamadielectric2"
+                {
+                    uniform token info:id = "LamaDielectric"
+                    int inputs:fresnelMode = 1
+                    float inputs:IOR = 2
+                    color3f inputs:reflectionTint = (0.171, 0.171, 0.261)
+                    float inputs:roughness = 0.6
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamalayer3"
+                {
+                    uniform token info:id = "LamaLayer"
+                    token inputs:materialBase.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamadiffuse1.outputs:bxdf_out>
+                    token inputs:materialTop.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/lamaconductor1.outputs:bxdf_out>
+                    float inputs:topMix = 0.1
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamaconductor1"
+                {
+                    uniform token info:id = "LamaConductor"
+                    color3f inputs:edgeColor = (0.171, 0.171, 0.261)
+                    float inputs:exteriorIOR = 1.165
+                    vector3f inputs:extinction = (3.424, 2.346, 1.77)
+                    vector3f inputs:IOR = (0.183, 0.421, 1.373)
+                    int inputs:overrideExteriorIOR = 1
+                    color3f inputs:reflectivity.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/pxrtexture1.outputs:resultRGB>
+                    token outputs:bxdf_out
+                }
+
+                def Shader "pxrtexture1"
+                {
+                    uniform token info:id = "PxrTexture"
+                    asset inputs:filename = @../textures/odie_cartoon_metal_01.tx@
+                    int inputs:invertT = 0
+                    color3f outputs:resultRGB
+                }
+
+                def Shader "lamadiffuse1"
+                {
+                    uniform token info:id = "LamaDiffuse"
+                    color3f inputs:diffuseColor.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/pxrtexture2.outputs:resultRGB>
+                    normal3f inputs:normal.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/pxrtexture4.outputs:resultNG>
+                    float inputs:roughness.connect = </main/mtl/odie_mtl/pxrmaterialbuilder_prman/pxrtexture3.outputs:resultR>
+                    token outputs:bxdf_out
+                }
+
+                def Shader "pxrtexture2"
+                {
+                    uniform token info:id = "PxrTexture"
+                    asset inputs:filename = @../textures/odie_cartoon_color_01.tx@
+                    int inputs:invertT = 0
+                    color3f outputs:resultRGB
+                }
+
+                def Shader "pxrtexture3"
+                {
+                    uniform token info:id = "PxrTexture"
+                    asset inputs:filename = @../textures/odie_cartoon_rough_01.tx@
+                    int inputs:invertT = 0
+                    float outputs:resultR
+                }
+
+                def Shader "pxrtexture4"
+                {
+                    uniform token info:id = "PxrTexture"
+                    asset inputs:filename = @../textures/odie_cartoon_norm_01.tx@
+                    int inputs:invertT = 0
+                    vector3f outputs:resultNG
+                }
+            }
         }
 
-        def Material "odie_glass_face_mtl" (
+        over "odie_glass_face_mtl" (
             prepend inherits = </__class_mtl__/odie_glass_face_mtl>
         )
         {
-            int inputs:inputnum = 1
-            token outputs:mtlx:surface.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial.outputs:surface>
+            int inputs:inputnum = 2
+            token outputs:mtlx:surface.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial_karma.outputs:surface>
+            token outputs:ri:surface.connect = </main/mtl/odie_glass_face_mtl/pxrmaterialbuilder_prman.outputs:surface>
 
-            def NodeGraph "mtlxmaterial"
+            def NodeGraph "mtlxmaterial_karma"
             {
-                token outputs:surface.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+                token outputs:surface.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial_karma/mtlxsurface1.outputs:out>
 
                 def Shader "mtlxsurface1"
                 {
                     uniform token info:id = "ND_surface"
-                    string inputs:bsdf.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
+                    string inputs:bsdf.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial_karma/mtlxlayer1.outputs:out>
                     token outputs:out
                 }
 
                 def Shader "mtlxlayer1"
                 {
                     uniform token info:id = "ND_layer_bsdf"
-                    string inputs:base.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
-                    string inputs:top.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
+                    string inputs:base.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial_karma/mtlxdielectric_bsdf1.outputs:out>
+                    string inputs:top.connect = </main/mtl/odie_glass_face_mtl/mtlxmaterial_karma/mtlxdielectric_bsdf2.outputs:out>
                     token outputs:out
                 }
 
@@ -159,7 +323,7 @@ over "main"
                     uniform token info:id = "ND_dielectric_bsdf"
                     float inputs:ior = 1.8
                     float2 inputs:roughness = (0.001, 0.001)
-                    color3f inputs:tint = (-0.027333332, 0.111999996, 0.17933333)
+                    color3f inputs:tint = (0.5196667, 0.659, 0.7263333)
                     float inputs:weight = 0.821
                     token outputs:out
                 }
@@ -172,6 +336,44 @@ over "main"
                     token outputs:out
                 }
             }
+
+            def NodeGraph "pxrmaterialbuilder_prman"
+            {
+                token outputs:surface.connect = </main/mtl/odie_glass_face_mtl/pxrmaterialbuilder_prman/lamasurface1.outputs:bxdf_out>
+
+                def Shader "lamasurface1"
+                {
+                    uniform token info:id = "LamaSurface"
+                    int inputs:computeInterior = 1
+                    int inputs:computeOpacity = 1
+                    int inputs:computePresence = 1
+                    int inputs:computeSubsurface = 1
+                    float inputs:exteriorIOR = 1.5
+                    token inputs:materialBack.connect = </main/mtl/odie_glass_face_mtl/pxrmaterialbuilder_prman/lamadielectric1.outputs:bxdf_out>
+                    token inputs:materialFront.connect = </main/mtl/odie_glass_face_mtl/pxrmaterialbuilder_prman/lamadielectric2.outputs:bxdf_out>
+                    float inputs:presence = 0.75
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamadielectric2"
+                {
+                    uniform token info:id = "LamaDielectric"
+                    int inputs:fresnelMode = 1
+                    float inputs:IOR = 1
+                    color3f inputs:reflectionTint = (0.519667, 0.659, 0.726333)
+                    float inputs:roughness = 0.001
+                    token outputs:bxdf_out
+                }
+
+                def Shader "lamadielectric1"
+                {
+                    uniform token info:id = "LamaDielectric"
+                    int inputs:fresnelMode = 1
+                    float inputs:roughness = 0.001
+                    token outputs:bxdf_out
+                }
+            }
         }
     }
 }
+
