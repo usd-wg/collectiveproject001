@@ -1,10 +1,10 @@
 #usda 1.0
 (
     defaultPrim = "main"
-    endTimeCode = 1
+    endTimeCode = 1480
     framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1000
     subLayers = [
         @fx/index.usda@,
         @lighting/index.usda@,
@@ -16,5 +16,62 @@
 
 def Xform "main"
 {
-}
+    def RectLight "red_light" (
+        prepend apiSchemas = ["LightAPI"]
+    )
+    {
+        color3f inputs:color = (1, 0, 0)
+        float inputs:diffuse = 1
+        bool inputs:enableColorTemperature = 0
+        float inputs:exposure = 2
+        float inputs:height = 100
+        float inputs:intensity = 1
+        bool inputs:normalize = 0
+        float inputs:specular = 1
+        asset inputs:texture:file = @@
+        float inputs:width = 100
+        rel light:filters = None
+        matrix4d xformOp:transform = ( (0.3045707039677182, -0.0000011053073633027194, 0.9524897302771231, 0), (-0.28508224728992787, 0.9541582712402398, 0.09115978117548094, 0), (-0.9088260551748795, -0.29930251155413895, 0.2906083412647537, 0), (-257.79852394833426, 57.15760098862407, -41.91113539982383, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
 
+    def RectLight "blue_light" (
+        prepend apiSchemas = ["LightAPI"]
+    )
+    {
+        color3f inputs:color = (0, 0, 1)
+        float inputs:diffuse = 1
+        bool inputs:enableColorTemperature = 0
+        float inputs:exposure = 3
+        float inputs:height = 100
+        float inputs:intensity = 1
+        bool inputs:normalize = 0
+        float inputs:specular = 1
+        asset inputs:texture:file = @@
+        float inputs:width = 100
+        rel light:filters = None
+        matrix4d xformOp:transform = ( (-0.16623135267268974, 7.065145983701976e-7, -0.9860867798465349, 0), (-0.2368833033193923, 0.9707170536562529, 0.03993372446211617, 0), (0.9572112817957699, 0.24022573080422563, -0.16136344153021495, 0), (317.6154877292129, 166.11755207269525, -49.014758782850926, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    def RectLight "spot_light" (
+        prepend apiSchemas = ["ShapingAPI", "LightAPI"]
+    )
+    {
+        color3f inputs:color = (1, 1, 0.774)
+        float inputs:diffuse = 1
+        bool inputs:enableColorTemperature = 0
+        float inputs:exposure = 8
+        float inputs:height = 50
+        float inputs:intensity = 1
+        bool inputs:normalize = 0
+        float inputs:shaping:cone:angle = 32.8
+        float inputs:shaping:cone:softness = 0
+        float inputs:specular = 1
+        asset inputs:texture:file = @@
+        float inputs:width = 50
+        rel light:filters = None
+        matrix4d xformOp:transform = ( (-0.14777738330555132, 4.4419748064718096e-7, 0.9890206494220264, 0), (0.7460099839146894, 0.6565395827836233, 0.11146694639179229, 0), (-0.6493311550225886, 0.7542915724294608, -0.09702203295603765, 0), (-109.03372420645402, 291.167840943919, -62.09050131118602, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}

@@ -255,6 +255,16 @@ def get_value_from_args(args, flag_short, flag_long):
     return result
 
 
+def get_bool_from_args(args, flag_short, flag_long):
+    i = 1
+    while(i < len(args)):
+        curr_arg = args[i]
+        if curr_arg in [flag_short,flag_long]:
+            return True
+        i+=1
+    return False
+
+
 def mkdir_safe(path):
     try:
         os.mkdir(path)

@@ -7,7 +7,23 @@
     upAxis = "Y"
 )
 
-def Xform "main"
+over "main"
 {
+    over "geo"
+    {
+        over "room" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </main/mtl/terrain>
+        }
+
+        over "pCube1" (
+            prepend apiSchemas = ["MaterialBindingAPI"]
+        )
+        {
+            rel material:binding = </main/mtl/cube>
+        }
+    }
 }
 

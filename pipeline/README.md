@@ -74,3 +74,30 @@ Publishing means committing and pushing new files to the main git repo in the wo
 A merge-request will submit the work for review.
 
 Once accepted, the merge-request is merged into the `main` branch and a new render should be triggered.
+
+# Rendering the shot
+
+We render the shot through `usdrecord` which means you have to run in a shell that has `OpenUSD` properly setup, whether that is via your own installation, or a Houdini-shell or an Omniverse-shell or anything else.
+
+To launch a render of a single frame of the `proxy` purpose, with `Storm`, in a timestamped folder, simply run:
+
+```
+python pipeline/render_shot.py --renderer Storm --purpose proxy --framestart 1250 --frameend 1250`
+```
+
+Without any option, by default the command will render the whole sequence, in `Storm` for both purposes.
+
+When you render a sequence, and you also have `ffmpeg` installed in the shell, you can merge all frames together using `--runffmpeg` flag.
+
+Please note that if you are running in a Houdini-shell, you need to use `hython` instead of `python`.
+
+If you want to render inside the official output folders, use the flag `--makefinal`.
+
+The following is a command to render the whole sequence, as `render` purpose, in `Karma`, and make it final, with an `mp4` generated via `ffmpeg`.
+
+```
+hython pipeline/render_shot.py --renderer karma --purpose render --makefinal --runffmpeg
+```
+
+
+

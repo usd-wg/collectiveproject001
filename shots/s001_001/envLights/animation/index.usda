@@ -1,8 +1,62 @@
 #usda 1.0
 (
-    endTimeCode = 1
+    endTimeCode = 1480
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1000
     upAxis = "Y"
 )
 
+over "main"
+{
+    over "blue_light"
+    {
+        float inputs:exposure
+        float inputs:exposure.timeSamples = {
+            1000: -10,
+            1080: -10,
+            1082: 5,
+            1086: -10,
+            1089: 3,
+            1092: 1,
+            1094: 3,
+            1343: 3,
+            1345: -10,
+            1480: -10,
+        }
+    }
+
+    over "red_light"
+    {
+        float inputs:exposure
+        float inputs:exposure.timeSamples = {
+            1000: -10,
+            1149: -10,
+            1152: 5,
+            1155: -10,
+            1158: 2,
+            1160: 1,
+            1162: 2,
+            1343: 2,
+            1345: -10,
+            1480: -10,
+        }
+    }
+
+    over "spot_light"
+    {
+        float inputs:exposure
+        float inputs:exposure.timeSamples = {
+            1000: -10,
+            1187: -10,
+            1189: 10,
+            1192: -10,
+            1195: 8,
+            1197: 2,
+            1200: 8,
+            1408: 8,
+            1411: -10,
+            1480: -10,
+        }
+    }
+}

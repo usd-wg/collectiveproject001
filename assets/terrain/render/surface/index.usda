@@ -7,7 +7,60 @@
     upAxis = "Y"
 )
 
-def Xform "main"
+over "main"
 {
-}
+    def Scope "mtl"
+    {
+        def Material "terrain" (
+            prepend apiSchemas = ["MaterialXConfigAPI"]
+        )
+        {
+            string config:mtlx:version = "1.39"
+            token outputs:mtlx:surface.connect = </main/mtl/terrain/mtlxstandard_surface.outputs:out>
 
+            def Shader "mtlxstandard_surface"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base
+                color3f inputs:base_color = (0.5, 0.5, 0.5)
+                float inputs:coat
+                float inputs:coat_roughness
+                float inputs:emission
+                color3f inputs:emission_color
+                float inputs:metalness
+                float inputs:specular = 0.133
+                color3f inputs:specular_color
+                float inputs:specular_IOR
+                float inputs:specular_roughness = 0.158
+                float inputs:transmission
+                token outputs:out
+            }
+        }
+
+        def Material "cube" (
+            prepend apiSchemas = ["MaterialXConfigAPI"]
+        )
+        {
+            string config:mtlx:version = "1.39"
+            token outputs:mtlx:surface.connect = </main/mtl/cube/mtlxstandard_surface.outputs:out>
+
+            def Shader "mtlxstandard_surface"
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base
+                color3f inputs:base_color = (0.2, 0.2, 0.2)
+                float inputs:coat
+                float inputs:coat_roughness
+                float inputs:emission
+                color3f inputs:emission_color
+                float inputs:metalness
+                float inputs:specular
+                color3f inputs:specular_color
+                float inputs:specular_IOR
+                float inputs:specular_roughness
+                float inputs:transmission
+                token outputs:out
+            }
+        }
+    }
+}
