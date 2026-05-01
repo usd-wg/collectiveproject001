@@ -1,9 +1,11 @@
 #usda 1.0
 (
     defaultPrim = "main"
-    endTimeCode = 1
+    endTimeCode = 1744
+    framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1744
+    timeCodesPerSecond = 24
     upAxis = "Y"
 )
 
@@ -36,5 +38,4 @@ over "main"
         }
     }
 }
-
 
