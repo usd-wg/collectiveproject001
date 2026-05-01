@@ -65,8 +65,8 @@ def Xform "main"
         float inputs:height = 50
         float inputs:intensity = 1
         bool inputs:normalize = 0
-        float inputs:shaping:cone:angle = 32.8
-        float inputs:shaping:cone:softness = 0
+        float inputs:shaping:cone:angle = 45
+        float inputs:shaping:cone:softness = 0.75
         float inputs:specular = 1
         asset inputs:texture:file = @@
         float inputs:width = 50

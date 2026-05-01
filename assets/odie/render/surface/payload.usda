@@ -1,10 +1,10 @@
 #usda 1.0
 (
     defaultPrim = "main"
-    endTimeCode = 1
+    endTimeCode = 1744
     framesPerSecond = 24
     metersPerUnit = 0.01
-    startTimeCode = 1
+    startTimeCode = 1744
     timeCodesPerSecond = 24
     upAxis = "Y"
 )
@@ -41,44 +41,130 @@ over "main"
         prepend inherits = </__class_mtl__/odie_glass_face_mtl>
     )
     {
-        int inputs:inputnum = 1
+        int inputs:inputnum = 2
         token outputs:mtlx:surface.connect = </main/odie_glass_face_mtl/mtlxmaterial.outputs:surface>
+        token outputs:surface.connect = </main/odie_glass_face_mtl/usdpreviewmaterial.outputs:surface>
 
         def NodeGraph "mtlxmaterial"
         {
-            token outputs:surface.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+            token outputs:surface.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxstandard_surface1.outputs:out>
 
-            def Shader "mtlxsurface1"
+            def Shader "mtlxstandard_surface1"
             {
-                uniform token info:id = "ND_surface"
-                string inputs:bsdf.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1
+                            string ogl_diff_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:base_color (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (0.8, 0.8, 0.8)
+                            string ogl_diff = "1"
+                        }
+                    }
+                )
+                float inputs:coat (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_coat_intensity = "1"
+                        }
+                    }
+                )
+                float inputs:coat_roughness (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0.1
+                            string ogl_coat_rough = "1"
+                        }
+                    }
+                )
+                float inputs:emission (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_emit_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:emission_color (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (1, 1, 1)
+                            string ogl_emit = "1"
+                        }
+                    }
+                )
+                float inputs:metalness (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_metallic = "1"
+                        }
+                    }
+                )
+                float inputs:specular (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1
+                            string ogl_spec_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:specular_color = (0.0273333, 0.112, 0.179333) (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (1, 1, 1)
+                            string ogl_spec = "1"
+                        }
+                    }
+                )
+                float inputs:specular_IOR (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1.5
+                            string ogl_ior = "1"
+                        }
+                    }
+                )
+                float inputs:specular_roughness = 0.01 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0.2
+                            string ogl_rough = "1"
+                        }
+                    }
+                )
+                float inputs:thin_film_IOR = 0
+                float inputs:transmission = 1 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_transparency = "1"
+                        }
+                    }
+                )
+                float inputs:transmission_depth = 5
+                float inputs:transmission_extra_roughness = 0.01
                 token outputs:out
             }
+        }
 
-            def Shader "mtlxlayer1"
-            {
-                uniform token info:id = "ND_layer_bsdf"
-                string inputs:base.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
-                string inputs:top.connect = </main/odie_glass_face_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
-                token outputs:out
-            }
+        def NodeGraph "usdpreviewmaterial"
+        {
+            token outputs:surface.connect = </main/odie_glass_face_mtl/usdpreviewmaterial/usdpreviewsurface.outputs:surface>
 
-            def Shader "mtlxdielectric_bsdf2"
+            def Shader "usdpreviewsurface"
             {
-                uniform token info:id = "ND_dielectric_bsdf"
-                float inputs:ior = 1.8
-                float2 inputs:roughness = (0.001, 0.001)
-                color3f inputs:tint = (-0.027333332, 0.111999996, 0.17933333)
-                float inputs:weight = 0.821
-                token outputs:out
-            }
-
-            def Shader "mtlxdielectric_bsdf1"
-            {
-                uniform token info:id = "ND_dielectric_bsdf"
-                float2 inputs:roughness = (0.001, 0.001)
-                string inputs:scatter_mode = "T"
-                token outputs:out
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (1, 1, 1)
+                float inputs:opacity = 0.1
+                token outputs:surface
             }
         }
     }
@@ -88,68 +174,132 @@ over "main"
     )
     {
         int inputs:inputnum = 2
-        token outputs:mtlx:displacement.connect = </main/odie_mtl/mtlxmaterial.outputs:displacement>
         token outputs:mtlx:surface.connect = </main/odie_mtl/mtlxmaterial.outputs:surface>
+        token outputs:surface.connect = </main/odie_mtl/usdpreviewmaterial.outputs:surface>
 
         def NodeGraph "mtlxmaterial"
         {
-            token outputs:displacement.connect = </main/odie_mtl/mtlxmaterial/mtlxdisplacement.outputs:out>
-            token outputs:surface.connect = </main/odie_mtl/mtlxmaterial/mtlxsurface1.outputs:out>
+            token outputs:surface.connect = </main/odie_mtl/mtlxmaterial/mtlxstandard_surface1.outputs:out>
 
-            def Shader "mtlxsurface1"
+            def Shader "mtlxstandard_surface1"
             {
-                uniform token info:id = "ND_surface"
-                string inputs:bsdf.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer3.outputs:out>
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:base (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1
+                            string ogl_diff_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:base_color = (1, 0, 0.5) (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (0.8, 0.8, 0.8)
+                            string ogl_diff = "1"
+                        }
+                    }
+                )
+                color3f inputs:base_color.connect = </main/odie_mtl/mtlxmaterial/mtlxsaturate1.outputs:out>
+                float inputs:coat = 0.2 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_coat_intensity = "1"
+                        }
+                    }
+                )
+                float inputs:coat_affect_color = 0.1
+                float inputs:coat_affect_roughness = 0.3
+                color3f inputs:coat_color = (0.171, 0.171, 0.261)
+                float inputs:coat_IOR = 1.2
+                float inputs:coat_roughness = 0.12 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0.1
+                            string ogl_coat_rough = "1"
+                        }
+                    }
+                )
+                float inputs:diffuse_roughness.connect = </main/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:r>
+                float inputs:emission (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_emit_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:emission_color (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (1, 1, 1)
+                            string ogl_emit = "1"
+                        }
+                    }
+                )
+                float inputs:metalness = 0.7 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_metallic = "1"
+                        }
+                    }
+                )
+                float inputs:metalness.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:r>
+                vector3f inputs:normal.connect = </main/odie_mtl/mtlxmaterial/mtlxnormalmap1.outputs:out>
+                color3f inputs:sheen_color = (0.10548276, 0.10548276, 0.161)
+                float inputs:sheen_roughness = 0.096
+                float inputs:specular (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1
+                            string ogl_spec_intensity = "1"
+                        }
+                    }
+                )
+                color3f inputs:specular_color (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double3 default_value = (1, 1, 1)
+                            string ogl_spec = "1"
+                        }
+                    }
+                )
+                float inputs:specular_IOR = 1.3 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 1.5
+                            string ogl_ior = "1"
+                        }
+                    }
+                )
+                float inputs:specular_roughness = 0.6 (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0.2
+                            string ogl_rough = "1"
+                        }
+                    }
+                )
+                float inputs:thin_film_IOR.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:r>
+                float inputs:transmission (
+                    customData = {
+                        dictionary HoudiniPreviewTags = {
+                            double default_value = 0
+                            string ogl_transparency = "1"
+                        }
+                    }
+                )
                 token outputs:out
             }
 
-            def Shader "mtlxlayer3"
+            def Shader "mtlxsaturate1"
             {
-                uniform token info:id = "ND_layer_bsdf"
-                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer1.outputs:out>
-                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxlayer2.outputs:out>
-                token outputs:out
-            }
-
-            def Shader "mtlxlayer2"
-            {
-                uniform token info:id = "ND_layer_bsdf"
-                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf2.outputs:out>
-                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxdielectric_bsdf1.outputs:out>
-                token outputs:out
-            }
-
-            def Shader "mtlxdielectric_bsdf1"
-            {
-                uniform token info:id = "ND_dielectric_bsdf"
-                float2 inputs:roughness = (0.1, 0.1)
-                token outputs:out
-            }
-
-            def Shader "mtlxdielectric_bsdf2"
-            {
-                uniform token info:id = "ND_dielectric_bsdf"
-                float inputs:ior = 2
-                float2 inputs:roughness = (0.6, 0.6)
-                color3f inputs:tint = (0.171, 0.171, 0.261)
-                token outputs:out
-            }
-
-            def Shader "mtlxlayer1"
-            {
-                uniform token info:id = "ND_layer_bsdf"
-                string inputs:base.connect = </main/odie_mtl/mtlxmaterial/mtlxconductor_bsdf1.outputs:out>
-                string inputs:top.connect = </main/odie_mtl/mtlxmaterial/mtlxburley_diffuse_bsdf1.outputs:out>
-                token outputs:out
-            }
-
-            def Shader "mtlxburley_diffuse_bsdf1"
-            {
-                uniform token info:id = "ND_burley_diffuse_bsdf"
-                color3f inputs:color = (0, 1, 0.5)
-                color3f inputs:color.connect = </main/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:rgb>
-                float inputs:roughness.connect = </main/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:r>
-                token outputs:out
+                uniform token info:id = "ND_saturate_color3"
+                float inputs:amount = 1.3
+                color3f inputs:in.connect = </main/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:rgb>
+                color3f outputs:out
             }
 
             def Shader "cartoon_base_color_texture"
@@ -175,45 +325,48 @@ over "main"
                 float outputs:r
             }
 
-            def Shader "mtlxconductor_bsdf1"
-            {
-                uniform token info:id = "ND_conductor_bsdf"
-                color3f inputs:extinction.connect = </main/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:extinction>
-                color3f inputs:ior.connect = </main/odie_mtl/mtlxmaterial/mtlxartistic_ior1.outputs:ior>
-                float2 inputs:roughness = (0.1, 0.1)
-                float inputs:weight = 0.196
-                token outputs:out
-            }
-
-            def Shader "mtlxartistic_ior1"
-            {
-                uniform token info:id = "ND_artistic_ior"
-                color3f inputs:edge_color = (0.1709999, 0.1709999, 0.261)
-                color3f inputs:reflectivity.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:rgb>
-                color3f outputs:extinction
-                color3f outputs:ior
-            }
-
             def Shader "cartoon_metallic_texture"
             {
                 uniform token info:id = "ND_UsdUVTexture"
                 asset inputs:file = @./textures/odie_cartoon_metal_01.exr@
-                color3f outputs:rgb
+                float2 inputs:st.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
+                float outputs:r
             }
 
-            def Shader "mtlxdisplacement"
+            def Shader "mtlxnormalmap1"
             {
-                uniform token info:id = "ND_displacement_vector3"
-                vector3f inputs:displacement.connect = </main/odie_mtl/mtlxmaterial/cartoon_normal_map.outputs:rgb>
-                token outputs:out
+                uniform token info:id = "ND_normalmap"
+                vector3f inputs:in.connect = </main/odie_mtl/mtlxmaterial/mtlximage1.outputs:out>
+                float inputs:scale = 5
+                vector3f outputs:out
             }
 
-            def Shader "cartoon_normal_map"
+            def Shader "mtlximage1"
             {
-                uniform token info:id = "ND_UsdUVTexture"
-                color4f inputs:fallback = (0.47553638, 0.47623226, 0.47622293, 1)
-                asset inputs:file = @./textures/odie_cartoon_norm_01.tga@
-                color3f outputs:rgb
+                uniform token info:id = "ND_image_vector3"
+                asset inputs:file = @./textures/norm.1001.exr@
+                float2 inputs:texcoord.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
+                vector3f outputs:out
+            }
+        }
+
+        def NodeGraph "usdpreviewmaterial"
+        {
+            token outputs:surface.connect = </main/odie_mtl/usdpreviewmaterial/usdpreviewsurface.outputs:surface>
+
+            def Shader "usdpreviewsurface"
+            {
+                uniform token info:id = "UsdPreviewSurface"
+                color3f inputs:diffuseColor = (1, 0, 0)
+                color3f inputs:diffuseColor.connect = </main/odie_mtl/usdpreviewmaterial/usduvtexture1.outputs:rgb>
+                token outputs:surface
+            }
+
+            def Shader "usduvtexture1"
+            {
+                uniform token info:id = "UsdUVTexture"
+                asset inputs:file = @./textures/odie_cartoon_color_01.exr@
+                vector3f outputs:rgb
             }
         }
     }
