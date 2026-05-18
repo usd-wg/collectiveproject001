@@ -162,8 +162,7 @@ over "main"
             def Shader "usdpreviewsurface"
             {
                 uniform token info:id = "UsdPreviewSurface"
-                color3f inputs:diffuseColor = (1, 1, 1)
-                float inputs:opacity = 0.1
+                color3f inputs:diffuseColor = (1, 0, 0)
                 token outputs:surface
             }
         }
@@ -221,7 +220,7 @@ over "main"
                         }
                     }
                 )
-                float inputs:diffuse_roughness.connect = </main/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:r>
+                float inputs:diffuse_roughness.connect = </main/odie_mtl/mtlxmaterial/cartoon_roughness_texture.outputs:out>
                 float inputs:emission (
                     customData = {
                         dictionary HoudiniPreviewTags = {
@@ -246,7 +245,7 @@ over "main"
                         }
                     }
                 )
-                float inputs:metalness.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:r>
+                float inputs:metalness.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:out>
                 vector3f inputs:normal.connect = </main/odie_mtl/mtlxmaterial/mtlxnormalmap1.outputs:out>
                 color3f inputs:sheen_color = (0.10548276, 0.10548276, 0.161)
                 float inputs:sheen_roughness = 0.096
@@ -282,7 +281,7 @@ over "main"
                         }
                     }
                 )
-                float inputs:thin_film_IOR.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:r>
+                float inputs:thin_film_IOR.connect = </main/odie_mtl/mtlxmaterial/cartoon_metallic_texture.outputs:out>
                 float inputs:transmission (
                     customData = {
                         dictionary HoudiniPreviewTags = {
@@ -298,16 +297,16 @@ over "main"
             {
                 uniform token info:id = "ND_saturate_color3"
                 float inputs:amount = 1.3
-                color3f inputs:in.connect = </main/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:rgb>
+                color3f inputs:in.connect = </main/odie_mtl/mtlxmaterial/cartoon_base_color_texture.outputs:out>
                 color3f outputs:out
             }
 
             def Shader "cartoon_base_color_texture"
             {
-                uniform token info:id = "ND_UsdUVTexture"
+                uniform token info:id = "ND_image_color3"
                 asset inputs:file = @./textures/odie_cartoon_color_01.exr@
-                float2 inputs:st.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
-                color3f outputs:rgb
+                float2 inputs:texcoord.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
+                color3f outputs:out
             }
 
             def Shader "mtlxUsdPrimvarReader1"
@@ -319,18 +318,18 @@ over "main"
 
             def Shader "cartoon_roughness_texture"
             {
-                uniform token info:id = "ND_UsdUVTexture"
+                uniform token info:id = "ND_image_float"
                 asset inputs:file = @./textures/odie_cartoon_rough_01.exr@
-                float2 inputs:st.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
-                float outputs:r
+                float2 inputs:texcoord.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
+                float outputs:out
             }
 
             def Shader "cartoon_metallic_texture"
             {
-                uniform token info:id = "ND_UsdUVTexture"
+                uniform token info:id = "ND_image_float"
                 asset inputs:file = @./textures/odie_cartoon_metal_01.exr@
-                float2 inputs:st.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
-                float outputs:r
+                float2 inputs:texcoord.connect = </main/odie_mtl/mtlxmaterial/mtlxUsdPrimvarReader1.outputs:out>
+                float outputs:out
             }
 
             def Shader "mtlxnormalmap1"
@@ -358,15 +357,7 @@ over "main"
             {
                 uniform token info:id = "UsdPreviewSurface"
                 color3f inputs:diffuseColor = (1, 0, 0)
-                color3f inputs:diffuseColor.connect = </main/odie_mtl/usdpreviewmaterial/usduvtexture1.outputs:rgb>
                 token outputs:surface
-            }
-
-            def Shader "usduvtexture1"
-            {
-                uniform token info:id = "UsdUVTexture"
-                asset inputs:file = @./textures/odie_cartoon_color_01.exr@
-                vector3f outputs:rgb
             }
         }
     }

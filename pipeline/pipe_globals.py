@@ -132,11 +132,12 @@ def create_renderproduct(
     resolution=[1024,768],
     ndc=(0,0,1,1),
     par=1.0,
+    timesample=0.0,
     ):
 
     prim = UsdRender.Product.Define( stage, "/Render/Products/{name}".format(name=product_name) )
     prim.GetAspectRatioConformPolicyAttr().Set( "expandAperture" )
-    prim.GetProductNameAttr().Set( product_filepath )
+    prim.GetProductNameAttr().Set( product_filepath, float(timesample) )
     prim.GetResolutionAttr().Set( Gf.Vec2i( resolution ) )
     prim.GetDataWindowNDCAttr().Set( ndc )
     prim.GetPixelAspectRatioAttr().Set( par )
@@ -144,15 +145,16 @@ def create_renderproduct(
     
     prim.GetCameraRel().SetTargets( [ camera_prim.GetPath() ] )
 
-    driver_parameters = {
-        "imageName":{ "type":Sdf.ValueTypeNames.String, "value":"beauty" },
-        "partName":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
-        "driver:imagePath":{ "type":Sdf.ValueTypeNames.String, "value":product_filepath },
-        "driver:aovNames":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
-        "driver:parameters:subimage":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
-    } 
-    for a in driver_parameters.keys():
-        prim.GetPrim().CreateAttribute( a, driver_parameters[a]["type"] ).Set( driver_parameters[a]["value"] )
+    # old/deprecated?
+    #driver_parameters = {
+    #    "imageName":{ "type":Sdf.ValueTypeNames.String, "value":"beauty" },
+    #    "partName":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
+    #    "driver:imagePath":{ "type":Sdf.ValueTypeNames.String, "value":product_filepath },
+    #    "driver:aovNames":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
+    #    "driver:parameters:subimage":{ "type":Sdf.ValueTypeNames.String, "value":"rgba" },
+    #} 
+    #for a in driver_parameters.keys():
+    #    prim.GetPrim().CreateAttribute( a, driver_parameters[a]["type"] ).Set( driver_parameters[a]["value"] )
 
     return prim
 
@@ -161,16 +163,24 @@ def create_rendervar(
     stage, 
     aov_name='',
     aov_source='',
+    aov_sourceType='raw',
     aov_format='',
+    aov_type='',
     ):
 
-    prim = UsdRender.Var.Define( stage, "/Render/Products/Vars/{name}".format(name=aov_name) )
+    prim = UsdRender.Var.Define( stage, "/Render/Products/Vars/{name}".format(name=aov_name.replace(" ","_")) )
 
-    prim.GetSourceNameAttr().Set( aov_name )
-    prim.GetPrim().CreateAttribute( "driver:parameters:aov:name", Sdf.ValueTypeNames.String ).Set( aov_name )
-    prim.GetPrim().CreateAttribute( "driver:parameters:aov:source", Sdf.ValueTypeNames.String ).Set( aov_source )
-    if aov_format != '':
-        prim.GetPrim().CreateAttribute( "driver:parameters:aov:format", Sdf.ValueTypeNames.String ).Set( aov_format )
+    prim.GetSourceNameAttr().Set( aov_source )
+    prim.GetSourceTypeAttr().Set( aov_sourceType )
+    if aov_type != "":
+        prim.GetDataTypeAttr().Set( aov_type )
+
+    
+    # old/deprecated?
+    #prim.GetPrim().CreateAttribute( "driver:parameters:aov:name", Sdf.ValueTypeNames.String ).Set( aov_name )
+    #prim.GetPrim().CreateAttribute( "driver:parameters:aov:source", Sdf.ValueTypeNames.String ).Set( aov_source )
+    #if aov_format != '':
+    #    prim.GetPrim().CreateAttribute( "driver:parameters:aov:format", Sdf.ValueTypeNames.String ).Set( aov_format )
 
     return prim
 

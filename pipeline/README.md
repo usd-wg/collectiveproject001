@@ -99,5 +99,13 @@ The following is a command to render the whole sequence, as `render` purpose, in
 hython pipeline/render_shot.py --renderer karma --purpose render --makefinal --runffmpeg
 ```
 
+# Rendering in RenderMan
 
+With RenderMan we can now set RenderSettings/Products/Vars and write out EXRs and AOVs.
+
+Using the flag `--useproducts` and ensuring your environment has `HD_PRMAN_INTERACTIVE_RENDER_WITH_RENDER_SETTINGS=1` RenderMan will use the Products/Vars for its output renders.
+
+A "denoising" pipeline has also been added, but not completed.
+
+For now, RenderMan RenderSettings have been pushed to higher quality to reduce some noise from emissive meshes.
 

@@ -10,15 +10,16 @@ def Xform "root"
     def Scope "mtl"
     {
         def Material "mtl_electric_arc" (
-            prepend apiSchemas = ["NodeGraphNodeAPI"]
+            prepend apiSchemas = ["NodeGraphNodeAPI", "MaterialXConfigAPI"]
             customData = {
                 dictionary Autodesk = {
                     string ldx_inputPos = "-1999.05 556.103"
-                    string ldx_outputPos = "1605.89 3.10745"
+                    string outputPos = "9.690500 0.734217"
                 }
             }
         )
         {
+            string config:mtlx:version = "1.39"
             float inputs:color_noise_frequency = 1 (
                 displayName = ""
                 sdrMetadata = {
@@ -73,7 +74,7 @@ def Xform "root"
                     string uisoftmin = "0,0,0"
                 }
             )
-            float inputs:intensity = 1000 (
+            float inputs:intensity = 10 (
                 displayName = ""
                 sdrMetadata = {
                     string uiorder = "0"
@@ -143,20 +144,8 @@ def Xform "root"
                     string uisoftmin = "0"
                 }
             )
-            token outputs:mtlx:surface.connect = </root/mtl/mtl_electric_arc/open_pbr_surface1.outputs:out>
-            uniform float2 ui:nodegraph:node:pos = (0.05985278, 0.051258054)
-
-            def Shader "open_pbr_surface1" (
-                prepend apiSchemas = ["NodeGraphNodeAPI"]
-            )
-            {
-                uniform token info:id = "ND_open_pbr_surface_surfaceshader"
-                color3f inputs:emission_color.connect = </root/mtl/mtl_electric_arc/mix1.outputs:out>
-                float inputs:emission_luminance = 10000
-                float inputs:emission_luminance.connect = </root/mtl/mtl_electric_arc/multiply1.outputs:out>
-                token outputs:out
-                uniform float2 ui:nodegraph:node:pos = (7.21, 0.14201723)
-            }
+            token outputs:mtlx:surface.connect = </root/mtl/mtl_electric_arc/standard_surface1.outputs:out>
+            uniform float2 ui:nodegraph:node:pos = (0.06937666, 0.041734055)
 
             def Shader "multiply1" (
                 prepend apiSchemas = ["NodeGraphNodeAPI"]
@@ -418,6 +407,17 @@ def Xform "root"
                 float inputs:inlow = -1
                 float outputs:out
                 uniform float2 ui:nodegraph:node:pos = (-3.0344, 6.106389)
+            }
+
+            def Shader "standard_surface1" (
+                prepend apiSchemas = ["NodeGraphNodeAPI"]
+            )
+            {
+                uniform token info:id = "ND_standard_surface_surfaceshader"
+                float inputs:emission.connect = </root/mtl/mtl_electric_arc/multiply1.outputs:out>
+                color3f inputs:emission_color.connect = </root/mtl/mtl_electric_arc/mix1.outputs:out>
+                token outputs:out
+                uniform float2 ui:nodegraph:node:pos = (7.2854443, 0.85722774)
             }
         }
     }
