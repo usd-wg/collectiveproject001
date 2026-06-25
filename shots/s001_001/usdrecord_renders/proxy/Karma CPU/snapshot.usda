@@ -1,10 +1,10 @@
 #usda 1.0
 (
-    endTimeCode = 1480
+    endTimeCode = 1210
     framesPerSecond = 24
     metersPerUnit = 0.01
     renderSettingsPrimPath = "/Render/rendersettings"
-    startTimeCode = 1000
+    startTimeCode = 1210
     subLayers = [
         @C:\Users\paolo\Desktop\code\collectiveproject001\shots\s001_001\index.usda@
     ]

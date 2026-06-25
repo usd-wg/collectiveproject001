@@ -67,9 +67,14 @@ def main(args):
     input_frameend = pipe_globals.get_value_from_args(args,"-fe","--frameend")
     if input_frameend != "":
         frameend = int(input_frameend)
-    frames_to_render = []
-    for frame in range(framestart, frameend+1):
-        frames_to_render.append(frame)
+    
+    # initialize with important-frames
+    frames_to_render = [1060, 1090, 1120, 1160, 1210, 1280, 1400, 1460]
+    if input_framestart != "" or input_frameend != "":
+        frames_to_render = []
+        for frame in range(framestart, frameend+1):
+            frames_to_render.append(frame)
+
 
     run_ffmpeg = pipe_globals.get_bool_from_args(args,"-rf","--runffmpeg")
     ffmpeg_passes = []

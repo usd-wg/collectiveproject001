@@ -1,0 +1,28 @@
+#usda 1.0
+(
+    endTimeCode = 1480
+    framesPerSecond = 24
+    metersPerUnit = 0.01
+    renderSettingsPrimPath = "/Render/rendersettings"
+    startTimeCode = 1001
+    subLayers = [
+        @/Users/panisj/Work/jobs/collectiveproject001/shots/s001_001/index.usda@
+    ]
+    timeCodesPerSecond = 24
+    upAxis = "Y"
+)
+
+def Scope "Render"
+{
+    def RenderSettings "rendersettings"
+    {
+        uniform token aspectRatioConformPolicy = "expandAperture"
+        rel camera = </World/cameras/renderCam/mono>
+        uniform float4 dataWindowNDC = (0, 0, 1, 1)
+        uniform token[] includedPurposes = ["default"]
+        uniform bool instantaneousShutter = 0
+        uniform float pixelAspectRatio = 1
+        uniform int2 resolution = (1024, 768)
+    }
+}
+
