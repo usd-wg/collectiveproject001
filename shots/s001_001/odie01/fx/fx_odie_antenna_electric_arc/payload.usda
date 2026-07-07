@@ -12,7 +12,7 @@ def Xform "main"
         uniform token purpose = "render"
 
         def Scope "fx" (
-            prepend payload = @geo/render.usda@
+            prepend payload = @geo/render.usd@
         )
         {
         }
@@ -23,7 +23,7 @@ def Xform "main"
         uniform token purpose = "proxy"
 
         def Scope "fx" (
-            prepend payload = @geo/proxy.usda@
+            prepend payload = @geo/proxy.usd@
         )
         {
         }
