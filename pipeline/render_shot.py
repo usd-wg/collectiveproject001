@@ -69,7 +69,7 @@ def main(args):
         frameend = int(input_frameend)
     
     # initialize with important-frames
-    frames_to_render = [1060, 1090, 1120, 1160, 1210, 1280, 1400, 1460]
+    frames_to_render = pipe_globals.IMPORTANT_FRAMES
     if input_framestart != "" or input_frameend != "":
         frames_to_render = []
         for frame in range(framestart, frameend+1):

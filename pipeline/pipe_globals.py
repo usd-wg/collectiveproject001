@@ -4,6 +4,7 @@ import os
 import math
 import pathlib
 
+IMPORTANT_FRAMES = [1060, 1090, 1120, 1160, 1210, 1280, 1400, 1460]
 
 def stage_begin(filename, start=1.0, end=1.0, fps=24.0):
     layer = Sdf.Layer.CreateNew( filename, args={'format':'usda'} )
